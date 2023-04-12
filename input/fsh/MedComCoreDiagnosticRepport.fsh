@@ -4,7 +4,7 @@ Id: MedComCoreDiagnosticRepport
 Title: "MedComCoreDiagnosticRepport"
 Description: ""
 * basedOn 0..1 MS
-* basedOn only Reference(ServiceReqest)
+* basedOn only Reference(MedComCoreServiceRequest)
 * status MS
 * category 0..1 MS
 * subject only Reference(MedComCorePatient)
@@ -14,7 +14,6 @@ Description: ""
 * encounter 
 * encounter only Reference(MedComCoreEncounter)
 * conclusion MS 
-* note MS
 * result MS
-* specimen
+* specimen MS
 * specimen only Reference(MedComCoreSpecimen)
