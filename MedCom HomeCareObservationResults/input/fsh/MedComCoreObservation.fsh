@@ -14,3 +14,7 @@ Description: "this profile is a genereal description of an observation"
 * performer only Reference(MedComCoreOrganization)
 * value[x] 0..1 MS
 * interpretation 0..* MS
+* note 0..* MS
+* method MS
+* referenceRange MS
+* specimen
