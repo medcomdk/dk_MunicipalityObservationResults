@@ -4,8 +4,8 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: fhir.example
-canonical: MedComHomeCareObservationResults.org
-name: MedCom HomeCareObservationResults
+canonical: MedComHomeCareObservation.org
+name: MedComHomeCareObservation
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
