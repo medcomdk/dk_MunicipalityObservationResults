@@ -11,7 +11,7 @@ Description: "core pirfile for medcom diagnostic repport "
 * issued 1..1 MS
 * performer 1..1 MS
 * performer only Reference(MedComCoreOrganization)
-* encounter 
+* encounter MS
 * encounter only Reference(MedComCoreEncounter)
 * conclusion MS 
 * result MS

@@ -1,5 +1,5 @@
 Profile: MedComCoreServiceRequest
 Parent: ServiceRequest
-Id: MedComCoreServiceRequest
+Id: medcom-core-servicerequest
 Title: "MedComCoreServiceRequest"
 Description: ""

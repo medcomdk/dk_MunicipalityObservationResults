@@ -1,10 +1,10 @@
 Profile: MedComCoreSpecimen
 Parent: Specimen
-Id: MedComCoreSpecimen
+Id: medcom-core-specimen
 Title: "MedComCoreSpecimen"
 Description: ""
 * accessionIdentifier MS
-* status
+* status MS
 * subject MS
 * subject only Reference(MedComCorePatient)
 * collection MS 

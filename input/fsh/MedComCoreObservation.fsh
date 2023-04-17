@@ -1,9 +1,9 @@
 Profile: MedComCoreObservation
 Parent: Observation
-Id: MedComCoreObservation
+Id: medcom-core-observation
 Title: "MedComCoreObservation"
 Description: "this profile is a genereal description of an observation"
-* status  MS
+* status MS
 * basedOn 0..1 MS
 * basedOn only Reference(ServiceRequest)
 * code 1..1 MS
