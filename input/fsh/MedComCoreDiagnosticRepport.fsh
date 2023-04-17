@@ -1,10 +1,10 @@
 Profile: MedComCoreDiagnosticRepport
 Parent: DiagnosticReport
-Id: MedComCoreDiagnosticRepport
+Id: medcom-core-diagnosticrepport
 Title: "MedComCoreDiagnosticRepport"
-Description: ""
+Description: "core pirfile for medcom diagnostic repport "
 * basedOn 0..1 MS
-* basedOn only Reference(MedComCoreServiceRequest)
+* basedOn only Reference(ServiceRequest)
 * status MS
 * category 0..1 MS
 * subject only Reference(MedComCorePatient)
@@ -15,5 +15,6 @@ Description: ""
 * encounter only Reference(MedComCoreEncounter)
 * conclusion MS 
 * result MS
+* result only Reference(MedComCoreObservation)
 * specimen MS
 * specimen only Reference(MedComCoreSpecimen)

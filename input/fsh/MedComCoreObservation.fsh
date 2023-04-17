@@ -5,7 +5,7 @@ Title: "MedComCoreObservation"
 Description: "this profile is a genereal description of an observation"
 * status  MS
 * basedOn 0..1 MS
-* basedOn only Reference(MedComCoreServiceRequest)
+* basedOn only Reference(ServiceRequest)
 * code 1..1 MS
 * subject 1..1 MS
 * subject only Reference(MedComCorePatient)
