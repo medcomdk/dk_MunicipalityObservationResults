@@ -1,5 +1,5 @@
 Profile: MedComHomeCareObservation
-Parent: MedComCoreObservation
+Parent: Observation
 Id: MedComHomeCareObservation
 Title: "MedComHomeCareObservation"
 Description: ""
