@@ -1,8 +1,8 @@
-Profile: MedComCoreDiagnosticRepport
+Profile: MedComCoreDiagnosticReport
 Parent: DiagnosticReport
-Id: medcom-core-diagnosticrepport
-Title: "MedComCoreDiagnosticRepport"
-Description: "core pirfile for medcom diagnostic repport "
+Id: medcom-core-diagnosticreport
+Title: "MedComCoreDiagnosticReport"
+Description: "Report onating all results form observations. "
 * basedOn 0..1 MS
 * basedOn only Reference(ServiceRequest)
 * status MS

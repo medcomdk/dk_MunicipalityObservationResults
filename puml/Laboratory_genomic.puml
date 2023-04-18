@@ -1,0 +1,38 @@
+@startuml HomeCareObservation
+
+hide empty members
+
+top to bottom direction
+
+class "MedComMessagingMessage" as message
+class "MedComMessagingMessageHeader" as messageheader
+class "MedComMessagingProvenance" as provenance
+class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
+class "MedComCorePatient" as patient
+class "MedComCorePractitioner" as author
+class "MedComCoreEncounter" as encounter
+class "MedComCoreOrganization" as organization
+class "MedComCoreDiagnosticReport" as diagnosticReport
+class "MedComCoreObservation" as observation
+class "MedComCoreSpecimen" as specimen 
+class "MedComCoreServiceRequest" as request
+
+
+message -- messageheader : "entry"
+messageheader -- diagnosticReport : "focus"
+diagnosticReport -- patient : "subject"
+message -- provenance : "entry"
+provenance -- messageheader : "target" 
+provenance -- messagingOrganization : "agent.who"
+diagnosticReport -- encounter : "encounter"
+diagnosticReport -- request: "request"
+diagnosticReport -- author: "performer"
+diagnosticReport -- observation : "result"
+diagnosticReport -- specimen : "specimen"
+observation -- specimen
+observation -- author:"performer"
+author -- organization
+messageheader -- messagingOrganization : "receiver"
+messageheader -- messagingOrganization : "sender"
+
+@enduml
