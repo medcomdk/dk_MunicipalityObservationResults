@@ -1,7 +1,7 @@
 Profile: MedComHomeCareObservation
 Parent: MedComCoreObservation
-Id: medcom-homecare-observation
+Id: medcom-homeCare-observation
 Title: "MedComHomeCareObservation"
-Description: ""
+Description: "This profile is "
 * specimen MS
 * specimen only Reference(MedComCoreSpecimen)
