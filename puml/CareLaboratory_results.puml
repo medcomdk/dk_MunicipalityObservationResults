@@ -15,6 +15,7 @@ class "MedComCoreOrganization" as organization
 class "MedComCoreDiagnosticReport" as diagnosticReport
 class "MedComCoreObservation" as observation
 class "MedComCoreSpecimen" as specimen 
+class "MedcomCoreSubstance" as substance
 class "MedComCoreServiceRequest" as request
 
 
@@ -26,10 +27,11 @@ provenance -- messageheader : "target"
 provenance -- messagingOrganization : "agent.who"
 diagnosticReport -- encounter : "encounter"
 diagnosticReport -- request: "request"
-diagnosticReport -- author: "performer"
 diagnosticReport -- observation : "result"
 diagnosticReport -- specimen : "specimen"
-observation -- specimen
+diagnosticReport -- author: "performer"
+specimen -- substance
+specimen --observation
 observation -- author:"performer"
 author -- organization
 messageheader -- messagingOrganization : "receiver"
