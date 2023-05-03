@@ -4,10 +4,10 @@ hide empty members
 
 top to bottom direction
 
-class "MedComMessagingMessage" as message
-class "MedComMessagingMessageHeader" as messageheader
-class "MedComMessagingProvenance" as provenance
-class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
+' class "MedComMessagingMessage" as message
+' class "MedComMessagingMessageHeader" as messageheader
+' class "MedComMessagingProvenance" as provenance
+' class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
 class "MedComCorePatient" as patient
 class "MedComCorePractitioner" as author
 class "MedComCoreEncounter" as encounter
@@ -19,22 +19,15 @@ class "MedcomCoreSubstance" as substance
 class "MedComCoreServiceRequest" as request
 
 
-message -- messageheader : "entry"
-messageheader -- diagnosticReport : "focus"
-diagnosticReport -- patient : "subject"
-message -- provenance : "entry"
-provenance -- messageheader : "target" 
-provenance -- messagingOrganization : "agent.who"
+
 diagnosticReport -- encounter : "encounter"
 diagnosticReport -- request: "request"
 diagnosticReport -- observation : "result"
 diagnosticReport -- specimen : "specimen"
 diagnosticReport -- author: "performer"
+diagnosticReport -- patient: "subject"
 specimen -- substance
 specimen --observation
-observation -- author:"performer"
+observation -- author:"performer/ practitioner rolle"
 author -- organization
-messageheader -- messagingOrganization : "receiver"
-messageheader -- messagingOrganization : "sender"
-
 @enduml

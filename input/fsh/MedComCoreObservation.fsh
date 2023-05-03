@@ -17,3 +17,4 @@ Description: "this profile is a genereal description of an observation"
 * note MS
 * method MS
 * referenceRange MS
+* referenceRange
