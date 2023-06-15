@@ -15,10 +15,9 @@ Description: "This is a profile intendet to be use in MedCom HomeCareObservation
 * performer 0..1 MS
 * performer only Reference(MedComCoreOrganization or MedComCorePractitioner or MedComCoreCareTeam or MedComCorePractitionerRole)
 * value[x] 0..1 MS
-* valueQuantity or valueBoolean
 * interpretation MS
 * note MS
 * referenceRange MS
-    * referenceRange.type MS
+* referenceRange.type MS
 * specimen 0..1 MS
 * specimen only Reference(MedComCoreSpecimen)

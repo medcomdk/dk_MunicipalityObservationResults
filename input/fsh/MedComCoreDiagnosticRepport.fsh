@@ -18,4 +18,4 @@ Description: "Report onating all results form observations. "
 * specimen MS
 * specimen only Reference(MedComCoreSpecimen)
 * presentedForm 0..1 
-* presentedForm.contentType= #application/pdf 
+* presentedForm.contentType = #application/pdf 

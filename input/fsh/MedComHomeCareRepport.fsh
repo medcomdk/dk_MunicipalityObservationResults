@@ -18,4 +18,4 @@ Description: "This resource is intenden to be used in relation with the procet c
 * specimen MS
 * specimen only Reference(MedComCoreSpecimen)
 * presentedForm 0..1 
-* presentedForm.contentType= #application/pdf 
+* presentedForm.contentType = #application/pdf 

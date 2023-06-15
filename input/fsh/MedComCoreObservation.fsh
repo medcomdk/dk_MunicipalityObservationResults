@@ -14,11 +14,10 @@ Description: "Observation resource to use in MedCom Laboratory and HomeCare prof
 * issued 1..1 MS
 * performer 0..1 MS
 * performer only Reference(MedComCoreOrganization or MedComCorePractitioner or MedComCoreCareTeam or MedComCorePractitionerRole)
-* value[x] 0..1 MS
-* valueQuantity or valueBoolean
+* value[x] 
 * interpretation MS
 * note MS
 * referenceRange MS
-    * referenceRange.type MS
+  * referenceRange.type MS
 * specimen 0..1 MS
 * specimen only Reference(MedComCoreSpecimen)
