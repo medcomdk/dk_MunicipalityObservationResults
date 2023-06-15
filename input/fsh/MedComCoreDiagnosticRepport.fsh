@@ -7,14 +7,15 @@ Description: "Report onating all results form observations. "
 * basedOn only Reference(ServiceRequest)
 * status MS
 * category 0..1 MS
-* subject only Reference(MedComCorePatient)
+* subject only Reference(MedComCorePatient or Group or Device)
+* effectiveDateTime 0..1 MS
 * issued 1..1 MS
 * performer 1..1 MS
-* performer only Reference(MedComCoreOrganization)
-* encounter MS
-* encounter only Reference(MedComCoreEncounter)
+* performer only Reference(MedComCoreOrganization or MedComCorePractitioner or MedComCoreCareTeam or MedComCorePractitionerRole)
 * conclusion MS 
 * result MS
 * result only Reference(MedComCoreObservation)
 * specimen MS
 * specimen only Reference(MedComCoreSpecimen)
+* presentedForm 0..1 
+* presentedForm.contentType= #application/pdf 

@@ -10,11 +10,12 @@ Description: "Observation resource to use in MedCom Laboratory and HomeCare prof
 * category 0..1 MS
 * code MS
 * subject MS
-* subject only Reference(MedComCorePatient)
+* subject only Reference(MedComCorePatient or Group)
 * issued 1..1 MS
 * performer 0..1 MS
-* performer only Reference(MedComCoreOrganization or MedComCorePractitioner or MedComCoreCareTeam)
+* performer only Reference(MedComCoreOrganization or MedComCorePractitioner or MedComCoreCareTeam or MedComCorePractitionerRole)
 * value[x] 0..1 MS
+* valueQuantity or valueBoolean
 * interpretation MS
 * note MS
 * referenceRange MS
