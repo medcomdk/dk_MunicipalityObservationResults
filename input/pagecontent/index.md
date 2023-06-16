@@ -3,7 +3,7 @@
 ## Introduction
 This implementation guide (IG) is provided by MedCom to describe the use of FHIR ®© in message based exchange of HomeCare Observations between the general practitioner and homecare.
 
-This IG contains profiles for MedCom HomeCareObservations (Dansk: KommunalePrøvesvar) which is used to 
+This IG contains profiles for MedCom HomeCareObservations (Dansk: KommunalePrøvesvar) which is used to exchange results from perforemed HomeCare Observations. 
 
 
 ### HomeCareObservations 
