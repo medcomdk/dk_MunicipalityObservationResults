@@ -4,9 +4,11 @@ Id: medcom-core-specimen
 Title: "MedComCoreSpecimen"
 Description: ""
 * accessionIdentifier MS
-* status MS
-* subject MS
+* status 1..1 MS
+* subject 1..1 MS
 * subject only Reference(MedComCorePatient)
-* collection MS 
-* collection.quantity 0..1 
-* collection.method 0..1
+* collection MS
+* collection.collectedDateTime MS
+* collection.collectedPeriod MS
+* collection.collector only Reference(MedComCorePractitioner or MedComCorePractitionerRole) 
+* collection.quantity 0..1 MS 

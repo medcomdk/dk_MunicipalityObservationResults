@@ -17,12 +17,12 @@ This IG contains profiles for MedCom HomeCareObservations (Dansk: KommunalePrøv
 #### MedcomHomeCareSpecimen 
 
 #### MedComCorePatient
-The [MedComCorePatient](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) profile is used in a HospitalNotification message. However, a HospitalNotification message may only be exchanged for patients with an official Danish civil person register (CPR)-number
+The [MedComCorePatient](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) profile is used in a MedComHomeCareObservations message. However, a MedComHomeCareObservations message may only be exchanged for patients with an official Danish civil person register (CPR)-number
 
 #### MedComCorePractitioner 
 
 #### MedComCoreOrganization 
-The [MedComCoreOrganization](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-organization.html) profile is used in a HospitalNotification message to describe the serviceprovider organisation, which is the organisation responsible for the patient's admission.
+The [MedComCoreOrganization](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-organization.html) profile is used in a MedComHomeCareObservations message to describe the serviceprovider organisation, which is the organisation responsible for the patient's admission.
 
 #### MedComMessagingProvenance
 
@@ -33,7 +33,7 @@ On [MedCom Terminology IG](http://medcomfhir.dk/ig/terminology/) all referenced 
 Content in this IG can be downloaded in npm format under [Download](https://medcomfhir.dk/ig/MedComHomeCareObservations/downloads.html). This can be used to validate locale FHIR profiles against.
 
 ## Documentation
-On the [introduction page for HomeCareObservations](https://medcomdk.github.io/dk-medcom-homecareobservations/) the following documentation can be found: 
+On the [introduction page for HomeCareObservations](https://medcomdk.github.io/dk-medcom-homecareobservations/) the following documentation can be found: æ
 * Clinical guidelines
 * Use cases
 
