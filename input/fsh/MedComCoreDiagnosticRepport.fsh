@@ -9,9 +9,7 @@ Description: "Report onating all results form observations. "
 * category 0..1 MS
 * subject 1..1 MS
 * subject only Reference(MedComCorePatient) 
-* effectiveDateTime 0..1 MS
 * issued 1..1 MS
-* note 0..* MS
 * dataAbsentReason MS
 * performer 1..1 MS
 * performer only Reference(MedComCoreOrganization or MedComCorePractitioner or MedComCoreCareTeam or MedComCorePractitionerRole)

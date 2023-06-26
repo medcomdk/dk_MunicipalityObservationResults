@@ -9,8 +9,7 @@ top to bottom direction
 ' class "MedComMessagingProvenance" as provenance
 ' class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
 class "MedComCorePatient" as patient
-class "MedComCorePractitioner" as author
-class "MedComCoreEncounter" as encounter
+class "MedComCorePractitioner" as performer
 class "MedComCoreOrganization" as organization
 class "MedComCoreDiagnosticReport" as diagnosticReport
 class "MedComCoreObservation" as observation
@@ -20,11 +19,10 @@ class "MedComCoreServiceRequest" as request
 
 
 
-diagnosticReport -- encounter : "encounter"
 diagnosticReport -- request: "request"
 diagnosticReport -- observation : "result"
 diagnosticReport -- specimen : "specimen"
-diagnosticReport -- author: "performer"
+diagnosticReport -- performer: "performer"
 diagnosticReport -- patient: "subject"
 specimen -- substance
 specimen --observation
