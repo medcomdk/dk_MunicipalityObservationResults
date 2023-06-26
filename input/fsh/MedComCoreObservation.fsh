@@ -17,3 +17,4 @@ Description: "Observation resource to use in MedCom Laboratory and HomeCare prof
 * note MS
 * specimen 0..1 MS
 * specimen only Reference(MedComCoreSpecimen)
+* referenceRange and referenceRange.low  and referenceRange.high MS
