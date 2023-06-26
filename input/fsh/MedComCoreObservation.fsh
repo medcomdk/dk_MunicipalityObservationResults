@@ -3,7 +3,8 @@ Parent: DkCoreObservation
 Id: medcom-core-observation
 Title: "MedComCoreObservation"
 Description: "Observation resource to use in MedCom Laboratory and HomeCare profiles. "
-* status MS
+* status 1..1 MS
+* status ^short = "registered | partial | preliminary | final | corrected | cancelled | entered-in-error" 
 * basedOn 0..1 MS
 * basedOn only Reference(MedComCoreServiceRequest)
 * code MS

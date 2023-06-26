@@ -2,7 +2,7 @@ Profile: MedComCoreSpecimen
 Parent: Specimen
 Id: medcom-core-specimen
 Title: "MedComCoreSpecimen"
-Description: ""
+Description: "Profile to express specimens used to perform laboratory results."
 * accessionIdentifier MS
 * status 1..1 MS
 * subject 1..1 MS

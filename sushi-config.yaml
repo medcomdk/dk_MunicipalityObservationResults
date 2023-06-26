@@ -26,6 +26,7 @@ dependencies:
     version: dev
   medcom.fhir.dk.terminology: current
   medcom.fhir.dk.core: dev
+  # medcom.fhir.dk.messaging: current
 
   
 menu:
