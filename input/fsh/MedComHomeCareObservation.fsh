@@ -5,4 +5,3 @@ Title: "MedComHomeCareObservation"
 Description: "This is a profile intendet to be use in MedCom HomeCareObservations standards , to structure results from HomeCare. "
 * performer
 * performer only Reference(MedComCoreOrganization or MedComCoreCareTeam)
-* effectiveDateTime 1..1 MS

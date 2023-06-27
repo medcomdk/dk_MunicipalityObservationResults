@@ -1,4 +1,4 @@
-@startuml HomeCareObservations
+@startuml HomeCareObservations repport 
 
 hide empty members
 
@@ -9,23 +9,20 @@ top to bottom direction
 ' class "MedComMessagingProvenance" as provenance
 ' class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
 class "MedComCorePatient" as patient
-class "MedComCorePractitioner" as performer
+class "MedComCorePractitioner" as practitioner
 class "MedComCoreOrganization" as organization
 class "MedComCoreDiagnosticReport" as diagnosticReport
 class "MedComCoreObservation" as observation
-class "MedComCoreSpecimen" as specimen 
-class "MedcomCoreSubstance" as substance
 class "MedComCoreServiceRequest" as request
 
 
 
 diagnosticReport -- request: "request"
 diagnosticReport -- observation : "result"
-diagnosticReport -- specimen : "specimen"
-diagnosticReport -- performer: "performer"
+diagnosticReport -- organization: "performer"
 diagnosticReport -- patient: "subject"
-specimen -- substance
-specimen --observation
-observation -- author:"performer/ practitioner rolle"
-author -- organization
+observation -- organization:"performer"
+request -- practitioner
+request -- result
+
 @enduml

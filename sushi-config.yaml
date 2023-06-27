@@ -6,6 +6,7 @@
 id: medcom.fhir.dk.homecareobservation
 canonical: http://medcomfhir.dk/ig/homecareobservation
 name: MedComHomeCareObservation
+title: MedCom HomeCareObservation
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown

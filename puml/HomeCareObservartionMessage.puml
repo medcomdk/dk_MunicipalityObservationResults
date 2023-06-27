@@ -1,11 +1,11 @@
-@startuml HomeCareObservation
+@startuml HomeCareObservation message
 
 hide empty members
 
 top to bottom direction
 
 class "MedComMessagingMessage" as message
-class "MedComMessagingMessageHeader" as messageheader
+class "MedComMessagingMessageHeader" as messageheader <<MedComHomeCareMessageHeader>>
 class "MedComMessagingProvenance" as provenance
 class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
 class "MedComCorePatient" as patient
@@ -30,9 +30,6 @@ diagnosticReport -- encounter : "encounter"
 diagnosticReport -- request: "request"
 diagnosticReport -- author: "performer"
 diagnosticReport -- observation : "result"
-diagnosticReport -- specimen : "specimen"
-specimen-- substance : "substance"
-observation -- specimen 
 observation -- author:"performer"
 author -- organization
 messageheader -- messagingOrganization : "receiver"
