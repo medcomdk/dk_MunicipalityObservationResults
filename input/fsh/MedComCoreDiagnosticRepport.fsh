@@ -12,11 +12,9 @@ Description: "Report onating all results form observations. "
 * subject only Reference(MedComCorePatient) 
 * issued 1..1 MS
 * performer 1..1 MS
-* performer only Reference(MedComCoreOrganization or MedComCorePractitioner or MedComCoreCareTeam or MedComCorePractitionerRole)
+* performer only Reference(MedComCoreObservationProducerOrg)
 * result MS
 * result only Reference(MedComCoreObservation)
-* specimen MS
-* specimen only Reference(MedComCoreSpecimen)
 * presentedForm 0..1 
 * presentedForm.contentType = #application/pdf 
 * conclusion 0..1 MS

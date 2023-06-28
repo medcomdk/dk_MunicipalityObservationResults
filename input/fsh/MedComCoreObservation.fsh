@@ -1,5 +1,5 @@
 Profile: MedComCoreObservation
-Parent: DkCoreObservation
+Parent: Observation
 Id: medcom-core-observation
 Title: "MedComCoreObservation"
 Description: "Observation resource to use in MedCom Laboratory and HomeCare profiles. "
@@ -12,9 +12,6 @@ Description: "Observation resource to use in MedCom Laboratory and HomeCare prof
 * subject only Reference(MedComCorePatient)
 * issued 1..1 MS
 * performer 1..1 MS
-* performer only Reference(MedComCoreOrganization or MedComCoreCareTeam or MedComCorePractitionerRole)
+* performer only Reference(MedComCoreObservationProducerOrg)
 * value[x] MS
 * note MS
-* specimen 0..1 MS
-* specimen only Reference(MedComCoreSpecimen)
-* referenceRange and referenceRange.low  and referenceRange.high MS
