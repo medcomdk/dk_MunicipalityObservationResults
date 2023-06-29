@@ -15,6 +15,5 @@ Description: "Report onating all results form observations. "
 * performer only Reference(MedComCoreObservationProducerOrg)
 * result MS
 * result only Reference(MedComCoreObservation)
-* presentedForm 0..1 
-* presentedForm.contentType = #application/pdf 
+* media MS
 * conclusion 0..1 MS

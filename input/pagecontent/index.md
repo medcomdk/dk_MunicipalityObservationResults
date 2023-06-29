@@ -1,11 +1,11 @@
 # Home
 
 ## Introduction
-This implementation guide (IG) is provided by MedCom to describe the use of FHIR ®© in message based exchange of HomeCare Observations between the general practitioner and homecare.
+This implementation guide (IG) is provided by MedCom to describe the use of FHIR ®© in message based exchange of health informations between the general practitioner and homecare. This standard will be used during testing of the modernised messaging Infrastructure called Enhanced Healthcare Messaging Infrastructure (EHMI). 
 
 This IG contains profiles for MedCom HomeCareObservations (Dansk: KommunalePrøvesvar) which is used to exchange results from perforemed HomeCare Observations. 
 
-
+## Standard documentation
 ### HomeCareObservations 
 <!-- Indsæt diagram over diagnostic repport struktur og beskriv den. -->
 
@@ -14,7 +14,6 @@ This IG contains profiles for MedCom HomeCareObservations (Dansk: KommunalePrøv
 
 #### MedComHomeCareObservation
 
-#### MedcomHomeCareSpecimen 
 
 #### MedComCorePatient
 The [MedComCorePatient](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) profile is used in a MedComHomeCareObservations message. However, a MedComHomeCareObservations message may only be exchanged for patients with an official Danish civil person register (CPR)-number
@@ -22,7 +21,10 @@ The [MedComCorePatient](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-
 #### MedComCorePractitioner 
 
 #### MedComCoreOrganization 
-The [MedComCoreOrganization](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-organization.html) profile is used in a MedComHomeCareObservations message to describe the serviceprovider organisation, which is the organisation responsible for the patient's admission.
+The [MedComCoreOrganization](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-organization.html) profile is used in a MedComHomeCareObservations message to describe the sender and receiver organization of the HomeCareRepport.
+
+#### MedComCoreObservationPorducer
+The [MedComCoreObservationProducer](#medcomcoreobservationporducer) profile is used in a MedComHomeCareObservation message to represents the organization that is responsible for the observation. 
 
 #### MedComMessagingProvenance
 
