@@ -22,7 +22,7 @@ diagnosticReport -- observation : "result"
 diagnosticReport -- organization: "performer"
 diagnosticReport -- patient: "subject"
 observation -- organization:"performer"
-request -- practitioner
-request -- result
+
+
 
 @enduml
