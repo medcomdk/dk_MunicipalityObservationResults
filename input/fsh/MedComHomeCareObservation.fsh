@@ -3,5 +3,6 @@ Parent: MedComCoreObservation
 Id: medcom-homeCare-observation
 Title: "MedComHomeCareObservation"
 Description: "This is a profile intendet to be use in MedCom HomeCareObservations standards , to structure results from HomeCare. "
-* performer
-* performer only Reference(MedComCoreObservationProducerOrg)
+* effectiveDateTime MS
+* effectivePeriod MS
+

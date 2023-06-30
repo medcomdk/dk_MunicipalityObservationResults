@@ -5,33 +5,26 @@ hide empty members
 top to bottom direction
 
 class "MedComMessagingMessage" as message
-class "MedComMessagingMessageHeader" as messageheader <<MedComHomeCareMessageHeader>>
+class "MedComHomeCareMessageHeader" as messageheader <<MedComMessagingMessageHeader>>
 class "MedComMessagingProvenance" as provenance
 class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
 class "MedComCorePatient" as patient
+class "MedComObservationProducerOrganization" as organization
 class "MedComCorePractitioner" as author
-class "MedComCoreEncounter" as encounter
-class "MedComCoreOrganization" as organization
-class "MedComCoreDiagnosticReport" as diagnosticReport
-class "MedComGenomicObservation" as observation <<MedComCoreObservation>>
-class "MedComCoreObservation" as coreobservation 
-class "MedComCoreSpecimen" as specimen 
-class "MedComCoreServiceRequest" as request
-class "MedComCoreSubstance" as substance
-
+class "HomeCareRepport" as diagnosticReport <<MedComCoreDiagnosticReport>>
+class "HomeCareObservation" as coreobservation <<MedComCoreObservation>>
 
 message -- messageheader : "entry"
 messageheader -- diagnosticReport : "focus"
-diagnosticReport -- patient : "subject"
 message -- provenance : "entry"
 provenance -- messageheader : "target" 
 provenance -- messagingOrganization : "agent.who"
-diagnosticReport -- encounter : "encounter"
-diagnosticReport -- request: "request"
-diagnosticReport -- author: "performer"
-diagnosticReport -- observation : "result"
-observation -- author:"performer"
-author -- organization
+diagnosticReport -- patient : "subject"
+diagnosticReport -- organization: "performer"
+diagnosticReport -- coreobservation : "result"
+coreobservation -- organization:"performer"
+
+
 messageheader -- messagingOrganization : "receiver"
 messageheader -- messagingOrganization : "sender"
 

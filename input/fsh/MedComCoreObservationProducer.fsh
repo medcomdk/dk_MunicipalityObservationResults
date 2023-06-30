@@ -1,7 +1,7 @@
 Profile: MedComCoreObservationProducerOrg
 Parent: Organization
 Id: medcom-core-observationporducerorg
-Title: "MedCom Core Observation Producer Organisation"
+Title: "MedComObservationProducerOrganisation"
 Description: "This profile is intended to be used to represend the performer of the observations results."
 * identifier 1..1 MS
 * identifier.system = "Producent-ID" 

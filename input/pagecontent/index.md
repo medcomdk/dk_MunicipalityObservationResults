@@ -1,13 +1,31 @@
 # Home
 
 ## Introduction
-This implementation guide (IG) is provided by MedCom to describe the use of FHIR ®© in message based exchange of health informations between the general practitioner and homecare. This standard will be used during testing of the modernised messaging Infrastructure called Enhanced Healthcare Messaging Infrastructure (EHMI). 
+This implementation guide (IG) is provided by MedCom to describe the use of FHIR ®© in message based exchange of health informations between the general practitioner and acute care team.
 
-This IG contains profiles for MedCom HomeCareObservations (Dansk: KommunalePrøvesvar) which is used to exchange results from perforemed HomeCare Observations. 
+This IG contains profiles for MedCom HomeCareObservation (Dansk: KommunalePrøvesvar) which is used to exchange results from perforemed HomeCare Observations by acute care teams in  danish municipalites.
 
 ## Standard documentation
-### HomeCareObservations 
+
+The structure of a HomeCareObservation standard is despicted on the following diagram:
+<figure>
+<img alt="Shows the structure of a HomeCareObservationMessage. The HomeCareObservationMessage includes a MedComHomeCareObservationsMessageHeader and a MedComMessagingProvenance. MedComHomeCareObservationsMessageHeader " src="./input/image/HomeCareObservation20message.svg" style="float:none; display:block; margin-left:auto; margin-right:auto;" id="Fig1"/>
+<figcaption text-align="center"><b>Figure 1: Overview of the references between profiles in a MedCom HomeCareObservation standard </b></figcaption>
+</figure>
+<br>
+<br>
+
+
 <!-- Indsæt diagram over diagnostic repport struktur og beskriv den. -->
+
+HomeCareObservation follows the general MedCom FHIR messaging model, except that the carbon-copy destination is not allowed to use. The following sections describe the overall purpose of each profile.
+
+
+#### MedComHomeCareObservation Message
+ The MedComHomeCareObservation Message is a constraint of [MedComMessagingMessage](http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-message) further to use the [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-homecareobservation-MessageHeader) and to require exactly one [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) resource in the message.
+
+#### MedComHomeCareObservationMessageHeader
+The [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-homecareobservation-MessageHeader) constrains the [MedComMessagingMessageHeader](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-messageHeader.html) further to specify the fixed coding for this message and constrains the use of carbon-copy destination. 
 
 
 #### MedComHomeCareRepport
@@ -18,15 +36,13 @@ This IG contains profiles for MedCom HomeCareObservations (Dansk: KommunalePrøv
 #### MedComCorePatient
 The [MedComCorePatient](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) profile is used in a MedComHomeCareObservations message. However, a MedComHomeCareObservations message may only be exchanged for patients with an official Danish civil person register (CPR)-number
 
-#### MedComCorePractitioner 
-
 #### MedComCoreOrganization 
 The [MedComCoreOrganization](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-organization.html) profile is used in a MedComHomeCareObservations message to describe the sender and receiver organization of the HomeCareRepport.
 
 #### MedComCoreObservationPorducer
 The [MedComCoreObservationProducer](#medcomcoreobservationporducer) profile is used in a MedComHomeCareObservation message to represents the organization that is responsible for the observation. 
 
-#### MedComMessagingProvenance
+
 
 #### Terminology
 On [MedCom Terminology IG](http://medcomfhir.dk/ig/terminology/) all referenced CodeSystem and ValueSets developed by MedCom can be found.
@@ -35,7 +51,7 @@ On [MedCom Terminology IG](http://medcomfhir.dk/ig/terminology/) all referenced 
 Content in this IG can be downloaded in npm format under [Download](https://medcomfhir.dk/ig/MedComHomeCareObservations/downloads.html). This can be used to validate locale FHIR profiles against.
 
 ## Documentation
-On the [introduction page for HomeCareObservations](https://medcomdk.github.io/dk-medcom-homecareobservations/) the following documentation can be found: æ
+On the [introduction page for HomeCareObservations](https://medcomdk.github.io/dk-medcom-homecareobservations/) the following documentation can be found: 
 * Clinical guidelines
 * Use cases
 
