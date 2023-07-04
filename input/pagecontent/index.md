@@ -1,15 +1,16 @@
 # Home
 
 ## Introduction
-This implementation guide (IG) is provided by MedCom to describe the use of FHIR ®© in message based exchange of health informations between the general practitioner and acute care team.
+This implementation guide (IG) is provided by MedCom to describe the use of FHIR ®© in message based exchange of structured health informations between acute care team and the general practitioner.  
 
-This IG contains profiles for MedCom HomeCareObservation (Dansk: KommunalePrøvesvar) which is used to exchange results from perforemed HomeCare Observations by acute care teams in  danish municipalites.
+This IG contains profiles for MedCom HomeCareObservation message (Dansk: KommunalePrøvesvar) which is used to exchange results from perforemed HomeCare Observations by acute care teams in  danish municipalites. The HomeCareObservation message is intended to structure the observations result, so the general practitioner can create an overwiev of the patients helth values easyly and order a right treatment for the patiente. The message will structure the health assesments such as "ABCD-method and TOPS" and observations performend when using Point of Care Testing (POCT).
+
 
 ## Standard documentation
 
 The structure of a HomeCareObservation standard is despicted on the following diagram:
 <figure>
-<img alt="Shows the structure of a HomeCareObservationMessage. The HomeCareObservationMessage includes a MedComHomeCareObservationsMessageHeader and a MedComMessagingProvenance. MedComHomeCareObservationsMessageHeader " src="./input/image/HomeCareObservation20message.svg" style="float:none; display:block; margin-left:auto; margin-right:auto;" id="Fig1"/>
+<img alt="Shows the structure of a HomeCareObservationMessage. The HomeCareObservationMessage includes a MedComHomeCareObservationsMessageHeader and a MedComMessagingProvenance. MedComHomeCareObservationsMessageHeader" src="/input/images/HomeCareObservationMessage.svg" style="float:none; display:block; margin-left:auto; margin-right:auto;" id="Fig1"/>
 <figcaption text-align="center"><b>Figure 1: Overview of the references between profiles in a MedCom HomeCareObservation standard </b></figcaption>
 </figure>
 <br>
@@ -31,6 +32,7 @@ The [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareob
 #### MedComHomeCareRepport
 
 #### MedComHomeCareObservation
+The [MedComHomeCareObservation]()
 
 
 #### MedComCorePatient

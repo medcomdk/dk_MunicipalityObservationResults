@@ -1,4 +1,4 @@
-@startuml HomeCareObservation message
+@startuml HomeCareObservationMessage
 
 hide empty members
 
@@ -10,7 +10,7 @@ class "MedComMessagingProvenance" as provenance
 class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
 class "MedComCorePatient" as patient
 class "MedComObservationProducerOrganization" as organization
-class "MedComCorePractitioner" as author
+' class "MedComCorePractitioner" as author
 class "HomeCareRepport" as diagnosticReport <<MedComCoreDiagnosticReport>>
 class "HomeCareObservation" as coreobservation <<MedComCoreObservation>>
 
