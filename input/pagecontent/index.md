@@ -10,7 +10,7 @@ This IG contains profiles for MedCom HomeCareObservation message (Dansk: Kommuna
 
 The structure of a HomeCareObservation standard is despicted on the following diagram:
 <figure>
-<img alt="Shows the structure of a HomeCareObservationMessage. The HomeCareObservationMessage includes a MedComHomeCareObservationsMessageHeader and a MedComMessagingProvenance. MedComHomeCareObservationsMessageHeader" src="./HomeCareObs.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" id="Fig1"/>
+<img alt="Shows the structure of a HomeCareObservationMessage. The HomeCareObservationMessage includes a MedComHomeCareObservationsMessageHeader and a MedComMessagingProvenance. MedComHomeCareObservationsMessageHeader" src="./input/images/HomeCareObservation/HomeCareObservationMessage.svg" style="float:none; display:block; margin-left:auto; margin-right:auto;" id="Fig1"/>
 <figcaption text-align="center"><b>Figure 1: Overview of the references between profiles in a MedCom HomeCareObservation standard </b></figcaption>
 </figure>
 <br>
@@ -31,7 +31,7 @@ The MedComMessaging require to use the [MedComHomeCareObservationsMessageHeader]
 The [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-homecareobservation-MessageHeader) constrains the [MedComMessagingMessageHeader](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-messageHeader.html) further to specify the fixed coding for this message and constrains the use of carbon-copy destination. 
 
 #### MedComMessagingProvenance
-
+The [MedComMessaging](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) profile is used to track information about the activity of the HomeCareObservation message, e.g 'modified-essage' or 'retract-message'. 
 
 #### MedComHomeCareRepport
 
