@@ -10,7 +10,7 @@ This IG contains profiles for MedCom HomeCareObservation message (Dansk: Kommuna
 
 The structure of a HomeCareObservation standard is despicted on the following diagram:
 <figure>
-<img alt="Shows the structure of a HomeCareObservationMessage. The HomeCareObservationMessage includes a MedComHomeCareObservationsMessageHeader and a MedComMessagingProvenance. MedComHomeCareObservationsMessageHeader" src="/input/images/HomeCareObservationMessage.svg" style="float:none; display:block; margin-left:auto; margin-right:auto;" id="Fig1"/>
+<img alt="Shows the structure of a HomeCareObservationMessage. The HomeCareObservationMessage includes a MedComHomeCareObservationsMessageHeader and a MedComMessagingProvenance. MedComHomeCareObservationsMessageHeader" src="./HomeCareObs.png" style="float:none; display:block; margin-left:auto; margin-right:auto;" id="Fig1"/>
 <figcaption text-align="center"><b>Figure 1: Overview of the references between profiles in a MedCom HomeCareObservation standard </b></figcaption>
 </figure>
 <br>
@@ -22,11 +22,15 @@ The structure of a HomeCareObservation standard is despicted on the following di
 HomeCareObservation follows the general MedCom FHIR messaging model, except that the carbon-copy destination is not allowed to use. The following sections describe the overall purpose of each profile.
 
 
-#### MedComHomeCareObservation Message
- The MedComHomeCareObservation Message is a constraint of [MedComMessagingMessage](http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-message) further to use the [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-homecareobservation-MessageHeader) and to require exactly one [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) resource in the message.
+#### MedCom Messaging Message
+The [MedComMessagingMessage](http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-messaging-message) profille is used to bundle the whole HomeCare Observations together. All referenced resources in the HomeCareObservation message shall be contained in the entry list in MedComMessaginingMessage
+
+The MedComMessaging require to use the [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-homecareobservation-MessageHeader) and to require exactly one [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) resource in the message.
 
 #### MedComHomeCareObservationMessageHeader
 The [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-homecareobservation-MessageHeader) constrains the [MedComMessagingMessageHeader](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-messageHeader.html) further to specify the fixed coding for this message and constrains the use of carbon-copy destination. 
+
+#### MedComMessagingProvenance
 
 
 #### MedComHomeCareRepport
