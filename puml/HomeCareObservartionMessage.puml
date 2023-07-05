@@ -11,7 +11,7 @@ class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganiz
 class "MedComCorePatient" as patient
 class "MedComObservationProducerOrganization" as organization
 ' class "MedComCorePractitioner" as author
-class "HomeCareRepport" as diagnosticReport <<MedComCoreDiagnosticReport>>
+class "HomeCareReport" as diagnosticReport <<MedComCoreDiagnosticReport>>
 class "HomeCareObservation" as coreobservation <<MedComCoreObservation>>
 
 message -- messageheader : "entry"

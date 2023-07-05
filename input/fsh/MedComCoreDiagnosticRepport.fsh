@@ -11,9 +11,11 @@ Description: "Report onating all results form observations. "
 * subject 1..1 MS
 * subject only Reference(MedComCorePatient) 
 * issued 1..1 MS
-* performer 1..1 MS
-* performer only Reference(MedComCoreObservationProducerOrg)
+// * performer 1..* MS
+// * performer only Reference(MedComCoreObservationProducerOrg or MedComCorePractitionerRole) 
 * result MS
 * result only Reference(MedComCoreObservation)
 * media MS
 * conclusion 0..1 MS
+* meta.security 0..1 MS
+* meta.security = $v3-Confidentiality#R "Restricted" 
