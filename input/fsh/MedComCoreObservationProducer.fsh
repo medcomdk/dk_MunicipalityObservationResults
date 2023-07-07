@@ -1,7 +1,7 @@
 Profile: MedComCoreObservationProducerOrg
 Parent: Organization
 Id: medcom-core-observationporducerorg
-Title: "MedComObservationProducerOrganisation"
+Title: "MedComObservationProducerOrganization"
 Description: "This profile is intended to be used to represend the performer of the observations results."
 * identifier 1.. MS
   * ^slicing.discriminator.type = #value

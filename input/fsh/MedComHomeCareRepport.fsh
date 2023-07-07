@@ -3,7 +3,7 @@ Parent: MedComCoreDiagnosticReport
 Id: MedComHomeCareReport
 Title: "MedComHomeCareReport"
 Description: "This resource is intenden to be used in relation with the project called HomeCareObservations"
-* conclusion ^short = "Danish:Klinisk kommentar"
+* conclusion ^short = "The Conclusion (Danish:Klinisk kommentar) shal contain assessments that are necessary for interpretation and understanding of the measurements and analysis of the results."
 * performer 2..2 MS
 * performer ^slicing.discriminator.type = #profile
 * performer ^slicing.discriminator.path = "reference"
@@ -18,6 +18,7 @@ Description: "This resource is intenden to be used in relation with the project 
 * performer[PractitionerRole] obeys medcom-homecareReport-1
 * performer[PractitionerRole] obeys medcom-homecareReport-2
 * performer[PractitionerRole] obeys medcom-homecareReport-3
+* performer ^short = "Performer of the observations repport. Shall include a Name, producerId (Producent-ID), practitioner role, relevant telephone of the producer. "
 
 Invariant: medcom-homecareReport-1
 Description: "There shall exist a practitioner role when using a PractitionerRole as author in a HomeCare Report."

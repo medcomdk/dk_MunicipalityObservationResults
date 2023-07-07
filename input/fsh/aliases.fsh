@@ -1,4 +1,4 @@
-Alias: $StatusCode = http://hl7.org/fhir/ValueSet/diagnostic-report-status
+Alias: $StatusCodeDiagnosticRepport = http://hl7.org/fhir/ValueSet/diagnostic-report-status
 Alias: $ObsStatusCodes = http://hl7.org/fhir/ValueSet/observation-status
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $NPU = urn:oid:1.2.208.176.2.1

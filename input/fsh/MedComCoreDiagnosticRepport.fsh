@@ -2,10 +2,11 @@ Profile: MedComCoreDiagnosticReport
 Parent: DiagnosticReport
 Id: medcom-core-diagnosticreport
 Title: "MedComCoreDiagnosticReport"
-Description: "Report onating all results form observations. "
-* basedOn 0..1 MS
-* basedOn only Reference(ServiceRequest)
+Description: "Report conating all observations results. "
+// * basedOn 0..1 MS
+// * basedOn only Reference(ServiceRequest)
 * status 1..1 MS
+* status from $StatusCodeDiagnosticRepport
 * status ^short = "registered | partial | preliminary | final | corrected | cancelled | entered-in-error" 
 * category 0..1 MS
 * subject 1..1 MS
@@ -15,7 +16,9 @@ Description: "Report onating all results form observations. "
 // * performer only Reference(MedComCoreObservationProducerOrg or MedComCorePractitionerRole) 
 * result MS
 * result only Reference(MedComCoreObservation)
+* performer MS
 * media MS
 * conclusion 0..1 MS
+* conclusion ^short = "The conclusion may be added to the diagnostic report. The conclusion contains generela information about the clicnical observations/requisition."
 * meta.security 0..1 MS
 * meta.security = $v3-Confidentiality#R "Restricted" 
