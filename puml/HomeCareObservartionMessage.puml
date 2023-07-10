@@ -8,6 +8,7 @@ class "MedComHomeCareMessage" as message <<MedComMessagingMessage>>
 class "MedComHomeCareMessageHeader" as messageheader <<MedComMessagingMessageHeader>>
 class "MedComMessagingProvenance" as provenance
 class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
+class "MedComMessagingOrganizationRequester" as observationRequester 
 class "MedComCorePatient" as patient
 class "MedComObservationProducerOrganization" as organization
 ' class "MedComCorePractitioner" as author
@@ -25,7 +26,7 @@ diagnosticReport -- coreobservation : "result"
 coreobservation -- organization:"performer"
 
 
-messageheader -- messagingOrganization : "receiver"
+messageheader -- observationRequester : "receiver"
 messageheader -- messagingOrganization : "sender"
 
 @enduml

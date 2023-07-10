@@ -1,6 +1,12 @@
 ### Scope and usage 
 The MedComHomeCareReport profile is the main profile of the new HomeCareObservation standard. This profile is intended to collect all observations results perforemd by the unicipal acute care team so the repport can be send to patients genereal practitioner. 
 
+<figure>
+<img alt="Form the HomeCareRepport is a MedComCorePatient and HomeCareObservation and a MedComObservationProducerOrganization. " src="./HomeCareObservation/HomeCareObsProfile.svg" style="float:none; display:block; margin-left:auto; margin-right:auto;" id="Fig1"/>
+<figcaption text-align="center"><b>Figure 1: Overview of the references between profiles in a MedCom HomeCareObservation profile </b></figcaption>
+</figure>
+<br>
+<br>
 
 #### Comments 
 ##### Comment about the observation

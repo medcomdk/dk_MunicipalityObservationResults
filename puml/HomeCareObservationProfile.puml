@@ -1,0 +1,17 @@
+@startuml HomeCareObsProfile
+hide empty members
+top to bottom direction
+
+class "MedComCorePatient" as patient
+class "MedComObservationProducerOrganization" as organization 
+class "HomeCareReport" as diagnosticReport <<MedComCoreDiagnosticReport>>
+class "HomeCareObservation" as coreobservation <<MedComCoreObservation>>
+
+diagnosticReport -- patient : "subject"
+diagnosticReport -- organization: "performer"
+diagnosticReport -- coreobservation : "result"
+coreobservation -- organization:"performer"
+
+
+
+@enduml
