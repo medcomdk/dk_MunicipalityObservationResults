@@ -33,13 +33,18 @@ The [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareob
 #### MedComMessagingProvenance
 The [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) profile is used to track information about the activity of the HomeCareObservation message, e.g 'modified-essage' or 'retract-message'. The allowed activity codes for HomeCareObservation message can be found in [MedComHomeCareObservationMessageAcitivityCodes](http://medcomfhir.dk/ig/terminology/ValueSet/medcom-HomeCareObservation-messagingActivities) on the Terminology IG. 
 
+#### MedComMessagingOrgzanizationRequester 
+The [MedComMessagningOrganizationRequester]( http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComMessagingOrganizationRequester) profile is used to express the receiver information of the HomeCareRepport. 
+The receiver informations consist of inital of the general practitioner that requested the observation, if known, and information about the general practitioners medical practice. The genral practice shal be identified using a SOR-, EAN and Ydrenummer-identifier.
+If the initials of the general practitioner are unknown, then the code "unknown" form data- absent reson valuset need to be sent. 
+
 #### MedComHomeCareRepport
-The [MedComHomeCareRepport](#) profile contains the main content of the HomeCareObservation standard. It based
+The [MedComHomeCareRepport](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComHomeCareReport) profile contains the main content of the HomeCareObservation standard. It based
 on the Diagnostic Repport resource.  
 
 
 #### MedComHomeCareObservation
-The [MedComHomeCareObservation]()
+The [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-homeCare-observation)
 
 
 #### MedComCorePatient
@@ -48,8 +53,11 @@ The [MedComCorePatient](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-
 #### MedComCoreOrganization 
 The [MedComCoreOrganization](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-organization.html) profile is used in a MedComHomeCareObservations message to describe the sender and receiver organization of the HomeCareRepport.
 
-#### MedComCoreObservationPorducerOrganization
-The [MedComCoreObservationProducerOrganization](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-core-observationporducerorg) profile is used in a MedComHomeCareObservation message to represents the organization that is responsible for the observation execution . 
+#### MedComCoreObservationProducerOrganization
+The [MedComCoreObservationProducerOrganization](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-core-observationproducerorg) profile is used in a MedComHomeCareObservation message to represents the organization that is responsible for the observation execution. The MedComCoreObservationProducerOrganization shall be identified using SOR- and EAN-identifier, and a producer-ID. The producer-id consist of a three letter code and a municipal code. The municipal code can be found in valuset exibitetd on Dk terminology IG, <a href ="http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes">that can be found here.</a>
+
+The three letter code is exibitted by MedCom and is an abbreviation for the organization that is responsible for the observations results. The municipal acute care team  is responsible for performig the observations and for genereting the observations results in the HomecareObservation standard. Therefore the Code for the municiapl acute careteam is "KAT". 
+The three letter code is exibited in code system on the terminology IG. <a href= "http://medcomfhir.dk/ig/terminology/CodeSystem/MedComProducentID">Click here too se th code system. </a>
 
 
 

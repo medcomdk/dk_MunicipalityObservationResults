@@ -26,11 +26,11 @@ Severity: #error
 Expression: "reference.resolve().code.coding.code.exists()"
 
 Invariant: medcom-homecareReport-2
-Description: "There shall exist a practitioner name as author in a HomeCare Report."
+Description: "There shall exist a name of the healtcare worker that performed the observations, as author in a HomeCare Report."
 Severity: #error
 Expression: "reference.resolve().practitioner.resolve().name.exists()"
 
 Invariant: medcom-homecareReport-3
-Description: "There shall exist a practitioner telecom as author in a HomeCare Report."
+Description: "There shall exist a telecom to the organization form the healthcare worker is part of, as author in a HomeCare Report."
 Severity: #error
 Expression: "reference.resolve().practitioner.resolve().telecom.exists()"

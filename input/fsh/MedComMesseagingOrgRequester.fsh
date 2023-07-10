@@ -3,6 +3,9 @@ Parent: MedComMessagingOrganization
 Id: MedComMessagingOrganizationRequester
 Title: "MedComMessagingOrganizationRequester"
 Description: "Requester organization of the observation"
+* identifier 3.. MS
+* identifier[Ydernummer] 1.. 
+* identifier[Ydernummer] MS
 * extension contains MedComMessagingRequesterInit named RequesterInitials 0..1
 * extension contains data-absent-reason named InitialsNotKnown 0..1
 * obeys medcom-homecareObservation-4
