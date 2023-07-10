@@ -38,13 +38,11 @@ The [MedComMessagningOrganizationRequester]( http://medcomfhir.dk/ig/homecareobs
 The receiver informations consist of inital of the general practitioner that requested the observation, if known, and information about the general practitioners medical practice. The genral practice shal be identified using a SOR-, EAN and Ydrenummer-identifier.
 If the initials of the general practitioner are unknown, then the code "unknown" form data- absent reson valuset need to be sent. 
 
-#### MedComHomeCareRepport
-The [MedComHomeCareRepport](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComHomeCareReport) profile contains the main content of the HomeCareObservation standard. It based
-on the Diagnostic Repport resource.  
-
+#### MedComHomeCareReport
+The [MedComHomeCareReport](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComHomeCareReport) profile contains the main content of the HomeCareObservation standard. It based on the Diagnostic report resource. The HomeCareReport shal include results form the perforemd observations by the municipal acute care team. The profile also includes information about the performer of the observations and the repport. Further, it is possible to add Clinical relevant comment regarding the whole repport. [Click here for more information about the coment](C:\Git_hub\dk_MunicipalityObservationResults\input\pagecontent\StructureDefinition-MedComHomeCareReport-intro.md)
 
 #### MedComHomeCareObservation
-The [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-homeCare-observation)
+The [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-homeCare-observation) profile is based on the Observation resource. THis profile describes the observationresults that the municipal acute care team performs. The observation results shall contain a code, either a NUP or MCS code describing the observation. Further, a deat and time that defines when the observation was performed shall be added. 
 
 
 #### MedComCorePatient
@@ -59,6 +57,18 @@ The [MedComCoreObservationProducerOrganization](http://medcomfhir.dk/ig/homecare
 The three letter code is exibitted by MedCom and is an abbreviation for the organization that is responsible for the observations results. The municipal acute care team  is responsible for performig the observations and for genereting the observations results in the HomecareObservation standard. Therefore the Code for the municiapl acute careteam is "KAT". 
 The three letter code is exibited in code system on the terminology IG. <a href= "http://medcomfhir.dk/ig/terminology/CodeSystem/MedComProducentID">Click here too se th code system. </a>
 
+#### Timestamps
+A HomecareReport standard includes several timestamps. These timestamps are present in the profiles [MedComHomeCareRepport](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComHomeCareReport), [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-homeCare-observation),[MedComHomeCareObservationMessage](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-homecare-message), and [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) and have different purposes:
+* Issued represents the dateTime the version of the report was made
+* effective.dateTime represens the time when the observation was performed
+* effecive.period represents the time-period for observation.
+* Bundle.timestamp represents the time bundle is generated.
+* Provenance.occuredDateTime[x] represents the time the HomeCareObservation is sent, in a human-readable time
+* Provenance.recorded represents the time the HomeCareObservation  is sent, in a machine-readable time
+
+<!-- It is assumed that in most cases, the above mentioned timestamps will be equal, as the events happpens instantly after eachother. However, there might be systems where the sending is delayed compared to the real world-event and bundle generation, hence will the Provenance timestamps differentiate from the Communication and Bundle timestamp.
+
+It is optional to include the timestamp: Communication.payload:attachment.content[x]:contentAttachment.creation, which represents the date and time the attachment was created. [Click here for more information about this timestamp.](./StructureDefinition-medcom-careCommunication-communication.html#attachments) -->
 
 
 #### Terminology
