@@ -9,3 +9,4 @@ Alias: $Use = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-de
 Alias: $v3-Confidentiality = http://terminology.hl7.org/CodeSystem/v3-Confidentiality
 Alias: $ProducenID = http://medcomfhir.dk/ig/terminology/CodeSystem/MedComProducentID  
 Alias: $MunicipalityCodes = http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes
+Alias: $PractitionerRole = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ
