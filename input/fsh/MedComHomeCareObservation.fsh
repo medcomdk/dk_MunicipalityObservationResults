@@ -24,3 +24,24 @@ Description: "This is a profile intendet to be use in MedCom HomeCareObservation
   * system 1..
   * system = $Medcom (exactly)
   * code 1..
+
+
+
+
+
+// Instancer for observationer
+Instance: 7fcb76a7-839b-4392-a2ff-f30035faca34
+InstanceOf: MedComHomeCareObservation
+Usage: #example
+Title: "Spot test of the patient"
+Description: "Spot test performed by acute care team on the subject."
+* status = #final
+* code.coding[NPU] = $NPU#NPU19748 "C-reaktivt protein [CRP];P"
+* valueQuantity.value = 26
+* valueQuantity.unit = "mg/l"
+* code.coding[NPU] = $NPU#02319 "Hæmoglobin;B"
+* valueQuantity.value = 7.8
+* valueQuantity.unit = "mmol/l"
+* effectiveDateTime = 2023-07-12
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
+* performer = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)

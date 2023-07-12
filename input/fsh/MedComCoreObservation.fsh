@@ -13,7 +13,7 @@ Description: "Observation resource to use in MedCom Laboratory and HomeCare prof
 * code MS
 * subject 1..1 MS
 * subject only Reference(MedComCorePatient)
-* issued 1..1 MS
+* issued  MS
 * issued ^short = "The date and time this version of the observation result was made.  "
 * value[x] MS
 * valueQuantity.system = $ucum
