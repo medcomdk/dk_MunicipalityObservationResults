@@ -10,4 +10,5 @@ Alias: $v3-Confidentiality = http://terminology.hl7.org/CodeSystem/v3-Confidenti
 Alias: $ProducenID = http://medcomfhir.dk/ig/terminology/CodeSystem/MedComProducentID  
 Alias: $MunicipalityCodes = http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes
 Alias: $PractitionerRole = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-PractitionerRolesSKSadministrativ
-// Alias: $NPUObservationCodes = 
+Alias: $DiagnosticReportCode = http://medcomfhir.dk/ig/terminology/ValueSet/MedComDiagnosticReportCodesValueset
+Alias: $BundleType = http://hl7.org/fhir/bundle-type

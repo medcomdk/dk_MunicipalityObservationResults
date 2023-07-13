@@ -9,6 +9,8 @@ Description: "Report conating all observations results. "
 * status from $StatusCodeDiagnosticRepport
 * status ^short = "registered | partial | preliminary | final | corrected | cancelled | entered-in-error" 
 * category 0..1 MS
+* code MS
+* code from $DiagnosticReportCode
 * subject 1..1 MS
 * subject only Reference(MedComCorePatient) 
 * issued 1..1 MS
