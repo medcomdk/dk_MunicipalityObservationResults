@@ -13,19 +13,19 @@ The MedCom HomeCareObservation message supports:
 More information about the clinical guidelines for applications can be found here. 
 
 ## Standard documentation
-The structure of a HomeCareObservation standard is despicted on the following diagram:
+The structure of a HomeCareObservation message is despicted on the following diagram:
 <figure>
 <img alt="Shows the structure of a HomeCareObservationMessage. The HomeCareObservationMessage includes a MedComHomeCareObservationsMessageHeader and a MedComMessagingProvenance. MedComHomeCareObservationsMessageHeader references a sender and receiver organization, the MedComCoreOrganization and a focus which is a reference to a HomeCare Report. Form the HomeCareRepport is a MedComCorePatient and HomeCareObservation and a MedComObservationProducerOrganization. " src="./HomeCareObservation/HomeCareObservationMessage.svg" style="float:none; display:block; margin-left:auto; margin-right:auto;" id="Fig1"/>
-<figcaption text-align="center"><b>Figure 1: Overview of the references between profiles in a MedCom HomeCareObservation standard </b></figcaption>
+<figcaption text-align="center"><b>Figure 1: Overview of the references between profiles in a MedCom HomeCareObservation message. </b></figcaption>
 </figure>
 <br>
 <br>
 
-HomeCareObservation follows the general MedCom FHIR messaging model, except that the carbon-copy destination is not allowed to use. The following sections describe the overall purpose of each profile.
+HomeCareObservation message follows the general MedCom FHIR messaging model, except that the carbon-copy destination is not allowed to use. The following sections describe the overall purpose of each profile.
 
 
-#### MedComHomeCareMessage
-The [MedComHomeCareMessage](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-message.html) is constraint of [MedComMessagingMessage](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-message.html). The MedComHomeCareMessage profile is used to bundle the all observations and relevant information together. All referenced resources in the HomeCareObservationmessage shall be contained in the entry list in MedComHomeCareMessage. 
+#### MedComHomeCareObservationMessage
+The [MedComHomeCareObservationMessage](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-message.html) is constraint of [MedComMessagingMessage](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-message.html). The MedComHomeCareObservationMessage profile is used to bundle the all observations and relevant information together. All referenced resources in the HomeCareObservationmessage shall be contained in the entry list in MedComHomeCareObservationMessage. 
 
 The MedComMessaging requires to use the [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecareobservation-MessageHeader.html) and to require exactly one [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) resource in the message.
 
@@ -41,7 +41,7 @@ This profile represents the receiver of the HomeCareObservation message. The rec
 If the initials of the general practitioner are unknown, then the code "unknown" form [data-absent-reson ValuSet](http://hl7.org/fhir/R4/valueset-data-absent-reason.html) need to be sent. 
 
 #### MedComHomeCareDiagnosticReport
-The [MedComHomeCareDiagnosticReport](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-MedComHomeCareDiagnosticReport.html) profile contains the main content of the HomeCareObservation standard. It is inherited from the profile MedComCoreDiagnosticReport. The MedComHomeCareDiagnosticReport shall include observation results performed  by the municipalties acute care team. The profile also includes information about the performer of the observations. Further, it is possible to add Clinical relevant comment regarding the whole repport. [Click here for more information about the coment.](C:\Git_hub\dk_MunicipalityObservationResults\input\pagecontent\StructureDefinition-MedComHomeCareDiagnosticReport-intro.md)
+The [MedComHomeCareDiagnosticReport](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-MedComHomeCareDiagnosticReport.html) profile contains the main content of the HomeCareObservation message. It is inherited from the profile MedComCoreDiagnosticReport. The MedComHomeCareDiagnosticReport shall include observation results performed  by the municipalties acute care team. The profile also includes information about the performer of the observations. Further, it is possible to add Clinical relevant comment regarding the whole repport. [Click here for more information about the coment.](C:\Git_hub\dk_MunicipalityObservationResults\input\pagecontent\StructureDefinition-MedComHomeCareDiagnosticReport-intro.md)
 
 #### MedComHomeCareObservation
 The [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homeCare-observation.html) profile inherits from the MedComCoreObservation profile. This profile includes a code, and value for the observation, and a comment on the individual result , if this comment is relevant to include. The  code shall either be a NPU or MCS code describing the observation. Further, a date and time that defines when the observation was performed shall be added. 
@@ -59,7 +59,7 @@ The [MedComCoreProducerOrganization](http://medcomfhir.dk/ig/homecareobservation
 
 
 #### Timestamps
-The HomeCareObservation standard includes several timestamps. These timestamps are present in the profiles [MedComHomeCareDiagnosticReport](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-diagnosticreport.html), [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homeCare-observation.html),[MedComHomeCareObservationMessage](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-message.html), and [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) and have different purposes:
+The HomeCareObservation message includes several timestamps. These timestamps are present in the profiles [MedComHomeCareDiagnosticReport](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-diagnosticreport.html), [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homeCare-observation.html),[MedComHomeCareObservationMessage](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-message.html), and [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) and have different purposes:
 * Observation sampling date and time (Danish: Prøvetagningsdato og tidspunkt)
     * Observation.effective.dateTime represents the time when the sample was performed.
     * Observation.effective.period represents the time-period for collecting the sample.
