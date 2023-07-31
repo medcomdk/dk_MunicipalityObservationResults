@@ -2,10 +2,9 @@ Profile: MedComHomeCareObservation
 Parent: MedComCoreObservation
 Id: medcom-homeCare-observation
 Title: "MedComHomeCareObservation"
-Description: "This is a profile intendet to be use in MedCom HomeCareObservations standards , to structure results from HomeCare. "
+Description: "This is a profile intended to be use in HomeCareObservations standard, to hold information about the observation. "
 * effectiveDateTime MS 
 * effectivePeriod MS
-* note ^short = "The Note (Danish: analyse kommentar) shall contain a comment about the actual observation."
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open

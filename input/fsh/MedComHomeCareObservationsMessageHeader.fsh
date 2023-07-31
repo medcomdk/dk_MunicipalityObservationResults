@@ -6,9 +6,13 @@ Description: "MessageHeader for HomeCareObservation"
 * id ^short = "A unique identifier for each message. This identifier should be globally unique."
 * eventCoding = $MessageEvents#homecareobservation-message
 * destination[cc] ..0 
-* destination.receiver only Reference (MedComMessagingOrganizationRequester)
+* destination.receiver only Reference(MedComMessagingRequesterOrganization)
+* destination.receiver ^type.aggregation = #bundled
 
-
+Instance: b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+InstanceOf: MedComMessagingDestinationUseExtension
+Usage: #inline
+* valueCoding.code = $Use#primary
 
 
 // HomeCareReport new example
@@ -17,7 +21,7 @@ InstanceOf: MedComHomeCareObservationMessageHeader
 Title: "Instance of a MessageHeader resource used in a new message."
 Description: "Example of a MessageHeader in a new HomeCareDiagnosticReport message. Valid only if used in a bundle (message)."
 Usage: #example
-// * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#homecareobservation-message
 * destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=52581000016005"
 * destination[primary].receiver = Reference(42541447-b58c-4a1a-9514-02b80494bbd3)

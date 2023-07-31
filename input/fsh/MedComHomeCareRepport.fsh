@@ -1,24 +1,29 @@
-Profile: MedComHomeCareReport
+Profile: MedComHomeCareDiagnosticReport
 Parent: MedComCoreDiagnosticReport
-Id: MedComHomeCareReport
-Title: "MedComHomeCareReport"
-Description: "This resource is intenden to be used in relation with the project called HomeCareObservations"
-* conclusion ^short = "The Conclusion (Danish:Klinisk kommentar) shal contain assessments that are necessary for interpretation and understanding of the measurements and analysis of the results."
+Id: medcom-homecare-diagnosticreport
+Title: "MedComHomeCareDiagnosticReport"
+Description: "This resource is intenden to be used in relation when a HomeCareObservation message"
+* conclusion ^short = "A comment relevant for all observations in the report and necessary to interpret and understand the results (Danish:Klinisk kommentar)."
+* result only Reference(MedComHomeCareObservation)
+* result ^type.aggregation = #bundled
 * performer 2..2 MS
 * performer ^slicing.discriminator.type = #profile
-* performer ^slicing.discriminator.path = "reference"
+* performer ^slicing.discriminator.path = "resolve()"
 * performer ^slicing.rules = #open
 * performer ^slicing.ordered = false
 * performer ^slicing.description = " Slice of observation codes"
 * performer contains 
     ProducerOrganization 1..1 and
     PractitionerRole 1..1
-* performer[ProducerOrganization] only Reference(MedComCoreObservationProducerOrg)
+* performer[ProducerOrganization] only Reference(MedComCoreProducerOrganization)
+* performer[ProducerOrganization] ^type.aggregation = #bundled
+* performer[ProducerOrganization] ^short = "Producer organization of the observations. Shall include a producer-ID (Danish: Producent-ID) of the producer"
 * performer[PractitionerRole] only Reference(MedComCorePractitionerRole)
+* performer[PractitionerRole] ^type.aggregation = #bundled
 * performer[PractitionerRole] obeys medcom-homecareReport-1
 * performer[PractitionerRole] obeys medcom-homecareReport-2
 * performer[PractitionerRole] obeys medcom-homecareReport-3
-* performer ^short = "Performer of the observations repport. Shall include a Name, producerId (Producent-ID), practitioner role, relevant telephone of the producer. "
+* performer ^short = "Performer of the observations. Shall include a name, practitioner role, relevant telephone of the producer."
 
 Invariant: medcom-homecareReport-1
 Description: "There shall exist a practitioner role when using a PractitionerRole as author in a HomeCare Report."
@@ -38,7 +43,7 @@ Expression: "reference.resolve().practitioner.resolve().telecom.exists()"
 
 
 Instance: 870333ac-3134-4ae6-8257-86e0b0537c5f
-InstanceOf: MedComHomeCareReport
+InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
 Title: "HomeCareObservation repport: spot test"
 Description: "Spot test performed by the acute care team on a subject."
@@ -62,7 +67,7 @@ Description: "Spot test performed by the acute care team on a subject."
 
 
 Instance: 6d08f000-33cc-41f3-a7c2-c086d53d31a7
-InstanceOf: MedComHomeCareReport
+InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
 Title: "HomeCareObservation repport: Urine dipsticks tests "
 Description: "Urine dipstick tests performed by the acute care team on a subject."

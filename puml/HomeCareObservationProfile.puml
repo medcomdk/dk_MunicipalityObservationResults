@@ -3,7 +3,7 @@ hide empty members
 top to bottom direction
 
 class "MedComCorePatient" as patient
-class "MedComObservationProducerOrganization" as organization 
+class "MedComProducerOrganization" as organization 
 class "HomeCareReport" as diagnosticReport <<MedComCoreDiagnosticReport>>
 class "HomeCareObservation" as coreobservation <<MedComCoreObservation>>
 

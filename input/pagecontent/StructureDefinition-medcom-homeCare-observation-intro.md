@@ -1,7 +1,7 @@
 ### Scope and usage
 
-This profile is used to define the observation and assesments the municipal acute care team can perform. 
-A HomeCareRepport shall contains results from perfomed observations by the acute care teams. The observations results needs to have a observation code that defines the type of the observation.
+This profile holds information about the observations the municipal acute care team can obtain.
+A HomeCareObservation message  shall contains results from perfomed observations by the acute care teams. The observations results needs to have a observation code that defines the type of the observation.
 The code for the observation shall be seleceted from a national analysis repertoire, that defines which observations and assesments methods the municipal acute care team can performe and send to the general practitioner. 
 The <a href="https://terminology.medcom.dk/fhir/observation-code">national analysis repertoire can be found here.</a> 
 

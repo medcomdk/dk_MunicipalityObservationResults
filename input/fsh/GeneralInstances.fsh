@@ -23,7 +23,7 @@ Description: "Example of an organization with a SOR and an EAN identifier."
 
 //Performer instance-new message
 Instance: 6aee2d64-c96c-4a47-ad41-d083d418f123
-InstanceOf: MedComCoreObservationProducerOrg 
+InstanceOf: MedComCoreProducerOrganization 
 Title: "Example of a producer organization with a Producer identifier."
 Description: "Example of an organization with a Producer identifier."
 * identifier[ProducentID].system = $ProducenID
@@ -34,7 +34,7 @@ Description: "Example of an organization with a Producer identifier."
 
 // Reciever instance - new message
 Instance: 42541447-b58c-4a1a-9514-02b80494bbd3
-InstanceOf: MedComMessagingOrganizationRequester 
+InstanceOf: MedComMessagingRequesterOrganization 
 Title: "Example of a reciever organization with a SOR, an EAN  and Ydrenummer identifier."
 Description: "Example of an organization with a SOR and an EAN and Ydrenummer identifier."
 * identifier[SOR-ID].value = "52581000016005" 

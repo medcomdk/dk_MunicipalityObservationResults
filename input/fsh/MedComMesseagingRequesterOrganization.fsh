@@ -1,7 +1,7 @@
-Profile: MedComMessagingOrganizationRequester
+Profile: MedComMessagingRequesterOrganization
 Parent: MedComMessagingOrganization
-Id: MedComMessagingOrganizationRequester
-Title: "MedComMessagingOrganizationRequester"
+Id: medcom-messaging-requesterorganization
+Title: "MedComMessagingRequesterOrganization"
 Description: "Requester organization of the observation"
 * identifier 3.. MS
 * identifier[Ydernummer] 1.. 

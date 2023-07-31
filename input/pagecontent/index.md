@@ -53,13 +53,13 @@ The [MedComCorePatient](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-
 #### MedComMessagingOrganization 
 The [MedComMessagingOrganization ](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-messaging-organization.html) profile is used in the MedComHomeCareObservationMessageHeader profile to describe the sender organization of the HomeCareDiagnosticReport.
 
-#### MedComCoreObservationProducerOrganization
-The [MedComCoreObservationProducerOrganization](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-core-observationproducerorg) profile is used in a HomeCareObservation message to represent the organization that is responsible for the collecting the observation results. The MedComCoreObservationProducerOrganization shall be identified using municipality code (Danish: kommunekode), and a producer-ID. The municipality code includes four numbers, that are display in a <a href ="http://hl7.dk/fhir/core/ValueSet-dk-core-MunicipalityCodes.html">ValueSet by HL7-DK</a>. The producer-ID consists of a <a href= "http://medcomfhir.dk/ig/terminology/CodeSystem-MedComProducentID.html">three letter code, which is displayed on the terminology IG</a>. In a receiver system, the interpretation of the two codes will together state that an acute care team from Aarhus municipality (municipality code: 0751) is the producer of the results.
+#### MedComCoreProducerOrganization
+The [MedComCoreProducerOrganization](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-producer-organization.html) profile is used in a HomeCareObservation message to represent the organization that is responsible for the collecting the observation results. The MedComCoreProducerOrganization shall be identified using municipality code (Danish: kommunekode), and a producer-ID. The municipality code includes four numbers, that are display in a <a href ="http://hl7.dk/fhir/core/ValueSet-dk-core-MunicipalityCodes.html">ValueSet by HL7-DK</a>. The producer-ID consists of a <a href= "http://medcomfhir.dk/ig/terminology/CodeSystem-MedComProducentID.html">three letter code, which is displayed on the terminology IG</a>. In a receiver system, the interpretation of the two codes will together state that an acute care team from Aarhus municipality (municipality code: 0751) is the producer of the results.
 
 
 
 #### Timestamps
-The HomeCareObservation standard includes several timestamps. These timestamps are present in the profiles [MedComHomeCareReport](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-MedComHomeCareReport.html), [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homeCare-observation.html),[MedComHomeCareObservationMessage](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-message.html), and [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) and have different purposes:
+The HomeCareObservation standard includes several timestamps. These timestamps are present in the profiles [MedComHomeCareDiagnosticReport](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-diagnosticreport.html), [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homeCare-observation.html),[MedComHomeCareObservationMessage](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-message.html), and [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) and have different purposes:
 * Observation sampling date and time (Danish: Prøvetagningsdato og tidspunkt)
     * Observation.effective.dateTime represents the time when the sample was performed.
     * Observation.effective.period represents the time-period for collecting the sample.
@@ -67,7 +67,7 @@ The HomeCareObservation standard includes several timestamps. These timestamps a
     * DiagnosticReport.issued represents the dateTime the version of the report was made. 
 * Sending date and time (Danish: Afsendelsesdato og tidspunkt)
     * Bundle.timestamp represents the time Bundle is generated.
-    * Provenance.occuredDateTime[x] represents the time the HomeCareObservation is sent, in a human-readable time
+    * Provenance.occuredDateTime[x] represents the time the HomeCareObservation message is sent, in a human-readable time
     * Provenance.recorded represents the time the HomeCareObservation  is sent, in a machine-readable time
 
 It is assumed that in most cases, the Bundle.timestamp, provenance.occuredDateTime[x] and provenance.recorded will be equal,as the events happens instantly after eachother. However, there might be systems where the sending is delayed compared to the real world-event and bundle generation, hence will the Provenance timestamps differentiate from Bundle timestamp.
