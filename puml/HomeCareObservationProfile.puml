@@ -4,8 +4,8 @@ top to bottom direction
 
 class "MedComCorePatient" as patient
 class "MedComProducerOrganization" as organization 
-class "HomeCareReport" as diagnosticReport <<MedComCoreDiagnosticReport>>
-class "HomeCareObservation" as coreobservation <<MedComCoreObservation>>
+class "MedComHomeCareDiagnosticReport" as diagnosticReport <<MedComCoreDiagnosticReport>>
+class "MedComHomeCareObservation" as coreobservation <<MedComCoreObservation>>
 
 diagnosticReport -- patient : "subject"
 diagnosticReport -- organization: "performer"

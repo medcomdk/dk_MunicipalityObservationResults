@@ -35,8 +35,8 @@ The [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareob
 #### MedComMessagingProvenance
 The [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) profile is used to track information about the activity of the HomeCareObservation message, e.g 'new-message' or 'modify-message'. The allowed activity codes for HomeCareObservation message can be found in [MedComHomeCareObservationMessageAcitivityCodes](http://medcomfhir.dk/ig/terminology/ValueSet-medcom-HomeCareObservation-messagingActivities.html) on the Terminology IG. 
 
-#### MedComMessagingOrgzanizationRequester 
-The [MedComMessagingOrganizationRequester]( http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-MedComMessagingOrganizationRequester.html) profile is used to express the receiver information of the HomeCareRepport. 
+#### MedComMessagingRequesterOrgnization 
+The [MedComMessagingRequesterOrganization]( http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-messaging-requesterorganization.html) profile is used to express the receiver information of the HomeCareRepport. 
 This profile represents the receiver of the HomeCareObservation message. The receiver information consist of initial of the general practitioner that requested the observation, if known, and identifiers such as SOR-, EAN and Ydrenummer-identifier to represent the general practitioner.
 If the initials of the general practitioner are unknown, then the code "unknown" form [data-absent-reson ValuSet](http://hl7.org/fhir/R4/valueset-data-absent-reason.html) need to be sent. 
 
