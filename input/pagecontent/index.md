@@ -5,7 +5,7 @@
 ## Introduction
 This implementation guide (IG) is provided by MedCom to describe the use of FHIR ®© in message based exchange of structured health informations between the municipal acute care team and the general practitioner.  
 
-This IG contains profiles for MedCom HomeCareObservation message (Danish: Kommunale Prøvesvar). The purpose of the HomeCareObservation message is to send structured result of observations performed by the acute care team to the general practitioner. In this way the quality of the observations results can be secure and the general practitioner can easly create an overview of the citizens health status and order a right treatment for the citizen. 
+This IG contains profiles for MedCom HomeCareObservation message (Danish: Kommunale Prøvesvar). The purpose of the HomeCareObservation message is to send structured results of observations performed by the acute care team to the general practitioner. In this way the quality of the observations results can be secure and the general practitioner can easly create an overview of the citizens health status and order a right treatment for the citizen. 
 The MedCom HomeCareObservation message supports: 
 * exchange of the observations that the acute care team has conducted and analyzed
 * exchange of the nursing assessments that are necessary to interpretation and understand the results and citizens health status
@@ -25,9 +25,9 @@ HomeCareObservation message follows the general MedCom FHIR messaging model, exc
 
 
 #### MedComHomeCareObservationMessage
-The [MedComHomeCareObservationMessage](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-message.html) is constraint of [MedComMessagingMessage](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-message.html). The MedComHomeCareObservationMessage profile is used to bundle the all observations and relevant information together. All referenced resources in the HomeCareObservationmessage shall be contained in the entry list in MedComHomeCareObservationMessage. 
+The [MedComHomeCareObservationMessage](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-message.html) constraints of the [MedComMessagingMessage](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-message.html). The MedComHomeCareObservationMessage profile is used to bundle all the observations and relevant information together. All referenced resources in the HomeCareObservationmessage shall be contained in the entry list in MedComHomeCareObservationMessage. 
 
-The MedComMessaging requires to use the [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecareobservation-MessageHeader.html) and to require exactly one [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) resource in the message.
+The MedComMessaging requires to use the [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecareobservation-MessageHeader.html) and requires to use exactly one [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) resource in the message.
 
 #### MedComHomeCareObservationMessageHeader
 The [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecareobservation-MessageHeader.html) constrains the [MedComMessagingMessageHeader](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-messageHeader.html) further to specify the fixed coding for this message and constrains the use of carbon-copy destination. 
@@ -35,26 +35,26 @@ The [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareob
 #### MedComMessagingProvenance
 The [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) profile is used to track information about the activity of the HomeCareObservation message, e.g 'new-message' or 'modify-message'. The allowed activity codes for HomeCareObservation message can be found in [MedComHomeCareObservationMessageAcitivityCodes](http://medcomfhir.dk/ig/terminology/ValueSet-medcom-HomeCareObservation-messagingActivities.html) on the Terminology IG. 
 
-#### MedComMessagingRequesterOrgnization 
+#### MedComMessagingRequesterOrganization 
 The [MedComMessagingRequesterOrganization]( http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-messaging-requesterorganization.html) profile is used to express the receiver information of the HomeCareRepport. 
-This profile represents the receiver of the HomeCareObservation message. The receiver information consist of initial of the general practitioner that requested the observation, if known, and identifiers such as SOR-, EAN and Ydrenummer-identifier to represent the general practitioner.
-If the initials of the general practitioner are unknown, then the code "unknown" form [data-absent-reson ValuSet](http://hl7.org/fhir/R4/valueset-data-absent-reason.html) need to be sent. 
+This profile represents the receiver of the HomeCareObservation message. The receiver information consist of the initials of the general practitioner that requested the observation, if known, and identifiers such as SOR-, EAN and Ydrenummer-identifier to represent the general practitioner.
+If the initials of the general practitioner are unknown, then the code "unknown" form of the [data-absent-reason ValueSet](http://hl7.org/fhir/R4/valueset-data-absent-reason.html) need to be sent. 
 
 #### MedComHomeCareDiagnosticReport
-The [MedComHomeCareDiagnosticReport](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-MedComHomeCareDiagnosticReport.html) profile contains the main content of the HomeCareObservation message. It is inherited from the profile MedComCoreDiagnosticReport. The MedComHomeCareDiagnosticReport shall include observation results performed  by the municipalties acute care team. The profile also includes information about the performer of the observations. Further, it is possible to add Clinical relevant comment regarding the whole repport. [Click here for more information about the coment.](C:\Git_hub\dk_MunicipalityObservationResults\input\pagecontent\StructureDefinition-MedComHomeCareDiagnosticReport-intro.md)
+The [MedComHomeCareDiagnosticReport](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-MedComHomeCareDiagnosticReport.html) profile contains the main content of the HomeCareObservation message. It is inherited from the profile MedComCoreDiagnosticReport. The MedComHomeCareDiagnosticReport shall include observation results performed by the municipalties acute care team. The profile also includes information about the performer of the observations. Further, it is possible to add Clinical relevant comments regarding the whole repport. [Click here for more information about the comment.](C:\Git_hub\dk_MunicipalityObservationResults\input\pagecontent\StructureDefinition-MedComHomeCareDiagnosticReport-intro.md)
 
 #### MedComHomeCareObservation
 The [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homeCare-observation.html) profile inherits from the MedComCoreObservation profile. This profile includes a code, and value for the observation, and a comment on the individual result , if this comment is relevant to include. The  code shall either be a NPU or MCS code describing the observation. Further, a date and time that defines when the observation was performed shall be added. 
 
 
 #### MedComCorePatient
-The [MedComCorePatient](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) profile is used in a MedComHomeCareObservations message to represents the patient. 
+The [MedComCorePatient](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) profile is used in a MedComHomeCareObservations message to represent the patient. 
 
 #### MedComMessagingOrganization 
 The [MedComMessagingOrganization ](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-messaging-organization.html) profile is used in the MedComHomeCareObservationMessageHeader profile to describe the sender organization of the HomeCareDiagnosticReport.
 
 #### MedComCoreProducerOrganization
-The [MedComCoreProducerOrganization](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-producer-organization.html) profile is used in a HomeCareObservation message to represent the organization that is responsible for the collecting the observation results. The MedComCoreProducerOrganization shall be identified using municipality code (Danish: kommunekode), and a producer-ID. The municipality code includes four numbers, that are display in a <a href ="http://hl7.dk/fhir/core/ValueSet-dk-core-MunicipalityCodes.html">ValueSet by HL7-DK</a>. The producer-ID consists of a <a href= "http://medcomfhir.dk/ig/terminology/CodeSystem-MedComProducentID.html">three letter code, which is displayed on the terminology IG</a>. In a receiver system, the interpretation of the two codes will together state that an acute care team from Aarhus municipality (municipality code: 0751) is the producer of the results.
+The [MedComCoreProducerOrganization](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-producer-organization.html) profile is used in a HomeCareObservation message to represent the organization that is responsible for collecting the observation results. The MedComCoreProducerOrganization shall be identified using municipality code (Danish: kommunekode), and a producer-ID. The municipality code includes four numbers, that are displayed in a <a href ="http://hl7.dk/fhir/core/ValueSet-dk-core-MunicipalityCodes.html">MunicipalityCodes ValueSet by HL7-DK</a>. The producer-ID consists of a <a href= "http://medcomfhir.dk/ig/terminology/CodeSystem-MedComProducentID.html">three letter code, which is displayed on the terminology IG</a>. In a receiver system, the interpretation of the two codes will together state that an acute care team from Aarhus municipality (municipality code: 0751) is the producer of the results.
 
 
 
@@ -73,25 +73,25 @@ The HomeCareObservation message includes several timestamps. These timestamps ar
 It is assumed that in most cases, the Bundle.timestamp, provenance.occuredDateTime[x] and provenance.recorded will be equal,as the events happens instantly after eachother. However, there might be systems where the sending is delayed compared to the real world-event and bundle generation, hence will the Provenance timestamps differentiate from Bundle timestamp.
 
 #### Modification and Cancellation of the HomeCareObservationMessage
-It is allowed to modify and cancel a HomeCareObservation Message. If the message is modified or cancelled it shall be clearly indicated on the user interface. When sending a modification or cancellation of the HomeCareObservation the MessageHeader.id sholud be the same so the receiver system can see if there are som changes or if the message has been cancelled. 
+It is allowed to modify and cancel a HomeCareObservation Message. If the message is modified or cancelled it shall be clearly indicated on the user interface. When sending a modification or cancellation of the HomeCareObservation the MessageHeader.id should be the same so the receiver system can see if there are som changes or if the message has been cancelled. 
 
 ##### Modify HomeCareObservationMessage
 It is a requirement that the sender of HomeCareObservation message can modify an already sent HomeCareObservation message if the user wants to correct the content.
-The modification can only happend if the modification is regarding observation sampling date and time, observation result, a clinical comment, an observation comment, content of an attached file (as long as the content is sent to the correct civil registration number (Danish: CPR-nummer)), the initials of the reqesting general practitioner or sender's signature. 
+The modification can only happen if the modification is regarding observation sampling date and time, observation result, a clinical comment, an observation comment, content of an attached file (as long as the content is sent to the correct civil registration number (Danish: CPR-nummer)), the initials of the reqesting general practitioner or sender's signature. 
 
-The receiver system shall be able to receive and show modification of an already received HomeCareObservation message. It is also required that the receiver system clearly shows what was modified in the received correction, in the user interface of the receiver system. Further, there shall be traceability to previour received HomeCareObservation message in the receiver system. 
+The receiver system shall be able to receive and show modification of an already received HomeCareObservation message. It is also required that the receiver system clearly shows what was modified in the received correction, in the user interface of the receiver system. Further, there shall be traceability to previous received HomeCareObservation message in the receiver system. 
 
 ##### Cancel HomeCareObservationReportMessage
-The sender of the HomeCareObservationReportMessage shall be able to cancel the already send HomeCareObservationReportMessage if the message if the subject in the message is incorrect, if the message is sent to an incorrect receiver or if the content of an attachement is sent on the wrong subject. 
-If the user wants to cancel the message, then the reason of cancellation shall be written in the clinical comment. Alternatively, the user can also add a MedCom's predefined cancellation reason phrases that should be added to the clinical comment. <a href="https://medcomfhir.dk/ig/terminology/CodeSystem-medcom-messaging-cancellation-reason.html">Click here to read the MedCom's predefined cancellation reason phrases</a>. 
+The sender of the HomeCareObservationReportMessage shall be able to cancel an already sent HomeCareObservationReportMessage if the subject in the message is incorrect, if the message is sent to an incorrect receiver or if the content of an attachement is sent on the wrong subject. 
+If the user wants to cancel the message, then the reason of cancellation shall be written in the clinical comment. Alternatively, the user can also add one of MedCom's predefined cancellation reason phrases that should be added to the clinical comment. <a href="https://medcomfhir.dk/ig/terminology/CodeSystem-medcom-messaging-cancellation-reason.html">Click here to read the MedCom's predefined cancellation reason phrases</a>. 
 
-The receiver system shall be able to receive a cancellation of the already received HomeCareObservationReportMessage and show clearly that the massage has been canceled in the user interface. The cancelled HomeCareObservationReportMessage should not be deleted for reasons of subsequent traceability, but should instead be archived and clearly marked as cancelled.
+The receiver system shall be able to receive a cancellation of the already received HomeCareObservationReportMessage and show clearly that the massage has been cancelled in the user interface. The cancelled HomeCareObservationReportMessage should not be deleted for reasons of subsequent traceability, but should instead be archived and clearly marked as cancelled.
 
 #### Terminology
 On [MedCom Terminology IG](http://medcomfhir.dk/ig/terminology/) all referenced CodeSystem and ValueSets developed by MedCom can be found.
 
 #### Dependencies
-This IG has a dependency to the [MedCom Core IG](http://medcomfhir.dk/ig/core/), [MedCom Messaging IG](http://medcomfhir.dk/ig/messaging/) and [DK-core v. 2.0.0](https://hl7.dk/fhir/core/), where the latter is defined by [HL7 Denmark](https://hl7.dk/). These dependencies are currently reflected in MedComHomeCareMessage, and MedComHomeMessageHeader which both inherits from profiles defined MedComMessaging IG. Further, it is reflected in references to MedComCorePatient, MedComCoreEncounter, MedComCoreOrganization and MedComMessagingOrganization.
+This IG has a dependency to the [MedCom Core IG](http://medcomfhir.dk/ig/core/), [MedCom Messaging IG](http://medcomfhir.dk/ig/messaging/), [MedCom Terminology IG](http://medcomfhir.dk/ig/terminology/) and [DK-core v. 2.0.0](https://hl7.dk/fhir/core/), where the latter is defined by [HL7 Denmark](https://hl7.dk/). These dependencies are currently reflected in MedComHomeCareMessage, and MedComHomeMessageHeader which both inherits from profiles defined MedComMessaging IG. Further, it is reflected in references to MedComCorePatient, MedComCoreEncounter, MedComCoreOrganization and MedComMessagingOrganization.
 
 ## Download 
 Content in this IG can be downloaded in npm format under [Download](https://medcomfhir.dk/ig/MedComHomeCareObservations/downloads.html). This can be used to validate locale FHIR profiles against.
