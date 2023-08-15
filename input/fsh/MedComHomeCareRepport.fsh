@@ -47,9 +47,9 @@ InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
 Title: "HomeCareObservation repport: spot test"
 Description: "Spot test performed by the acute care team on a subject."
-* status = #final
+* status = $StatusCodeDiagnosticReportSystem#final
 * issued = 2023-07-13T12:24:08+02:00
-* code = #HomeCareReport
+* code = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 * performer[ProducerOrganization] = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)
 * performer[PractitionerRole] = Reference(6ff69f1c-690d-11ed-9022-0242ac120002)
@@ -71,9 +71,9 @@ InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
 Title: "HomeCareObservation repport: Urine dipsticks tests "
 Description: "Urine dipstick tests performed by the acute care team on a subject."
-* status = #final
+* status = $StatusCodeDiagnosticReportSystem#final
 * issued = 2023-07-12T12:24:08+02:00
-* code.coding = #HomeCareReport
+* code.coding = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 * performer[ProducerOrganization] = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)
 * performer[PractitionerRole] = Reference(6ff69f1c-690d-11ed-9022-0242ac120002)
