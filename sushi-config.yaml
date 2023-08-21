@@ -17,8 +17,8 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#DK "Denmark"
 publisher:
-  name: Example Publisher
-  url: http://example.org/example-publisher
+  name: MedCom
+  url: http://www.medcom.dk
   # email: test@example.org
 
 dependencies:
