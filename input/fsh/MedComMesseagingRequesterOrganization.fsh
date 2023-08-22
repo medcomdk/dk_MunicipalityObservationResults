@@ -6,6 +6,12 @@ Description: "Requester organization of the observation"
 * identifier 3.. MS
 * identifier[Ydernummer] 1.. 
 * identifier[Ydernummer] MS
+// * contact 0..1 MS
+// * contact.name 0..1 MS
+// * contact.name.given 1..1 MS
+// * contact.name.given ^short = "Initials of the practitioner that request the observation."
+
+
 * extension contains MedComMessagingRequesterInit named RequesterInitials 0..1
 * extension contains data-absent-reason named InitialsNotKnown 0..1
 * obeys medcom-homecareObservation-4

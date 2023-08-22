@@ -13,3 +13,6 @@ Alias: $PractitionerRole = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom
 Alias: $DiagnosticReportCode = http://medcomfhir.dk/ig/terminology/ValueSet/MedComDiagnosticReportCodesValueset
 Alias: $BundleType = http://hl7.org/fhir/bundle-type
 Alias: $Use = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-destinationUse
+Alias: $DiagnosticReportCodeSystem = http://medcomfhir.dk/ig/terminology/CodeSystem/MedComDiagnosticReportCodes
+Alias: $ObsStatusCodeSystem = http://hl7.org/fhir/observation-status
+Alias: $StatusCodeDiagnosticReportSystem = http://hl7.org/fhir/diagnostic-report-status

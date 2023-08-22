@@ -6,8 +6,8 @@ Description: "MessageHeader for HomeCareObservation"
 * id ^short = "A unique identifier for each message. This identifier should be globally unique."
 * eventCoding = $MessageEvents#homecareobservation-message
 * destination[cc] ..0 
-* destination.receiver only Reference(MedComMessagingRequesterOrganization)
-* destination.receiver ^type.aggregation = #bundled
+* destination[primary].receiver only Reference(MedComMessagingRequesterOrganization)
+* destination[primary].receiver ^type.aggregation = #bundled
 
 Instance: b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 InstanceOf: MedComMessagingDestinationUseExtension
