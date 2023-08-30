@@ -5,7 +5,7 @@ Title: "MedComHomeCareObservation"
 Description: "This is a profile intended to be use in HomeCareObservations standard, to hold information about the observation. "
 * effectiveDateTime MS 
 * effectivePeriod MS
-* code.coding[NPU].system = $NPU (exactly)
+* code.coding[NPU].system from $NPUObservationCodesValueSet 
 * code.coding[MedCom].system = $Medcom (exactly)
  
 
@@ -21,7 +21,7 @@ Usage: #example
 Title: "C-reaktive protein [CRP];P"
 Description: "C-reaktive protein [CRP] test performed by acute care team on the subject."
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = $NPU#NPU19748 "C-reaktivt protein [CRP];P"
+* code.coding[NPU] = #NPU19748 "C-reaktivt protein [CRP];P"
 * valueQuantity.value = 26
 * valueQuantity.unit = "mg/L"
 * effectiveDateTime = 2023-07-12T10:24:08+02:00
@@ -35,7 +35,7 @@ Usage: #example
 Title: "Observation of the haemoglobin"
 Description: "Observation of the haemoglobin"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = $NPU#NPU02319 "Hæmoglobin;B"
+* code.coding[NPU] = #NPU02319 "Hæmoglobin;B"
 * valueQuantity.value = 7.8
 * valueQuantity.unit = "mmol/L"
 * effectiveDateTime = 2023-07-12T10:25:08+02:00
@@ -51,7 +51,7 @@ Usage: #example
 Title: "Leukocyt Observation"
 Description: "Test of leucocyte on the subject by acute care team"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = $NPU#NPU02593 "Leukocytter;B"
+* code.coding[NPU] = #NPU02593 "Leukocytter;B"
 * valueQuantity.value = 9.1
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-07-12T10:27:08+02:00
@@ -65,7 +65,7 @@ Usage: #example
 Title: "Lymphocyte observation"
 Description: "Lymphocyte observation on the subject by acute care team"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = $NPU#NPU02636 "Lymfocytter;B"
+* code.coding[NPU] = #NPU02636 "Lymfocytter;B"
 * valueQuantity.value = 2.6
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-07-12T10:30:08+02:00
@@ -80,7 +80,7 @@ Usage: #example
 Title: "Monocytes observation"
 Description: "Monocytes observation performed on o subject by the acute care team"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = $NPU#NPU02840 "Monocytter;B"
+* code.coding[NPU] = #NPU02840 "Monocytter;B"
 * valueQuantity.value = 0.7
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-07-12T10:32:08+02:00
@@ -94,7 +94,7 @@ Usage: #example
 Title: "Neutrophilocytes observation"
 Description: "Neutrophilocytes observation performed on o subject by the acute care team"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = $NPU#NPU02902 "Neutrofilocytter;B"
+* code.coding[NPU] = #NPU02902 "Neutrofilocytter;B"
 * valueQuantity.value = 10.1
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-07-12T10:34:08+02:00
@@ -108,7 +108,7 @@ Usage: #example
 Title: "Eosinofilocyt observation"
 Description: "Eosinofilocyt observation performed on a subject by the auce care team"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = $NPU#NPU01933 "Eosinofilocytter;B"
+* code.coding[NPU] = #NPU01933 "Eosinofilocytter;B"
 * valueQuantity.value = 0.10
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-07-12T10:36:08+02:00
@@ -123,7 +123,7 @@ Usage: #example
 Title: "Basofilocyt observation "
 Description: "Basofilocyt observation performed on a subject by the auce care team"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = $NPU#NPU01349 "Basofilocytter;B"
+* code.coding[NPU] = #NPU01349 "Basofilocytter;B"
 * valueQuantity.value = 0.05
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-07-12T10:38:08+02:00
@@ -137,7 +137,7 @@ Usage: #example
 Title: "Glucose measurement"
 Description: "Glucose measurement on the subject. "
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = $NPU#NPU22089 "Glukose;P(kB)"
+* code.coding[NPU] = #NPU22089 "Glukose;P(kB)"
 * valueQuantity.value = 6.8
 * valueQuantity.unit = "mmol/L"
 * effectiveDateTime = 2023-07-12T10:40:08+02:00
@@ -151,7 +151,7 @@ Usage: #example
 Title: "Coagulation factor test"
 Description: "Coagulation factor on the subject"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = $NPU#NPU01685 "Koagulationsfaktor II+VII+X [INR];P"
+* code.coding[NPU] = #NPU01685 "Koagulationsfaktor II+VII+X [INR];P"
 * valueQuantity.value = 0.9
 * effectiveDateTime = 2023-07-12T10:42:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
@@ -170,7 +170,7 @@ Usage: #example
 Title: "Urine dipstick tests"
 Description: "Urine dipstick tests on Bruno "
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = $NPU#NPU04206 "Protein(semikvant);U"
+* code.coding[NPU] = #NPU04206 "Protein(semikvant);U"
 * valueQuantity.value = 1
 * valueQuantity.unit = "+"
 * effectiveDateTime = 2023-07-13T12:24:08+02:00
@@ -183,7 +183,7 @@ Usage: #example
 Title: "Nitrite observation"
 Description: "Nitrit observation on Bruno"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = $NPU#NPU21578 "Nitrit(semikvant);U"
+* code.coding[NPU] = #NPU21578 "Nitrit(semikvant);U"
 * valueString = "Negative" 
 * effectiveDateTime = 2023-07-13T12:24:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
@@ -195,7 +195,7 @@ Usage: #example
 Title: "Leukocyt urine test"
 Description: "Test of leucocyt using urine dipstick"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = $NPU#NPU03987
+* code.coding[NPU] = #NPU03987
 * valueQuantity.value = 2
 * valueQuantity.unit = "+"
 * effectiveDateTime = 2023-07-13T12:24:08+02:00
