@@ -19,3 +19,4 @@ Alias: $Use = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-de
 Alias: $DiagnosticReportCodeSystem = http://medcomfhir.dk/ig/terminology/CodeSystem/MedComDiagnosticReportCodes
 Alias: $ObsStatusCodeSystem = http://hl7.org/fhir/observation-status
 Alias: $StatusCodeDiagnosticReportSystem = http://hl7.org/fhir/diagnostic-report-status
+Alias: $Mimetypes = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-core-attachmentMimeTypes
