@@ -24,7 +24,7 @@ publisher:
 dependencies:
   hl7.fhir.dk.core: 
     uri: https://hl7.dk/fhir/core
-    version: dev
+    version: 2.2.0
   medcom.fhir.dk.terminology: current
   medcom.fhir.dk.core: current
   medcom.fhir.dk.messaging: current
