@@ -40,7 +40,7 @@ Description: "Example of an organization with a SOR and an EAN and Ydrenummer id
 * identifier[SOR-ID].value = "52581000016005" 
 * identifier[EAN-ID].value = "5790000127092"
 * identifier[Ydernummer].value = "061654"
-* extension[RequesterInitials].valueHumanName.given = "KTM"
+* contact.name.given = "KTM"
 * name = "Skødstrup Lægepraksis"
 
 //Practitioner - reply message

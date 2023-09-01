@@ -5,6 +5,7 @@ Title: "MedComHomeCareObservation"
 Description: "This is a profile intended to be use in HomeCareObservations standard, to hold information about the observation. "
 * effectiveDateTime MS 
 * effectivePeriod MS
+* valueQuantity 1..1 MS
 * code.coding[NPU].system from $NPUObservationCodesValueSet 
 * code.coding[MedCom].system = $Medcom (exactly)
  
