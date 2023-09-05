@@ -5,7 +5,7 @@ Title: "MedComMessagingRequesterOrganization"
 Description: "Requester organization of the observation"
 * identifier 3.. MS
 * identifier[Ydernummer] 1.. 
-* identifier[Ydernummer] MS
+* identifier[Ydernummer] MS 
 * contact 1..1 MS
 * contact.name 0..1 MS
 * contact.name.given 1..1 MS
