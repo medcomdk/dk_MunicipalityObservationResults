@@ -8,14 +8,18 @@ The MedComHomeCareDiagnosticReport profile contains references to all observatio
 <br>
 <br>
 
+#### Status 
+In the MedComHomeCareDiagnosticReport it is require to send the status marking. 
+
+
 #### Comments 
-In the MedComHomeCareDiagnosticReport it is possible to sent comments or anotation regarding the performed observations by the municipal acute care team. There are two types of comments that can be send; comment about the individual observation and a clinical comment about the entire report, hence a comment relevant for all observations included the report. 
+In the MedComHomeCareDiagnosticReport it is possible to sent comments or anotation regarding the performed observations by the municipal acute care team. There are two types of comments that can be send; comment about the individual observation and a clinical observation (nursing assessments) about regarding the citizens overall results and health status in. 
 
 ##### Comment about the individual observation
 Comment about the observation (Danish: Analysekommentar) is a comment that the user can choose to add to a current observation result. The element Observation.note in HomeCareObservation profile shall be used when ading a comment about the observation. 
 
-##### Comment about the clinical comment
-The clinical comment (Danish: Klinisk kommentar) is a comment to entire report. Ths comment shall contain information that is necessary to provide an overall assessment of the citizen in the acute situation. It is recommended that the municipal acute careteam send the relevant clinical observations and nursing assessments, which are necessary for the interpretation and understanding of the measurements and observations results. When adding a clinical comment the element DiagnosticReport.conclusion should be used. 
+##### Clinical Observation
+The clinical observation (Danish: Klinisk kommentar) is a comment to entire report. Ths comment shall contain information that is necessary to provide an overall assessment of the citizen in the acute situation. It is recommended that the municipal acute careteam send the relevant clinical observations and nursing assessments, which are necessary for the interpretation and understanding of the measurements and observations results. When adding a clinical comment the element DiagnosticReport.conclusion should be used. 
 
 #### Performer 
 In the MedComHomeCareDiagnosticReport it is required to describe the performer of the MedComHomeCareDiagnosticReport. The performer shall be described using a signature and a producer-ID.
