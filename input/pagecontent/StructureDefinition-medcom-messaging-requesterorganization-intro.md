@@ -1,2 +1,2 @@
 #### Scope and usage
-This profile is a MedCom profile intended to represent a requester of the obeservation. 
+This profile is intended to be used to represent the requester organization of the observations. 

@@ -52,7 +52,6 @@ This profile also allows to send relevant files from the acute home care visit. 
 If the atached file are sent, it is a requirement that the ID and title of the attached file be sent. Furthermore, MedCom recommended that the name of the author, as well as the time of creation, of the attached file be signed and sent with it.
 
 
-
 #### MedComHomeCareObservation
 The [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homeCare-observation.html) profile inherits from the MedComCoreObservation profile. This profile includes a code, and value for the observation, and a comment on the individual result , if this comment is relevant to include. The  code shall either be a NPU or MCS code describing the observation. Further, a date and time that defines when the observation was performed shall be added. 
 
@@ -65,8 +64,6 @@ The [MedComMessagingOrganization ](http://medcomfhir.dk/ig/core/StructureDefinit
 
 #### MedComCoreProducerOrganization
 The [MedComCoreProducerOrganization](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-producer-organization.html) profile is used in a HomeCareObservation message to represent the organization that is responsible for collecting the observation results e.g. acute careteam. The MedComCoreProducerOrganization shall be identified using municipality code (Danish: kommunekode), and a producer-ID. The municipality code includes four numbers, that are displayed in a <a href ="http://hl7.dk/fhir/core/ValueSet-dk-core-MunicipalityCodes.html">MunicipalityCodes ValueSet by HL7-DK</a>. The producer-ID consists of a <a href= "http://medcomfhir.dk/ig/terminology/CodeSystem-MedComProducentID.html">three letter code, which is displayed on the terminology IG</a>. In a receiver system, the interpretation of the two codes will together state that an acute care team from Aarhus municipality (municipality code: 0751) is the producer of the results.
-
-
 
 #### Timestamps
 The HomeCareObservation message includes several timestamps. These timestamps are present in the profiles [MedComHomeCareDiagnosticReport](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-diagnosticreport.html), [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homeCare-observation.html),[MedComHomeCareObservationMessage](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-message.html), and [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) and have different purposes:
