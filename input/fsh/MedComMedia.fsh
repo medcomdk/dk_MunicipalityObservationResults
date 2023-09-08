@@ -28,3 +28,11 @@ Invariant: medcom-homecareReport-6
 Description: "There shall exist a name of the healtcare worker that performed the observations, as author of the attached file ."
 Severity: #error
 Expression: "reference.resolve().practitioner.resolve().name.exists()"
+
+
+Instance: cb277ee2-5d96-4762-829d-d36449b2b17f
+InstanceOf: MedComMedia
+Usage: #example
+Title: ""
+Description: ""
+* 

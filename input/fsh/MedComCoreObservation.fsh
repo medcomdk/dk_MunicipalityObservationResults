@@ -15,3 +15,5 @@ Description: "Observation profile intended to be used in MedCom's Laboratory and
 * note MS
 * note ^short = "A comment on the individual result (Danish: Analysekommentar)"
 * referenceRange 0..* MS
+* interpretation MS
+* interpretation from $obsInterpretation

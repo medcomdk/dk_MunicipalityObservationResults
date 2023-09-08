@@ -66,6 +66,7 @@ Description: "Spot test performed by the acute care team on a subject."
 
 
 
+
 Instance: 6d08f000-33cc-41f3-a7c2-c086d53d31a7
 InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
