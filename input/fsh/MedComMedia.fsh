@@ -34,8 +34,8 @@ Instance: cb277ee2-5d96-4762-829d-d36449b2b17f
 InstanceOf: MedComMedia
 Usage: #example
 Title: "Normal EKG"
-Description: ""
-* status.value = $mediastatus#completed
+Description: "An example of an EKG that can be sendt with an diagnostic repport"
+* status = $mediastatus#completed
 * identifier.value = "urn:uuid:974e7953-4cc2-465e-bc60-b1750ff41604"
 * identifier.assigner = Reference(85669d18-2bb3-4c6e-80d2-e039a63a521c)
 * note.text = "EGK observation"
