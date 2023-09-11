@@ -37,4 +37,6 @@ The producer-ID consist of a three letter code and a municipal code. The municip
 The three letter code is exibitted by MedCom and is an abbreviation for the organization that is responsible for the observations results. The municipal acute care team  is responsible for performig the observations and for genereting the observations results in the HomecareObservation standard. Therefore the Code for the municiapl acute careteam is "KAF". 
 The three letter code is exibited in code system on the terminology IG. <a href= "http://medcomfhir.dk/ig/terminology/CodeSystem-MedComProducentID">Click here too see the code system. </a>
 
-
+#### Use of security labet on patient consent 
+If a patient gives a negative consent to sharing the observation results with other than the general practitioner a securety labe shall be used. 
+This mean that the meta.security.code shall be R, and in the user interface, it shall be clearly stated that consent has been refused. 
