@@ -11,7 +11,7 @@ Description: "This is a profile intended to be use in HomeCareObservations stand
 * code.coding[MedCom].system = $Medcom (exactly)
 * interpretation MS
 * interpretation from $obsInterpretation
-* interpretation.coding.code = 'NI'
+* interpretation.coding.code = #NI
 // * obeys medcom-homecareObservation-1
  
 
