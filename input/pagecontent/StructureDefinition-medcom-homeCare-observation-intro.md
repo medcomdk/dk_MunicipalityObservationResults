@@ -11,4 +11,7 @@ In a Observation resource, codes from CodeSystems are used to describe what is o
 * The NPU codes are the preferred first choice in official Danish health IT-systems and most used laboratory codes. NPU codes hase NPU prefixes in the begining of the code. 
 * MedCom codes are Danish codes that are refered as MCS- codes. 
 
-It is required to display 
+It is required to send the long and short name of the analysis. Both the long and short name of the performed observation can be fund on med medcom's terminology server. 
+[Click here to see NPU observation codes.](http://medcomfhir.dk/ig/terminology/ValueSet-NPUObservationCodesValueSet.html)
+[Click here to see MCS observation codes.](http://medcomfhir.dk/ig/terminology/ValueSet-MedComObservationValueSet.html)
+

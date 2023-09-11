@@ -9,14 +9,17 @@ Description: "This is a profile intended to be use in HomeCareObservations stand
   * ^maxLength = 12
 * code.coding[NPU].system from $NPUObservationCodesValueSet 
 * code.coding[MedCom].system = $Medcom (exactly)
-* obeys medcom-homecareObservation-1
+* interpretation MS
+* interpretation from $obsInterpretation
+* interpretation.coding.code = 'NI'
+// * obeys medcom-homecareObservation-1
  
 
 
-Invariant: medcom-homecareObservation-1
-Description: "There shall exist a Interpretation code 'Not Interpreted' when valueQuantity is sent. "
-Expression: "if(valueQuantity.value.exists(),interpretation.coding.code = 'NI',true)"
-Severity: #error
+// Invariant: medcom-homecareObservation-1
+// Description: "There shall exist a Interpretation code 'Not Interpreted' when valueQuantity is sent. "
+// Expression: "if(valueQuantity.value.exists(),interpretation.coding.code = 'NI',true)"
+// Severity: #error
 
 
 
