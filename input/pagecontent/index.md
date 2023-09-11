@@ -53,7 +53,9 @@ If the atached file are sent, it is a requirement that the ID and title of the a
 
 
 #### MedComHomeCareObservation
-The [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homeCare-observation.html) profile inherits from the MedComCoreObservation profile. This profile includes a code, and value for the observation, and a comment on the individual result , if this comment is relevant to include. The  code shall either be a NPU or MCS code describing the observation. Further, a date and time that defines when the observation was performed shall be added. It is also required to send a marking that the result of the observation is not reference assessed
+The [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homeCare-observation.html) profile inherits from the MedComCoreObservation profile. This profile includes infromation about what observation was performed, what date & time, by whom, and what result was obtaind. Codes form two Codesystems for NPU and MCS are used to stated what observation is performed in Observation.code.coding. Both codystsems are exibitet on terminology server.
+It is alsao allowed to send an analysis comment on the individual result, if this comment is relevant to include. 
+Further it is also required to send a marking that the result of the observation is not reference assessed (Dansk: ikke reference vurderet). 
 
 
 #### MedComCorePatient

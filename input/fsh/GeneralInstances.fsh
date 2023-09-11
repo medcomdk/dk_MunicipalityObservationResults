@@ -43,7 +43,7 @@ Description: "Example of an organization with a SOR and an EAN and Ydrenummer id
 * contact.name.given = "KTM"
 * name = "Skødstrup Lægepraksis"
 
-//Practitioner - reply message
+//Practitioner  - reply message
 Instance: 7c7f31d6-690d-11ed-9022-0242ac120002
 InstanceOf: MedComCorePractitioner
 Title: "Simple practitioner with a name"
@@ -51,11 +51,21 @@ Description: "Simple practitioner with a name"
 * name.given = "Maibrit"
 * telecom.value = "+45 005566778"
 
+//Akutsygeplerjerske
+Instance: b56708c6-2df3-4e4a-a110-2f924b9fc072
+InstanceOf: MedComCorePractitioner
+Title: "Acute nurse"
+Description: "Acute nurse"
+* name.given = "Julia"
+* telecom.value = "+45 05577668"
+
+
+//Practitioner rolle
 Instance: 6ff69f1c-690d-11ed-9022-0242ac120002
 InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
-* practitioner = Reference(7c7f31d6-690d-11ed-9022-0242ac120002)
+* practitioner = Reference(b56708c6-2df3-4e4a-a110-2f924b9fc072)
 * code = $PractitionerRole#sygeplejerske
 
 

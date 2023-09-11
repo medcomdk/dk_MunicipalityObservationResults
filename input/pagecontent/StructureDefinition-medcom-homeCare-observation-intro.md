@@ -10,3 +10,5 @@ The <a href="https://terminology.medcom.dk/fhir/observation-code">national analy
 In a Observation resource, codes from CodeSystems are used to describe what is observed in the elements Observation.code.coding. In the element Observation.code.coding two CodeSystem are specified. 
 * The NPU codes are the preferred first choice in official Danish health IT-systems and most used laboratory codes. NPU codes hase NPU prefixes in the begining of the code. 
 * MedCom codes are Danish codes that are refered as MCS- codes. 
+
+It is required to display 
