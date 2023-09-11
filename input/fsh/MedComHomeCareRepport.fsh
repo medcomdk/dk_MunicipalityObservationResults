@@ -45,7 +45,7 @@ Expression: "reference.resolve().practitioner.resolve().telecom.exists()"
 Instance: 870333ac-3134-4ae6-8257-86e0b0537c5f
 InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
-Title: "HomeCareObservation repport: spot test"
+Title: "HomeCareObservation repport: spot test and EKG"
 Description: "Spot test performed by the acute care team on a subject."
 * status = $StatusCodeDiagnosticReportSystem#final
 * issued = 2023-07-13T12:24:08+02:00
@@ -63,6 +63,7 @@ Description: "Spot test performed by the acute care team on a subject."
 * result[+] = Reference(1e2351e2-77df-4135-a77b-6a4c39e4a4ca)
 * result[+] = Reference(0e4a5452-1804-42d3-82ed-484df20a09f0)
 * result[+] = Reference(470d39e4-d3f9-4301-82eb-b957ba33475e)
+* media.link = Reference(cb277ee2-5d96-4762-829d-d36449b2b17f)
 
 
 
