@@ -21,4 +21,4 @@ Alias: $ObsStatusCodeSystem = http://hl7.org/fhir/observation-status
 Alias: $StatusCodeDiagnosticReportSystem = http://hl7.org/fhir/diagnostic-report-status
 Alias: $Mimetypes = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-core-attachmentMimeTypes
 Alias: $obsInterpretation = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-core-interpreation-valueset
-Alias: $mediastatus = http://hl7.org/fhir/ValueSet/event-status
+Alias: $mediastatus = http://hl7.org/fhir/event-status
