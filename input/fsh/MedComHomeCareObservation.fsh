@@ -2,7 +2,7 @@ Profile: MedComHomeCareObservation
 Parent: MedComCoreObservation
 Id: medcom-homeCare-observation
 Title: "MedComHomeCareObservation"
-Description: "This is a profile intended to be use in HomeCareObservations standard, to hold information about the observation. "
+Description: "This profile is intended to be used in HomeCareObservation to hold information about the observation results."
 * effectiveDateTime MS 
 * valueQuantity 1..1 MS
 * valueQuantity

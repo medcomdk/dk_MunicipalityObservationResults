@@ -29,7 +29,7 @@ Description: "Example of an organization with a Producer identifier."
 * identifier[ProducentID].system = $ProducenID
 * identifier[ProducentID].value = "KAF"
 * identifier[Kommunekode].value = "0751"
-* name = "Akut funktion, Århus kommune"
+* name = "Akutfunktion, Århus kommune"
 
 
 // Reciever instance - new message

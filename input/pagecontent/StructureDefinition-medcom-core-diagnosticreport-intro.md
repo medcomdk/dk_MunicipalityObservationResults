@@ -1,8 +1,8 @@
 #### Scope and usage
-This profile is intended to be uses in MedCom's Laboratory standards. 
+This profile is intended to be uses in  MedCom HomeCareObservation and MedCom's Laboratory standards. 
 
 #### Attachments 
-In MedComCoreDiagnosticReport it is allowed to include an attachment. It is up to the user to assess when it is relevant to send an attachment. 
+In MedComCoreDiagnosticReport it is allowed to include attachments. It is up to the user to assess when it is relevant to send an attachment. 
 Only an attachment of the following formats must be included: 
 
 * Adobe Portable Document Format (PDF)

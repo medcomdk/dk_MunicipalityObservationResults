@@ -2,7 +2,7 @@ Profile: MedComCoreDiagnosticReport
 Parent: DiagnosticReport
 Id: medcom-core-diagnosticreport
 Title: "MedComCoreDiagnosticReport"
-Description: "Report conating all observations results. "
+Description: "Report containing all observation results. "
 * status 1..1 MS
 * status from $StatusCodeDiagnosticRepport
 * status ^short = "registered | partial | preliminary | final | corrected | cancelled | entered-in-error" 

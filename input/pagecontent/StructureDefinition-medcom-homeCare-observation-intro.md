@@ -1,9 +1,10 @@
 ### Scope and usage
 
-The MedComHomeCareObservation profile holds information about the observations the municipal acute care team can obtain.The MedComHomeCareObservations are collected in a MedComHomeCareDiagnosticReport, that is sent as a MedComHomeCareObservation message to the general practitioner.
-A MedComHomeCareObservation message  shall contains results from perfomed observations by the acute care teams. The observations results needs to have a observation code that defines the type of the observation.
+The MedComHomeCareObservation profile holds information about the observation results from the municipal acute care team The MedComHomeCareObservations are collected in a MedComHomeCareDiagnosticReport, that is sent as a MedComHomeCareObservation message to the general practitioner.
+
+The observations results needs to have a observation code that defines the type of the observation.
 The code for the observation shall be seleceted from a national analysis repertoire, that defines which observations and assesments methods the municipal acute care team can performe and send to the general practitioner. 
-The <a href="https://terminology.medcom.dk/fhir/observation-code">national analysis repertoire can be found here.</a> 
+<a href="https://terminology.medcom.dk/fhir/observation-code">The national analysis repertoire can be found here. </a> 
 
 
 #### Codes
@@ -15,3 +16,10 @@ It is required to send the long and short name of the analysis. Both the long an
 [Click here to see NPU observation codes.](http://medcomfhir.dk/ig/terminology/ValueSet-NPUObservationCodesValueSet.html)
 [Click here to see MCS observation codes.](http://medcomfhir.dk/ig/terminology/ValueSet-MedComObservationValueSet.html)
 
+#### Status
+In a Observation resource, it is required to specify the status of the result. When nurse from  the acute care team perform the analysis and the result from the analysis is ready then the. HomeCareObservation.status shall be #final. 
+
+
+#### Interpretation
+In HomeCareObservation it is required to send information that result of the observation is not interpreted (Dansk: ikke reference vurderet). 
+Therefore i is required that the observation.interpretation.coding.code is "NI" not interpreted. 

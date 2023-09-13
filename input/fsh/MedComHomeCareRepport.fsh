@@ -6,6 +6,7 @@ Description: "This resource is intenden to be used in relation when a HomeCareOb
 * conclusion ^short = "A comment relevant for all observations in the report and necessary to interpret and understand the results (Danish:Klinisk kommentar)."
 * result only Reference(MedComHomeCareObservation)
 * result ^type.aggregation = #bundled
+* status.value = #final
 * performer 2..2 MS
 * performer ^slicing.discriminator.type = #profile
 * performer ^slicing.discriminator.path = "resolve()"
