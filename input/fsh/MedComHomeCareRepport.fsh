@@ -46,13 +46,13 @@ Expression: "reference.resolve().practitioner.resolve().telecom.exists()"
 Instance: 870333ac-3134-4ae6-8257-86e0b0537c5f
 InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
-Title: "HomeCareObservation repport: spot test and EKG"
+Title: "HomeCareObservation repport: spot test"
 Description: "Spot test performed by the acute care team on a subject."
 * status = $StatusCodeDiagnosticReportSystem#final
 * issued = 2023-07-13T12:24:08+02:00
 * code = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* performer[ProducerOrganization] = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)
+* performer[ProducerOrganization] = Reference(ef5cb9a6-835f-4d18-a34e-179c578b9a2a)
 * performer[PractitionerRole] = Reference(6ff69f1c-690d-11ed-9022-0242ac120002)
 * result[+] = Reference(7fcb76a7-839b-4392-a2ff-f30035faca34)
 * result[+] = Reference(f70ae8b7-c1af-44a2-a21a-570c552dd7cc)
@@ -64,7 +64,6 @@ Description: "Spot test performed by the acute care team on a subject."
 * result[+] = Reference(1e2351e2-77df-4135-a77b-6a4c39e4a4ca)
 * result[+] = Reference(0e4a5452-1804-42d3-82ed-484df20a09f0)
 * result[+] = Reference(470d39e4-d3f9-4301-82eb-b957ba33475e)
-* media.link = Reference(cb277ee2-5d96-4762-829d-d36449b2b17f)
 
 
 
@@ -77,9 +76,36 @@ Description: "Urine dipstick tests performed by the acute care team on a subject
 * status = $StatusCodeDiagnosticReportSystem#final
 * issued = 2023-07-12T12:24:08+02:00
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
-* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* performer[ProducerOrganization] = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)
-* performer[PractitionerRole] = Reference(6ff69f1c-690d-11ed-9022-0242ac120002)
+* subject = Reference(99f5578f-c9d3-4d8c-aa3e-21690e03e27c)
+* performer[ProducerOrganization] = Reference(72cc3a2c-1dda-4b95-b50a-0f7ac19640f4)
+* performer[PractitionerRole] = Reference(4b3b6f0f-a475-4b04-8a92-105e8ce6a7bf)
 * result[+] = Reference(4b8f899a-df12-4301-8287-9a77d46ded3d)
 * result[+] = Reference(f58819ff-d727-4740-a4ef-44eefc77022e)
 * result[+] = Reference(2fc2c078-825b-491d-9f8e-34926eb4f06f)
+
+
+Instance: efb1ed12-6a5d-4342-9572-861071644e46
+InstanceOf: MedComHomeCareDiagnosticReport
+Usage: #example
+Title: "TOBS and ABC examination"
+Description: "TOBS and ABC examination of Elmer"
+* status = $StatusCodeDiagnosticReportSystem#final
+* issued = 2023-09-13T12:24:13+02:00
+* code.coding = $DiagnosticReportCodeSystem#HomeCareReport
+* subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
+* performer[ProducerOrganization] = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
+* performer[PractitionerRole] = Reference( 4b3b6f0f-a475-4b04-8a92-105e8ce6a7bf)
+* result[+] = Reference(3fd3835d-1758-4d22-8547-000182752817)
+* result[+] = Reference(ba691ee4-6d38-4f5b-82f1-40b54e3b8ad1)
+* result[+] = Reference(8917f29d-269c-4bb3-8ce9-d255c351d52b)
+* result[+] = Reference(6bf03841-8397-4a2a-9f9a-8966b0cfa571)
+* result[+] = Reference(85fd1372-cf02-49c6-bd45-7205f5541a66)
+* result[+] = Reference(f64a0a78-53cf-4a7f-9b89-4a2338a4935c)
+* conclusion = "ABCDE
+SeFølLyt-Princippet
+A.	RF 19 – påskyndet men regelmæssig, fri respiration. SAT 93%
+B.	Puls 92 palperet på venstre håndled. Fyldig regelmæssig. Fin kapilærrespons
+C.	BT 147/83 – klamtsvedende. Kolde ekstremiteter. 
+D.	Reagerer habituelt. Pupilreaktion i.a. VAS 7. Bl.s. 6,8
+E.	Temperatur 38,7 Målt rektalt "
+

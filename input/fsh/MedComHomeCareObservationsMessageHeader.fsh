@@ -8,6 +8,7 @@ Description: "MessageHeader for HomeCareObservation"
 * destination[cc] ..0 
 * destination[primary].receiver only Reference(MedComMessagingRequesterOrganization)
 * destination[primary].receiver ^type.aggregation = #bundled
+* sender only Reference(MedComCoreProducerOrganization)
 
 Instance: b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 InstanceOf: MedComMessagingDestinationUseExtension
@@ -15,7 +16,7 @@ Usage: #inline
 * valueCoding.code = $Use#primary
 
 
-// HomeCareReport new example
+// HomeCareReport new example- Spot
 Instance: 8dbf63f4-b784-4d40-8802-c1bdb1ecfa63
 InstanceOf: MedComHomeCareObservationMessageHeader
 Title: "Instance of a MessageHeader resource used in a new message."
@@ -28,3 +29,32 @@ Usage: #example
 * sender = Reference(ef5cb9a6-835f-4d18-a34e-179c578b9a2a)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(870333ac-3134-4ae6-8257-86e0b0537c5f)
+
+
+// HomeCareReport new example- urin stick
+Instance: e9f4cc68-b1b7-46b2-ba74-7cc39a914bfa
+InstanceOf: MedComHomeCareObservationMessageHeader
+Title: "Instance of a MessageHeader resource used in a new message."
+Description: "Example of a MessageHeader in a new HomeCareDiagnosticReport message. Valid only if used in a bundle (message)."
+Usage: #example
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#homecareobservation-message
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=52581000016005"
+* destination[primary].receiver = Reference(d1c1fa90-2c7e-4dd7-b2e8-e40281635a98)
+* sender = Reference(72cc3a2c-1dda-4b95-b50a-0f7ac19640f4)
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+* focus = Reference(6d08f000-33cc-41f3-a7c2-c086d53d31a7)
+
+// HomeCareReport new example-tobs
+Instance: 489de4f2-0d8d-4de2-a7ce-ccb93568799f
+InstanceOf: MedComHomeCareObservationMessageHeader
+Title: "Instance of a MessageHeader resource used in a new message."
+Description: "Example of a MessageHeader in a new HomeCareDiagnosticReport message. Valid only if used in a bundle (message)."
+Usage: #example
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#homecareobservation-message
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=52581000016005"
+* destination[primary].receiver = Reference(1ab9c2d9-c348-4d75-9122-60ea8a6fdcf1)
+* sender = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+* focus = Reference(efb1ed12-6a5d-4342-9572-)861071644e46

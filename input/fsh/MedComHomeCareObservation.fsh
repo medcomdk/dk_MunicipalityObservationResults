@@ -37,7 +37,6 @@ Description: "C-reaktive protein [CRP] test performed by acute care team on the 
 * valueQuantity.unit = "mg/L"
 * effectiveDateTime = 2023-07-12T10:24:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* performer = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)
 * interpretation.coding.code = $obsInterpretation#NI
 
 
@@ -52,7 +51,6 @@ Description: "Observation of the haemoglobin"
 * valueQuantity.unit = "mmol/L"
 * effectiveDateTime = 2023-07-12T10:25:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* performer = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)
 * interpretation.coding.code = $obsInterpretation#NI
 
 
@@ -69,7 +67,6 @@ Description: "Test of leucocyte on the subject by acute care team"
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-07-12T10:27:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* performer = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)
 * interpretation.coding.code = $obsInterpretation#NI
 
 Instance: 4a94a70e-6957-47a8-bec7-3e27b3145668
@@ -83,7 +80,6 @@ Description: "Lymphocyte observation on the subject by acute care team"
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-07-12T10:30:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* performer = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)
 * interpretation.coding.code = $obsInterpretation#NI
 
 
@@ -99,7 +95,6 @@ Description: "Monocytes observation performed on o subject by the acute care tea
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-07-12T10:32:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* performer = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)
 * interpretation.coding.code = $obsInterpretation#NI
 
 Instance: f84143f7-f586-477f-af56-e50c7d152605
@@ -113,7 +108,6 @@ Description: "Neutrophilocytes observation performed on o subject by the acute c
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-07-12T10:34:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* performer = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)
 * interpretation.coding.code = $obsInterpretation#NI
 
 
@@ -128,7 +122,6 @@ Description: "Eosinofilocyt observation performed on a subject by the auce care 
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-07-12T10:36:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* performer = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)
 * interpretation.coding.code = $obsInterpretation#NI
 
 
@@ -144,7 +137,6 @@ Description: "Basofilocyt observation performed on a subject by the auce care te
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-07-12T10:38:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* performer = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)
 * interpretation.coding.code = $obsInterpretation#NI
 
 Instance: 0e4a5452-1804-42d3-82ed-484df20a09f0
@@ -158,7 +150,6 @@ Description: "Glucose measurement on the subject. "
 * valueQuantity.unit = "mmol/L"
 * effectiveDateTime = 2023-07-12T10:40:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* performer = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)
 * interpretation.coding.code = $obsInterpretation#NI
 
 
@@ -172,7 +163,6 @@ Description: "Coagulation factor on the subject"
 * valueQuantity.value = 0.9
 * effectiveDateTime = 2023-07-12T10:42:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* performer = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)
 * interpretation.coding.code = $obsInterpretation#NI
 
 
@@ -193,7 +183,6 @@ Description: "Urine dipstick tests on Bruno "
 * valueQuantity.unit = "+"
 * effectiveDateTime = 2023-07-13T12:24:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* performer = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)
 * interpretation.coding.code = $obsInterpretation#NI
 
 Instance: f58819ff-d727-4740-a4ef-44eefc77022e
@@ -206,7 +195,6 @@ Description: "Nitrit observation on Bruno"
 * valueString = "Negative" 
 * effectiveDateTime = 2023-07-13T12:24:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* performer = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)
 * interpretation.coding.code = $obsInterpretation#NI
 
 Instance: 2fc2c078-825b-491d-9f8e-34926eb4f06f
@@ -220,5 +208,86 @@ Description: "Test of leucocyt using urine dipstick"
 * valueQuantity.unit = "+"
 * effectiveDateTime = 2023-07-13T12:24:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* performer = Reference(6aee2d64-c96c-4a47-ad41-d083d418f123)
+* interpretation.coding.code = $obsInterpretation#NI
+
+
+
+
+
+// TOBS
+Instance: 3fd3835d-1758-4d22-8547-000182752817
+InstanceOf: MedComHomeCareObservation
+Usage: #example
+Title: "Respiration frequency "
+Description: "Respiration frequency of Elmer"
+* status = $ObsStatusCodeSystem#final
+* code.coding[Medcom]= #MCS88122
+* valueQuantity = 19
+* valueQuantity.unit = "1/min"
+* effectiveDateTime = 2023-09-13T09:24:08+02:00
+* subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
+* interpretation.coding.code = $obsInterpretation#NI
+
+Instance: ba691ee4-6d38-4f5b-82f1-40b54e3b8ad1
+InstanceOf: MedComHomeCareObservation
+Usage: #example
+Title: "Heart Rate"
+Description: "HeartRate of Elmer"
+* status = $ObsStatusCodeSystem#final
+* code.coding[NPU]= #NPU21692
+* valueQuantity = 92
+* valueQuantity.unit = " 1/min"
+* note = "Patienten har været ud og går lige inden målingen."
+* effectiveDateTime = 2023-09-13T09:24:09+02:00
+* subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
+* interpretation.coding.code = $obsInterpretation#NI
+
+Instance: 8917f29d-269c-4bb3-8ce9-d255c351d52b
+InstanceOf: MedComHomeCareObservation
+Usage: #example
+Title: "Systolic Blood Pressure "
+Description: "Systolic Blood Pressure of Elmer"
+* status = $ObsStatusCodeSystem#final
+* code.coding[NPU]= #DNK05472
+* valueQuantity = 147
+* valueQuantity.unit = "mmHg"
+* effectiveDateTime = 2023-09-13T09:24:10+02:00
+* subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
+* interpretation.coding.code = $obsInterpretation#NI
+
+Instance: 6bf03841-8397-4a2a-9f9a-8966b0cfa571
+InstanceOf: MedComHomeCareObservation
+Usage: #example
+Title: "Consciousness  "
+Description: "Consciousness of Elmer"
+* status = $ObsStatusCodeSystem#final
+* code.coding[MedCom]= #MCS88126
+* valueQuantity = 0
+* effectiveDateTime = 2023-09-13T09:24:11+02:00
+* subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
+* interpretation.coding.code = $obsInterpretation#NI
+
+Instance: 85fd1372-cf02-49c6-bd45-7205f5541a66
+InstanceOf: MedComHomeCareObservation
+Usage: #example
+Title: "Temperature  "
+Description: "Temperature of the elmerElmer"
+* status = $ObsStatusCodeSystem#final
+* code.coding[NPU]= #NPU08676
+* valueQuantity = 38,7
+* valueQuantity.unit = "°C"
+* effectiveDateTime = 2023-09-13T09:24:12+02:00
+* subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
+* interpretation.coding.code = $obsInterpretation#NI
+
+Instance: f64a0a78-53cf-4a7f-9b89-4a2338a4935c
+InstanceOf: MedComHomeCareObservation
+Usage: #example
+Title: "TOBS "
+Description: "TOBS of Emler"
+* status = $ObsStatusCodeSystem#final
+* code.coding[MedCom]= #MCS88125
+* valueQuantity = 3
+* effectiveDateTime = 2023-09-13T09:24:13+02:00
+* subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
 * interpretation.coding.code = $obsInterpretation#NI
