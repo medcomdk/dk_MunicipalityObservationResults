@@ -71,8 +71,8 @@ Description: "Spot test performed by the acute care team on a subject."
 Instance: 6d08f000-33cc-41f3-a7c2-c086d53d31a7
 InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
-Title: "HomeCareObservation repport: Urine dipsticks tests "
-Description: "Urine dipstick tests performed by the acute care team on a subject."
+Title: "HomeCareObservation repport: Urine dipsticks tests and refused consent"
+Description: "Urine dipstick tests performed by the acute care team on a subject, that has refused consent."
 * status = $StatusCodeDiagnosticReportSystem#final
 * issued = 2023-07-12T12:24:08+02:00
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
@@ -82,12 +82,14 @@ Description: "Urine dipstick tests performed by the acute care team on a subject
 * result[+] = Reference(4b8f899a-df12-4301-8287-9a77d46ded3d)
 * result[+] = Reference(f58819ff-d727-4740-a4ef-44eefc77022e)
 * result[+] = Reference(2fc2c078-825b-491d-9f8e-34926eb4f06f)
+* meta.security.code.value = #R
+* meta.security.display = "Restricted"
 
 
 Instance: efb1ed12-6a5d-4342-9572-861071644e46
 InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
-Title: "TOBS and ABC examination"
+Title: "HomeCareObservation Repport: TOBS and ABC examination"
 Description: "TOBS and ABC examination of Elmer"
 * status = $StatusCodeDiagnosticReportSystem#final
 * issued = 2023-09-13T12:24:13+02:00
