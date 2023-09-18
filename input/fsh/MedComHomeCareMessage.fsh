@@ -16,8 +16,8 @@ Expression: "entry.resource.ofType(MessageHeader).conformsTo('http://medcomfhir.
 
 Instance: add5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c
 InstanceOf: MedComHomeCareObservationMessage
-Title: "New HomeCareDiagnosticRepport-Spot test"
-Description: "Example of a HomeCareDiagnosticRepport-SpotTest."
+Title: "HomeCareDiagnosticRepport-Spot test and EKG image"
+Description: "Example of a HomeCareDiagnosticRepport-Spot Test and EKG image."
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2023-07-13T12:00:00+01:00
@@ -41,8 +41,8 @@ Usage: #example
 
 Instance: faa0c104-0ebf-49cb-bad1-9e0f59436e18
 InstanceOf: MedComHomeCareObservationMessage
-Title: "New HomeCareDiagnosticRepport-Urine dipsticks."
-Description: "Example of a HomeCareDiagnosticRepport-Urine dipsticks."
+Title: "HomeCareDiagnosticRepport-Urine dipsticks and subject refused consent."
+Description: "Example of a HomeCareDiagnosticRepport-Urine dipsticks and subject refused consent."
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2023-07-13T12:00:00+01:00
@@ -69,7 +69,7 @@ Usage: #example
 Instance: 401cbc36-db1e-4fe0-bf90-6df331dde179
 InstanceOf: MedComHomeCareObservationMessage
 Title: "New HomeCareDiagnosticRepport message."
-Description: "Example of a HomeCareDiagnosticRepport new message."
+Description: "Example of a HomeCareDiagnosticRepport with clinical and analysis comment."
 Usage: #example
 * type = $BundleType#message
 * timestamp = 2023-07-13T12:00:00+01:00

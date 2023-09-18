@@ -258,7 +258,7 @@ Description: "Systolic Blood Pressure of Elmer"
 Instance: 6bf03841-8397-4a2a-9f9a-8966b0cfa571
 InstanceOf: MedComHomeCareObservation
 Usage: #example
-Title: "Consciousness  "
+Title: "Consciousness "
 Description: "Consciousness of Elmer"
 * status = $ObsStatusCodeSystem#final
 * code.coding[MedCom] = #MCS88126

@@ -64,9 +64,8 @@ Description: "Spot test and EKG performed by the acute care team on a subject."
 * result[+] = Reference(1e2351e2-77df-4135-a77b-6a4c39e4a4ca)
 * result[+] = Reference(0e4a5452-1804-42d3-82ed-484df20a09f0)
 * result[+] = Reference(470d39e4-d3f9-4301-82eb-b957ba33475e)
+* media.link[+] = Reference(cb277ee2-5d96-4762-829d-d36449b2b17f)
 * conclusion = "EKG udført. Normal sinusrytme."
-* media.link = Reference(cb277ee2-5d96-4762-829d-d36449b2b17f)
-
 
 
 
