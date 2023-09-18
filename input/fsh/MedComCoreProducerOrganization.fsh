@@ -3,7 +3,7 @@ Parent: MedComMessagingOrganization
 Id: medcom-producer-organization
 Title: "MedComCoreProducerOrganization"
 Description: "This profile is intended to be used to represend the producer of the observations results."
-* identifier 1.. MS
+* identifier 2.. MS
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "system"
   * ^slicing.rules = #open

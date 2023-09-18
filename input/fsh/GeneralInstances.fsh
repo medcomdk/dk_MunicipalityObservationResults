@@ -70,7 +70,7 @@ InstanceOf: MedComMessagingProvenance
 Title: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - new message"
 Description: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #example
-* target = Reference(add5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c)
+* target = Reference(8dbf63f4-b784-4d40-8802-c1bdb1ecfa63)
 * occurredDateTime = 2023-07-13T12:00:00+01:00
 * recorded = 2023-07-13T12:00:00+01:00
 * activity.coding = $HCOActivityCodes#new-message
@@ -144,7 +144,7 @@ InstanceOf: MedComMessagingProvenance
 Title: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - new message"
 Description: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #example
-* target = Reference(8dbf63f4-b784-4d40-8802-c1bdb1ecfa63)
+* target = Reference(e9f4cc68-b1b7-46b2-ba74-7cc39a914bfa)
 * occurredDateTime = 2023-07-13T12:00:00+01:00
 * recorded = 2023-07-13T12:00:00+01:00
 * activity.coding = $HCOActivityCodes#new-message
@@ -197,7 +197,7 @@ Description: "Acute nurse"
 
 
 //Practitioner rolle
-Instance: 4b3b6f0f-a475-4b04-8a92-105e8ce6a7bf
+Instance: f90d522a-c236-475e-b718-aa4be26fae2f
 InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
@@ -267,7 +267,7 @@ Description: "Acute nurse"
 
 
 //Practitioner rolle
-Instance: 4b3b6f0f-a475-4b04-8a92-105e8ce6a7bf
+Instance: 80284c01-1674-45ca-98b7-d1e669bdeff6
 InstanceOf: MedComCorePractitionerRole
 Title: "PractitionerRole with a role and reference to a practitioner"
 Description: "PractitionerRole with a role and reference to a practitioner"
@@ -276,161 +276,13 @@ Description: "PractitionerRole with a role and reference to a practitioner"
 
 
 // HomeCareDiagnosticReport example - new message
-Instance: 4c845e97-04b2-40e9-ab51-4c5bf080196f
+Instance: 008e1c02-605d-458e-8cb8-3eeb16a69aac
 InstanceOf: MedComMessagingProvenance
 Title: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - new message"
 Description: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #example
-* target = Reference(8dbf63f4-b784-4d40-8802-c1bdb1ecfa63)
+* target = Reference(489de4f2-0d8d-4de2-a7ce-ccb93568799f)
 * occurredDateTime = 2023-07-13T12:00:00+01:00
 * recorded = 2023-07-13T12:00:00+01:00
 * activity.coding = $HCOActivityCodes#new-message
 * agent.who = Reference(1ab9c2d9-c348-4d75-9122-60ea8a6fdcf1)
-
-
-// Instancer til rettelse 
-// Instance: 99f5578f-c9d3-4d8c-aa3e-21690e03e27c
-// InstanceOf: MedComCorePatient
-// Title: "Bruno Test Elmer"
-// Description: "Patient described with minimal information. Valid only if used in a Bundle."
-// Usage: #example
-// * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
-// * identifier[cpr].value = "2509479989"
-// * name[official].use = #official
-// * name[official].family = "Elmer"
-
-// // Sender instance - new message
-// Instance: 72cc3a2c-1dda-4b95-b50a-0f7ac19640f4
-// InstanceOf: MedComCoreProducerOrganization 
-// Title: "Example of a sender organization with a SOR, and an EAN identifier and producentID."
-// Description: "Example of an organization with a SOR, an EAN identifier and ProducentID."
-// * identifier[SOR-ID].value = "1144561000016002" 
-// * identifier[EAN-ID].value = "5790000123117" 
-// * identifier[ProducentID].system = $ProducenID
-// * identifier[ProducentID].value = "KAF"
-// * name = "Pleje og Rehabilitering"
-
-
-
-// // Reciever instance - new message
-// Instance: d1c1fa90-2c7e-4dd7-b2e8-e40281635a98
-// InstanceOf: MedComMessagingRequesterOrganization 
-// Title: "Example of a reciever organization with a SOR, an EAN  and Ydrenummer identifier."
-// Description: "Example of an organization with a SOR and an EAN and Ydrenummer identifier."
-// * identifier[SOR-ID].value = "52581000016005" 
-// * identifier[EAN-ID].value = "5790000127092"
-// * identifier[Ydernummer].value = "061654"
-// * contact.name.given = "OKM"
-// * name = "Skødstrup Lægepraksis"
-
-// //Practitioner 
-// Instance: a7902d60-45f5-43f1-86e0-c5b0cdd1dc44
-// InstanceOf: MedComCorePractitioner
-// Title: "Simple practitioner with a name"
-// Description: "Simple practitioner with a name"
-// * name.given = "Maibrit"
-// * telecom.value = "+45 005566778"
-
-// //Akutsygeplerjerske
-// Instance: be9f367d-a84a-4815-90a8-c83a03813fd8
-// InstanceOf: MedComCorePractitioner
-// Title: "Acute nurse"
-// Description: "Acute nurse"
-// * name.given = "Mia"
-// * telecom.value = "+45 05577668"
-
-
-// //Practitioner rolle
-// Instance: 4b3b6f0f-a475-4b04-8a92-105e8ce6a7bf
-// InstanceOf: MedComCorePractitionerRole
-// Title: "PractitionerRole with a role and reference to a practitioner"
-// Description: "PractitionerRole with a role and reference to a practitioner"
-// * practitioner = Reference(be9f367d-a84a-4815-90a8-c83a03813fd8)
-// * code = $PractitionerRole#sygeplejerske
-
-
-// // HomeCareDiagnosticReport example - new message
-// Instance: 4c845e97-04b2-40e9-ab51-4c5bf080196f
-// InstanceOf: MedComMessagingProvenance
-// Title: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - new message"
-// Description: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - new message"
-// Usage: #example
-// * target = Reference(8dbf63f4-b784-4d40-8802-c1bdb1ecfa63)
-// * occurredDateTime = 2023-07-13T12:00:00+01:00
-// * recorded = 2023-07-13T12:00:00+01:00
-// * activity.coding = $HCOActivityCodes#new-message
-// * agent.who = Reference(72cc3a2c-1dda-4b95-b50a-0f7ac19640f4)
-
-
-// // Instancer til annullering 
-// Instance: 99f5578f-c9d3-4d8c-aa3e-21690e03e27c
-// InstanceOf: MedComCorePatient
-// Title: "Bruno Test Elmer"
-// Description: "Patient described with minimal information. Valid only if used in a Bundle."
-// Usage: #example
-// * identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
-// * identifier[cpr].value = "2509479989"
-// * name[official].use = #official
-// * name[official].family = "Elmer"
-
-// // Sender instance - new message
-// Instance: 72cc3a2c-1dda-4b95-b50a-0f7ac19640f4
-// InstanceOf: MedComCoreProducerOrganization 
-// Title: "Example of a sender organization with a SOR, and an EAN identifier and producentID."
-// Description: "Example of an organization with a SOR, an EAN identifier and ProducentID."
-// * identifier[SOR-ID].value = "1144561000016002" 
-// * identifier[EAN-ID].value = "5790000123117" 
-// * identifier[ProducentID].system = $ProducenID
-// * identifier[ProducentID].value = "KAF"
-// * name = "Pleje og Rehabilitering"
-
-
-
-// // Reciever instance - new message
-// Instance: d1c1fa90-2c7e-4dd7-b2e8-e40281635a98
-// InstanceOf: MedComMessagingRequesterOrganization 
-// Title: "Example of a reciever organization with a SOR, an EAN  and Ydrenummer identifier."
-// Description: "Example of an organization with a SOR and an EAN and Ydrenummer identifier."
-// * identifier[SOR-ID].value = "52581000016005" 
-// * identifier[EAN-ID].value = "5790000127092"
-// * identifier[Ydernummer].value = "061654"
-// * contact.name.given = "OKM"
-// * name = "Skødstrup Lægepraksis"
-
-// //Practitioner 
-// Instance: a7902d60-45f5-43f1-86e0-c5b0cdd1dc44
-// InstanceOf: MedComCorePractitioner
-// Title: "Simple practitioner with a name"
-// Description: "Simple practitioner with a name"
-// * name.given = "Maibrit"
-// * telecom.value = "+45 005566778"
-
-// //Akutsygeplerjerske
-// Instance: be9f367d-a84a-4815-90a8-c83a03813fd8
-// InstanceOf: MedComCorePractitioner
-// Title: "Acute nurse"
-// Description: "Acute nurse"
-// * name.given = "Mia"
-// * telecom.value = "+45 05577668"
-
-
-// //Practitioner rolle
-// Instance: 4b3b6f0f-a475-4b04-8a92-105e8ce6a7bf
-// InstanceOf: MedComCorePractitionerRole
-// Title: "PractitionerRole with a role and reference to a practitioner"
-// Description: "PractitionerRole with a role and reference to a practitioner"
-// * practitioner = Reference(be9f367d-a84a-4815-90a8-c83a03813fd8)
-// * code = $PractitionerRole#sygeplejerske
-
-
-// // HomeCareDiagnosticReport example - new message
-// Instance: 4c845e97-04b2-40e9-ab51-4c5bf080196f
-// InstanceOf: MedComMessagingProvenance
-// Title: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - new message"
-// Description: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - new message"
-// Usage: #example
-// * target = Reference(8dbf63f4-b784-4d40-8802-c1bdb1ecfa63)
-// * occurredDateTime = 2023-07-13T12:00:00+01:00
-// * recorded = 2023-07-13T12:00:00+01:00
-// * activity.coding = $HCOActivityCodes#new-message
-// * agent.who = Reference(72cc3a2c-1dda-4b95-b50a-0f7ac19640f4)

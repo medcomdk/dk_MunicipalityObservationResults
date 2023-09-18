@@ -8,7 +8,7 @@ Description: "This profile is intended to be used in HomeCareObservation to hold
 * valueQuantity
   * ^maxLength = 12
 * code.coding[NPU].system from $NPUObservationCodesValueSet 
-* code.coding[MedCom].system = $Medcom (exactly)
+* code.coding[MedCom].system from $MedcomCodes 
 * interpretation MS
 * interpretation from $obsInterpretation
 * interpretation.coding.code = #NI
@@ -221,8 +221,8 @@ Usage: #example
 Title: "Respiration frequency "
 Description: "Respiration frequency of Elmer"
 * status = $ObsStatusCodeSystem#final
-* code.coding[Medcom]= #MCS88122
-* valueQuantity = 19
+* code.coding[MedCom] = #MCS88122
+* valueQuantity.value = 19
 * valueQuantity.unit = "1/min"
 * effectiveDateTime = 2023-09-13T09:24:08+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
@@ -234,10 +234,10 @@ Usage: #example
 Title: "Heart Rate"
 Description: "HeartRate of Elmer"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU]= #NPU21692
-* valueQuantity = 92
+* code.coding[NPU] = #NPU21692
+* valueQuantity.value = 92
 * valueQuantity.unit = " 1/min"
-* note = "Patienten har været ud og går lige inden målingen."
+* note.text = "Patienten har været ud og går lige inden målingen."
 * effectiveDateTime = 2023-09-13T09:24:09+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
 * interpretation.coding.code = $obsInterpretation#NI
@@ -248,8 +248,8 @@ Usage: #example
 Title: "Systolic Blood Pressure "
 Description: "Systolic Blood Pressure of Elmer"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU]= #DNK05472
-* valueQuantity = 147
+* code.coding[NPU] = #DNK05472
+* valueQuantity.value = 147
 * valueQuantity.unit = "mmHg"
 * effectiveDateTime = 2023-09-13T09:24:10+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
@@ -261,8 +261,8 @@ Usage: #example
 Title: "Consciousness  "
 Description: "Consciousness of Elmer"
 * status = $ObsStatusCodeSystem#final
-* code.coding[MedCom]= #MCS88126
-* valueQuantity = 0
+* code.coding[MedCom] = #MCS88126
+* valueQuantity.value = 0
 * effectiveDateTime = 2023-09-13T09:24:11+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
 * interpretation.coding.code = $obsInterpretation#NI
@@ -273,8 +273,8 @@ Usage: #example
 Title: "Temperature  "
 Description: "Temperature of the elmerElmer"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU]= #NPU08676
-* valueQuantity = 38,7
+* code.coding[NPU] = #NPU08676
+* valueQuantity.value = 38.7
 * valueQuantity.unit = "°C"
 * effectiveDateTime = 2023-09-13T09:24:12+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
@@ -286,8 +286,8 @@ Usage: #example
 Title: "TOBS "
 Description: "TOBS of Emler"
 * status = $ObsStatusCodeSystem#final
-* code.coding[MedCom]= #MCS88125
-* valueQuantity = 3
+* code.coding[MedCom] = #MCS88125
+* valueQuantity.value = 3
 * effectiveDateTime = 2023-09-13T09:24:13+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
 * interpretation.coding.code = $obsInterpretation#NI
