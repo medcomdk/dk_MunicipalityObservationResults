@@ -203,7 +203,7 @@ Usage: #example
 Title: "Leukocyt urine test"
 Description: "Test of leucocyt using urine dipstick"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU03987
+* code.coding[NPU] = #NPU03987 "Leukocytter(semikvant);U"
 * valueQuantity.value = 2
 * valueQuantity.unit = "+"
 * effectiveDateTime = 2023-07-13T12:24:08+02:00
@@ -221,7 +221,7 @@ Usage: #example
 Title: "Respiration frequency "
 Description: "Respiration frequency of Elmer"
 * status = $ObsStatusCodeSystem#final
-* code.coding[MedCom] = #MCS88122
+* code.coding[MedCom] = #MCS88122 "Respirationsfrekvens;Pt"
 * valueQuantity.value = 19
 * valueQuantity.unit = "1/min"
 * effectiveDateTime = 2023-09-13T09:24:08+02:00
@@ -234,7 +234,7 @@ Usage: #example
 Title: "Heart Rate"
 Description: "HeartRate of Elmer"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU21692
+* code.coding[NPU] = #NPU21692 "Puls;Hjerte"
 * valueQuantity.value = 92
 * valueQuantity.unit = " 1/min"
 * note.text = "Patienten har været ud og går lige inden målingen."
@@ -247,8 +247,8 @@ InstanceOf: MedComHomeCareObservation
 Usage: #example
 Title: "Systolic Blood Pressure "
 Description: "Systolic Blood Pressure of Elmer"
-* status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #DNK05472
+* status = $ObsStatusCodeSystem#final 
+* code.coding[NPU] = #DNK05472 "Blodtryk systolisk;Arm"
 * valueQuantity.value = 147
 * valueQuantity.unit = "mmHg"
 * effectiveDateTime = 2023-09-13T09:24:10+02:00
@@ -261,7 +261,7 @@ Usage: #example
 Title: "Consciousness "
 Description: "Consciousness of Elmer"
 * status = $ObsStatusCodeSystem#final
-* code.coding[MedCom] = #MCS88126
+* code.coding[MedCom] = #MCS88126 "Bevidsthed;Pt"
 * valueQuantity.value = 0
 * effectiveDateTime = 2023-09-13T09:24:11+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
@@ -270,10 +270,10 @@ Description: "Consciousness of Elmer"
 Instance: 85fd1372-cf02-49c6-bd45-7205f5541a66
 InstanceOf: MedComHomeCareObservation
 Usage: #example
-Title: "Temperature  "
+Title: "Temperature"
 Description: "Temperature of the elmerElmer"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU08676
+* code.coding[NPU] = #NPU08676 "Legeme temp.;Pt"
 * valueQuantity.value = 38.7
 * valueQuantity.unit = "°C"
 * effectiveDateTime = 2023-09-13T09:24:12+02:00
@@ -286,7 +286,7 @@ Usage: #example
 Title: "TOBS "
 Description: "TOBS of Emler"
 * status = $ObsStatusCodeSystem#final
-* code.coding[MedCom] = #MCS88125
+* code.coding[MedCom] = #MCS88125 "TOBS score;Pt" 
 * valueQuantity.value = 3
 * effectiveDateTime = 2023-09-13T09:24:13+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
