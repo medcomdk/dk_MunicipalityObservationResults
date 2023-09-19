@@ -89,3 +89,5 @@ Usage: #example
 * entry[=].resource = a0330c62-fe29-4719-83fa-a94959084f29
 * entry[+].fullUrl = "Provenance/008e1c02-605d-458e-8cb8-3eeb16a69aac"
 * entry[=].resource = 008e1c02-605d-458e-8cb8-3eeb16a69aac
+* entry[+].fullUrl = "Media/cb277ee2-5d96-4762-829d-d36449b2b17f"
+* entry[=].resource = cb277ee2-5d96-4762-829d-d36449b2b17f

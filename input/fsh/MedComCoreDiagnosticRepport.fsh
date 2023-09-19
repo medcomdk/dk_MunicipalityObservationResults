@@ -17,8 +17,8 @@ Description: "Report containing all observation results. "
 * result ^type.aggregation = #bundled
 * performer MS
 * media MS
-* media.link MS
+* media.link MS SU
 * conclusion 0..1 MS
 * conclusion ^short = "A comment relevant for all observations in the report."
-* meta.security 0..1 MS
-* meta.security = $v3-Confidentiality#R "Restricted" 
+* meta.security 0..1 MS SU
+* meta.security = $v3-Confidentiality#R "Restricted" SU
