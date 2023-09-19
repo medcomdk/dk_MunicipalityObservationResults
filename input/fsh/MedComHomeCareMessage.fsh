@@ -37,6 +37,8 @@ Usage: #example
 * entry[=].resource = ef5cb9a6-835f-4d18-a34e-179c578b9a2a
 * entry[+].fullUrl = "Provenance/4c284936-5454-4116-95fc-3c8eeeed2400"
 * entry[=].resource = 4c284936-5454-4116-95fc-3c8eeeed2400
+* entry[+].fullUrl = "Media/cb277ee2-5d96-4762-829d-d36449b2b17f"
+* entry[=].resource = cb277ee2-5d96-4762-829d-d36449b2b17f
 
 
 Instance: faa0c104-0ebf-49cb-bad1-9e0f59436e18
@@ -68,7 +70,7 @@ Usage: #example
 
 Instance: 401cbc36-db1e-4fe0-bf90-6df331dde179
 InstanceOf: MedComHomeCareObservationMessage
-Title: "New HomeCareDiagnosticRepport message."
+Title: "HomeCareDiagnosticRepport with clinical and analysis comment."
 Description: "Example of a HomeCareDiagnosticRepport with clinical and analysis comment."
 Usage: #example
 * type = $BundleType#message
@@ -91,3 +93,31 @@ Usage: #example
 * entry[=].resource = 008e1c02-605d-458e-8cb8-3eeb16a69aac
 * entry[+].fullUrl = "Media/cb277ee2-5d96-4762-829d-d36449b2b17f"
 * entry[=].resource = cb277ee2-5d96-4762-829d-d36449b2b17f
+
+
+
+Instance: 73996cdc-3192-4d15-bd16-c365ef0085e7
+InstanceOf: MedComHomeCareObservationMessage
+Title: "Modified HomeCareDiagnosticRepport message."
+Description: "Example of a Modified HomeCareDiagnosticRepport with clinical and analysis comment."
+Usage: #example
+* type = $BundleType#message
+* timestamp = 2023-07-13T12:00:00+01:00
+* entry[+].fullUrl = "MessageHeader/07eb074b-be00-47e5-8bcb-484990a1a97e"
+* entry[=].resource = 07eb074b-be00-47e5-8bcb-484990a1a97e
+* entry[+].fullUrl = "Subject/bbcd4817-1c4b-4089-a712-346f65ec16f9"
+* entry[=].resource = bbcd4817-1c4b-4089-a712-346f65ec16f9
+* entry[+].fullUrl = "DiagnosticReport/cfa9e95b-b5ac-4cfe-abe7-ea29e6b67919"
+* entry[=].resource = cfa9e95b-b5ac-4cfe-abe7-ea29e6b67919
+* entry[+].fullUrl = "PractitionerRole/80284c01-1674-45ca-98b7-d1e669bdeff6"
+* entry[=].resource = 80284c01-1674-45ca-98b7-d1e669bdeff6
+* entry[+].fullUrl = "Practitioner/70f14d25-0979-4192-8da2-0c0a3950f4b1"
+* entry[=].resource = 70f14d25-0979-4192-8da2-0c0a3950f4b1
+* entry[+].fullUrl = "Organization/1ab9c2d9-c348-4d75-9122-60ea8a6fdcf13"
+* entry[=].resource = 1ab9c2d9-c348-4d75-9122-60ea8a6fdcf1
+* entry[+].fullUrl = "Organization/a0330c62-fe29-4719-83fa-a94959084f29"
+* entry[=].resource = a0330c62-fe29-4719-83fa-a94959084f29
+* entry[+].fullUrl = "Provenance/008e1c02-605d-458e-8cb8-3eeb16a69aac"
+* entry[=].resource = 008e1c02-605d-458e-8cb8-3eeb16a69aac
+* entry[+].fullUrl = "Provenance/8ce47645-4d69-4fa6-a51d-c2bb49d87efb"
+* entry[=].resource = 8ce47645-4d69-4fa6-a51d-c2bb49d87efb
