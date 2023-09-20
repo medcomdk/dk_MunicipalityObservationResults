@@ -282,10 +282,10 @@ Title: "HomeCareDiagnosticReport example. The Provenance instance is only valid 
 Description: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #example
 * target = Reference(489de4f2-0d8d-4de2-a7ce-ccb93568799f)
-* occurredDateTime = 2023-07-13T12:00:00+01:00
-* recorded = 2023-07-13T12:00:00+01:00
+* occurredDateTime = 2023-09-13T12:00:00+01:00
+* recorded = 2023-09-13T12:00:00+01:00
 * activity.coding = $HCOActivityCodes#new-message
-* agent.who = Reference(1ab9c2d9-c348-4d75-9122-60ea8a6fdcf1)
+* agent.who = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
 
 // Instanser til en rettelse af HomeCare Rapport 
 Instance: 8ce47645-4d69-4fa6-a51d-c2bb49d87efb
@@ -293,11 +293,11 @@ InstanceOf: MedComMessagingProvenance
 Title: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - modified message"
 Description: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - modified message"
 Usage: #example
-* target = Reference(cfa9e95b-b5ac-4cfe-abe7-ea29e6b67919)
-* occurredDateTime = 2023-07-13T12:00:00+01:00
-* recorded = 2023-07-13T12:00:00+01:00
+* target = Reference(07eb074b-be00-47e5-8bcb-484990a1a97e)
+* occurredDateTime = 2023-09-13T13:00:00+01:00
+* recorded = 2023-09-13T13:00:00+01:00
 * activity.coding = $HCOActivityCodes#modified-message
-* agent.who = Reference(1ab9c2d9-c348-4d75-9122-60ea8a6fdcf1)
+* agent.who = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
 * entity.role = #revision
 * entity.what = Reference(489de4f2-0d8d-4de2-a7ce-ccb93568799f)
 
