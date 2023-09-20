@@ -72,3 +72,19 @@ Usage: #example
 * sender = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
 * focus = Reference(cfa9e95b-b5ac-4cfe-abe7-ea29e6b67919)
+
+
+// HomeCareReport  Cancelled example
+Instance: 36cb86f1-a01a-4115-a84d-9390aa0ddcbd
+InstanceOf: MedComHomeCareObservationMessageHeader
+Title: "Instance of a MessageHeader resource used in a new message."
+Description: "Example of a MessageHeader in a new HomeCareDiagnosticReport message. Valid only if used in a bundle (message)."
+Usage: #example
+* destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
+* eventCoding = $MessageEvents#homecareobservation-message
+* destination[primary].endpoint = "https://sor2.sum.dsdn.dk/#id=52581000016005"
+* destination[primary].receiver = Reference(1ab9c2d9-c348-4d75-9122-60ea8a6fdcf1)
+* sender = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
+* source.endpoint = "https://sor2.sum.dsdn.dk/#id=265161000016000"
+* focus[0] = Reference(4f013d3a-575c-447d-83e1-7a5fb7f7b0de)
+* focus[1] = Reference(cfa9e95b-b5ac-4cfe-abe7-ea29e6b67919)

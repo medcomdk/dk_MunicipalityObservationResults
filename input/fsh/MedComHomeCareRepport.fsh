@@ -119,7 +119,7 @@ InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
 Title: "HomeCareObservation Repport: TOBS and ABC examination"
 Description: "Example of a modified DiagnosticRepport, with TOBS and ABC examination of Elmer"
-* status = $StatusCodeDiagnosticReportSystem#final
+* status = $StatusCodeDiagnosticReportSystem#corrected
 * issued = 2023-09-13T13:24:13+02:00
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
@@ -144,3 +144,35 @@ E.	Temperatur 38,7 Målt rektalt
 Patienten har nægtet at spise og drikke i løbet af dagen. 
 "
 
+// Cancelled diagostic repport 
+Instance: 4f013d3a-575c-447d-83e1-7a5fb7f7b0de
+InstanceOf: MedComHomeCareDiagnosticReport
+Usage: #example
+Title: "HomeCareObservation Repport: TOBS and ABC examination"
+Description: "Example of a modified DiagnosticRepport, with TOBS and ABC examination of Elmer"
+* status = $StatusCodeDiagnosticReportSystem#cancelled
+* issued = 2023-09-13T14:24:13+02:00
+* code.coding = $DiagnosticReportCodeSystem#HomeCareReport
+* subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
+* performer[ProducerOrganization] = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
+* performer[PractitionerRole] = Reference( 4b3b6f0f-a475-4b04-8a92-105e8ce6a7bf)
+* result[+] = Reference(3fd3835d-1758-4d22-8547-000182752817)
+* result[+] = Reference(ba691ee4-6d38-4f5b-82f1-40b54e3b8ad1)
+* result[+] = Reference(8917f29d-269c-4bb3-8ce9-d255c351d52b)
+* result[+] = Reference(6bf03841-8397-4a2a-9f9a-8966b0cfa571)
+* result[+] = Reference(85fd1372-cf02-49c6-bd45-7205f5541a66)
+* result[+] = Reference(f64a0a78-53cf-4a7f-9b89-4a2338a4935c)
+* conclusion = "
+Cancellation due to incorrect CPR-number!
+
+ABCDE
+SeFølLyt-Princippet
+A.	RF 19 – påskyndet men regelmæssig, fri respiration. SAT 93%
+B.	Puls 92 palperet på venstre håndled. Fyldig regelmæssig. Fin kapilærrespons
+C.	BT 147/83 – klamtsvedende. Kolde ekstremiteter. 
+D.	Reagerer habituelt. Pupilreaktion i.a. VAS 7. Bl.s. 6,8
+E.	Temperatur 38,7 Målt rektalt
+
+
+Patienten har nægtet at spise og drikke i løbet af dagen. 
+"

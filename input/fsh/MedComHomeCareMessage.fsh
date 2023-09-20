@@ -20,7 +20,7 @@ Title: "HomeCareDiagnosticRepport-Spot test and EKG image"
 Description: "Example of a HomeCareDiagnosticRepport-Spot Test and EKG image."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-07-13T12:00:00+01:00
+* timestamp = 2023-09-13T12:00:00+01:00
 * entry[+].fullUrl = "MessageHeader/8dbf63f4-b784-4d40-8802-c1bdb1ecfa63"
 * entry[=].resource = 8dbf63f4-b784-4d40-8802-c1bdb1ecfa63
 * entry[+].fullUrl = "Subject/733cef33-3626-422b-955d-d506aaa65fe1"
@@ -47,7 +47,7 @@ Title: "HomeCareDiagnosticRepport-Urine dipsticks and subject refused consent."
 Description: "Example of a HomeCareDiagnosticRepport-Urine dipsticks and subject refused consent."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-07-13T12:00:00+01:00
+* timestamp = 2023-09-13T12:00:00+01:00
 * entry[+].fullUrl = "MessageHeader/e9f4cc68-b1b7-46b2-ba74-7cc39a914bfa"
 * entry[=].resource = e9f4cc68-b1b7-46b2-ba74-7cc39a914bfa
 * entry[+].fullUrl = "Subject/99f5578f-c9d3-4d8c-aa3e-21690e03e27c"
@@ -74,7 +74,7 @@ Title: "HomeCareDiagnosticRepport with clinical and analysis comment."
 Description: "Example of a HomeCareDiagnosticRepport with clinical and analysis comment."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-07-13T12:00:00+01:00
+* timestamp = 2023-09-13T12:00:00+01:00
 * entry[+].fullUrl = "MessageHeader/8dbf63f4-b784-4d40-8802-c1bdb1ecfa63"
 * entry[=].resource = 8dbf63f4-b784-4d40-8802-c1bdb1ecfa63
 * entry[+].fullUrl = "Subject/bbcd4817-1c4b-4089-a712-346f65ec16f9"
@@ -100,7 +100,7 @@ Title: "Modified HomeCareDiagnosticRepport message."
 Description: "Example of a Modified HomeCareDiagnosticRepport with clinical and analysis comment."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-07-13T12:00:00+01:00
+* timestamp = 2023-09-13T13:00:00+01:00
 * entry[+].fullUrl = "MessageHeader/07eb074b-be00-47e5-8bcb-484990a1a97e"
 * entry[=].resource = 07eb074b-be00-47e5-8bcb-484990a1a97e
 * entry[+].fullUrl = "Subject/bbcd4817-1c4b-4089-a712-346f65ec16f9"
@@ -119,3 +119,31 @@ Usage: #example
 * entry[=].resource = 008e1c02-605d-458e-8cb8-3eeb16a69aac
 * entry[+].fullUrl = "Provenance/8ce47645-4d69-4fa6-a51d-c2bb49d87efb"
 * entry[=].resource = 8ce47645-4d69-4fa6-a51d-c2bb49d87efb
+
+
+
+Instance: 5f341feb-9a20-463a-96cc-a9ca8ace5567
+InstanceOf: MedComHomeCareObservationMessage
+Title: "HomeCareDiagnosticRepport message-retracted."
+Description: "Example of a retracted HomeCareDiagnosticRepport with clinical and analysis comment."
+Usage: #example
+* type = $BundleType#message
+* timestamp = 2023-09-13T14:00:00+01:00
+* entry[+].fullUrl = "MessageHeader/36cb86f1-a01a-4115-a84d-9390aa0ddcbd"
+* entry[=].resource = 36cb86f1-a01a-4115-a84d-9390aa0ddcbd
+* entry[+].fullUrl = "Subject/bbcd4817-1c4b-4089-a712-346f65ec16f9"
+* entry[=].resource = bbcd4817-1c4b-4089-a712-346f65ec16f9
+* entry[+].fullUrl = "DiagnosticReport/4f013d3a-575c-447d-83e1-7a5fb7f7b0de"
+* entry[=].resource = 4f013d3a-575c-447d-83e1-7a5fb7f7b0de
+* entry[+].fullUrl = "PractitionerRole/80284c01-1674-45ca-98b7-d1e669bdeff6"
+* entry[=].resource = 80284c01-1674-45ca-98b7-d1e669bdeff6
+* entry[+].fullUrl = "Practitioner/70f14d25-0979-4192-8da2-0c0a3950f4b1"
+* entry[=].resource = 70f14d25-0979-4192-8da2-0c0a3950f4b1
+* entry[+].fullUrl = "Organization/1ab9c2d9-c348-4d75-9122-60ea8a6fdcf1"
+* entry[=].resource = 1ab9c2d9-c348-4d75-9122-60ea8a6fdcf1
+* entry[+].fullUrl = "Organization/a0330c62-fe29-4719-83fa-a94959084f29"
+* entry[=].resource = a0330c62-fe29-4719-83fa-a94959084f29
+* entry[+].fullUrl = "Provenance/008e1c02-605d-458e-8cb8-3eeb16a69aac"
+* entry[=].resource = 008e1c02-605d-458e-8cb8-3eeb16a69aac
+* entry[+].fullUrl = "Provenance/babb316c-796c-4d10-b97b-45274b5a0c44"
+* entry[=].resource = babb316c-796c-4d10-b97b-45274b5a0c44

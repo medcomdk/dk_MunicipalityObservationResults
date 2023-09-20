@@ -303,5 +303,17 @@ Usage: #example
 
 //Instancer til en annullering af HomeCareRapport 
 
+Instance: babb316c-796c-4d10-b97b-45274b5a0c44
+InstanceOf: MedComMessagingProvenance
+Title: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - cancelled message"
+Description: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - cancelled message"
+Usage: #example
+* target = Reference(07eb074b-be00-47e5-8bcb-484990a1a97e)
+* occurredDateTime = 2023-09-13T13:00:00+01:00
+* recorded = 2023-09-13T13:00:00+01:00
+* activity.coding = $HCOActivityCodes#retract-message
+* agent.who = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
+* entity.role = #revision
+* entity.what = Reference(489de4f2-0d8d-4de2-a7ce-ccb93568799f)
 
 
