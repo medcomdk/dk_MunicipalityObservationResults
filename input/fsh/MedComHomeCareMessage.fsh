@@ -16,21 +16,41 @@ Expression: "entry.resource.ofType(MessageHeader).conformsTo('http://medcomfhir.
 
 Instance: add5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c
 InstanceOf: MedComHomeCareObservationMessage
-Title: "HomeCareDiagnosticRepport-Spot test and EKG image"
-Description: "Example of a HomeCareDiagnosticRepport-Spot Test and EKG image."
+Title: "HomeCareObservation message-Spot test and EKG image"
+Description: "Example of a HomeCareObservation message-Spot Test and EKG image."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-09-13T12:00:00+01:00
+* timestamp = 2023-09-13T12:24:20+02:00
 * entry[+].fullUrl = "MessageHeader/8dbf63f4-b784-4d40-8802-c1bdb1ecfa63"
 * entry[=].resource = 8dbf63f4-b784-4d40-8802-c1bdb1ecfa63
 * entry[+].fullUrl = "Subject/733cef33-3626-422b-955d-d506aaa65fe1"
 * entry[=].resource = 733cef33-3626-422b-955d-d506aaa65fe1
 * entry[+].fullUrl = "DiagnosticReport/870333ac-3134-4ae6-8257-86e0b0537c5f"
 * entry[=].resource = 870333ac-3134-4ae6-8257-86e0b0537c5f
+* entry[+].fullUrl = "Observation/7fcb76a7-839b-4392-a2ff-f30035faca34"
+* entry[=].resource = 7fcb76a7-839b-4392-a2ff-f30035faca34
+* entry[+].fullUrl = "Observation/f70ae8b7-c1af-44a2-a21a-570c552dd7cc"
+* entry[=].resource = f70ae8b7-c1af-44a2-a21a-570c552dd7cc
+* entry[+].fullUrl = "Observation/1b089a05-0a5f-479d-9cbd-921a13470221"
+* entry[=].resource = 1b089a05-0a5f-479d-9cbd-921a13470221
+* entry[+].fullUrl = "Observation/4a94a70e-6957-47a8-bec7-3e27b3145668"
+* entry[=].resource = 4a94a70e-6957-47a8-bec7-3e27b3145668
+* entry[+].fullUrl = "Observation/d2b89faa-979a-430d-8887-21ccdf6f238b"
+* entry[=].resource = d2b89faa-979a-430d-8887-21ccdf6f238b
+* entry[+].fullUrl = "Observation/f84143f7-f586-477f-af56-e50c7d152605"
+* entry[=].resource = f84143f7-f586-477f-af56-e50c7d152605
+* entry[+].fullUrl = "Observation/b22fcbe0-4977-433e-ad1c-d6545bc8c1cb"
+* entry[=].resource = b22fcbe0-4977-433e-ad1c-d6545bc8c1cb
+* entry[+].fullUrl = "Observation/1e2351e2-77df-4135-a77b-6a4c39e4a4ca"
+* entry[=].resource = 1e2351e2-77df-4135-a77b-6a4c39e4a4ca
+* entry[+].fullUrl = "Observation/0e4a5452-1804-42d3-82ed-484df20a09f0"
+* entry[=].resource = 0e4a5452-1804-42d3-82ed-484df20a09f0
+* entry[+].fullUrl = "Observation/470d39e4-d3f9-4301-82eb-b957ba33475e"
+* entry[=].resource = 470d39e4-d3f9-4301-82eb-b957ba33475e
 * entry[+].fullUrl = "PractitionerRole/6ff69f1c-690d-11ed-9022-0242ac120002"
 * entry[=].resource = 6ff69f1c-690d-11ed-9022-0242ac120002
-* entry[+].fullUrl = "Practitioner/7c7f31d6-690d-11ed-9022-0242ac120002"
-* entry[=].resource = 7c7f31d6-690d-11ed-9022-0242ac120002
+* entry[+].fullUrl = "Practitioner/b56708c6-2df3-4e4a-a110-2f924b9fc072"
+* entry[=].resource = b56708c6-2df3-4e4a-a110-2f924b9fc072
 * entry[+].fullUrl = "Organization/42541447-b58c-4a1a-9514-02b80494bbd3"
 * entry[=].resource = 42541447-b58c-4a1a-9514-02b80494bbd3
 * entry[+].fullUrl = "Organization/ef5cb9a6-835f-4d18-a34e-179c578b9a2a"
@@ -43,11 +63,11 @@ Usage: #example
 
 Instance: faa0c104-0ebf-49cb-bad1-9e0f59436e18
 InstanceOf: MedComHomeCareObservationMessage
-Title: "HomeCareDiagnosticRepport-Urine dipsticks and subject refused consent."
-Description: "Example of a HomeCareDiagnosticRepport-Urine dipsticks and subject refused consent."
+Title: "HomeCareObservation message-Urine dipsticks and subject refused consent."
+Description: "Example of a HomeCareObservation message-Urine dipsticks and subject refused consent."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-09-13T12:00:00+01:00
+* timestamp = 2023-09-13T12:24:09+02:00
 * entry[+].fullUrl = "MessageHeader/e9f4cc68-b1b7-46b2-ba74-7cc39a914bfa"
 * entry[=].resource = e9f4cc68-b1b7-46b2-ba74-7cc39a914bfa
 * entry[+].fullUrl = "Subject/99f5578f-c9d3-4d8c-aa3e-21690e03e27c"
@@ -56,27 +76,33 @@ Usage: #example
 * entry[=].resource = 6d08f000-33cc-41f3-a7c2-c086d53d31a7
 * entry[+].fullUrl = "PractitionerRole/4b3b6f0f-a475-4b04-8a92-105e8ce6a7bf"
 * entry[=].resource = 4b3b6f0f-a475-4b04-8a92-105e8ce6a7bf
-* entry[+].fullUrl = "Practitioner/a7902d60-45f5-43f1-86e0-c5b0cdd1dc44"
-* entry[=].resource = a7902d60-45f5-43f1-86e0-c5b0cdd1dc44
+* entry[+].fullUrl = "Practitioner/be9f367d-a84a-4815-90a8-c83a03813fd8"
+* entry[=].resource = be9f367d-a84a-4815-90a8-c83a03813fd8
 * entry[+].fullUrl = "Organization/72cc3a2c-1dda-4b95-b50a-0f7ac19640f4"
 * entry[=].resource = 72cc3a2c-1dda-4b95-b50a-0f7ac19640f4
 * entry[+].fullUrl = "Organization/d1c1fa90-2c7e-4dd7-b2e8-e40281635a98"
 * entry[=].resource = d1c1fa90-2c7e-4dd7-b2e8-e40281635a98
 * entry[+].fullUrl = "Provenance/4c845e97-04b2-40e9-ab51-4c5bf080196f"
 * entry[=].resource = 4c845e97-04b2-40e9-ab51-4c5bf080196f
+* entry[+].fullUrl = "Observation/4b8f899a-df12-4301-8287-9a77d46ded3d"
+* entry[=].resource = 4b8f899a-df12-4301-8287-9a77d46ded3d
+* entry[+].fullUrl = "Observation/f58819ff-d727-4740-a4ef-44eefc77022e"
+* entry[=].resource = f58819ff-d727-4740-a4ef-44eefc77022e
+* entry[+].fullUrl = "Observation/2fc2c078-825b-491d-9f8e-34926eb4f06f"
+* entry[=].resource = 2fc2c078-825b-491d-9f8e-34926eb4f06f
 
 
 
 
 Instance: 401cbc36-db1e-4fe0-bf90-6df331dde179
 InstanceOf: MedComHomeCareObservationMessage
-Title: "HomeCareDiagnosticRepport with clinical and analysis comment."
-Description: "Example of a HomeCareDiagnosticRepport with clinical and analysis comment."
+Title: "HomeCareObservation with clinical and analysis comment."
+Description: "Example of a HomeCareObservation with clinical and analysis comment."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-09-13T12:00:00+01:00
-* entry[+].fullUrl = "MessageHeader/8dbf63f4-b784-4d40-8802-c1bdb1ecfa63"
-* entry[=].resource = 8dbf63f4-b784-4d40-8802-c1bdb1ecfa63
+* timestamp = 2023-09-13T12:24:10+02:00
+* entry[+].fullUrl = "MessageHeader/489de4f2-0d8d-4de2-a7ce-ccb93568799f"
+* entry[=].resource = 489de4f2-0d8d-4de2-a7ce-ccb93568799f
 * entry[+].fullUrl = "Subject/bbcd4817-1c4b-4089-a712-346f65ec16f9"
 * entry[=].resource = bbcd4817-1c4b-4089-a712-346f65ec16f9
 * entry[+].fullUrl = "DiagnosticReport/efb1ed12-6a5d-4342-9572-861071644e46"
@@ -91,16 +117,29 @@ Usage: #example
 * entry[=].resource = a0330c62-fe29-4719-83fa-a94959084f29
 * entry[+].fullUrl = "Provenance/008e1c02-605d-458e-8cb8-3eeb16a69aac"
 * entry[=].resource = 008e1c02-605d-458e-8cb8-3eeb16a69aac
+* entry[+].fullUrl = "Observation/3fd3835d-1758-4d22-8547-000182752817"
+* entry[=].resource = 3fd3835d-1758-4d22-8547-000182752817
+* entry[+].fullUrl = "Observation/ba691ee4-6d38-4f5b-82f1-40b54e3b8ad1"
+* entry[=].resource = ba691ee4-6d38-4f5b-82f1-40b54e3b8ad1
+* entry[+].fullUrl = "Observation/8917f29d-269c-4bb3-8ce9-d255c351d52b"
+* entry[=].resource = 8917f29d-269c-4bb3-8ce9-d255c351d52b
+* entry[+].fullUrl = "Observation/6bf03841-8397-4a2a-9f9a-8966b0cfa571"
+* entry[=].resource = 6bf03841-8397-4a2a-9f9a-8966b0cfa571
+* entry[+].fullUrl = "Observation/85fd1372-cf02-49c6-bd45-7205f5541a66"
+* entry[=].resource = 85fd1372-cf02-49c6-bd45-7205f5541a66
+* entry[+].fullUrl = "Observation/f64a0a78-53cf-4a7f-9b89-4a2338a4935c"
+* entry[=].resource = f64a0a78-53cf-4a7f-9b89-4a2338a4935c
+
 
 
 
 Instance: 73996cdc-3192-4d15-bd16-c365ef0085e7
 InstanceOf: MedComHomeCareObservationMessage
-Title: "Modified HomeCareDiagnosticRepport message."
-Description: "Example of a Modified HomeCareDiagnosticRepport with clinical and analysis comment."
+Title: "Modified HomeCareObservation message."
+Description: "Example of a Modified HomeCareObservation with clinical and analysis comment."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-09-13T13:00:00+01:00
+* timestamp = 2023-09-12T12:34:00+02:00
 * entry[+].fullUrl = "MessageHeader/07eb074b-be00-47e5-8bcb-484990a1a97e"
 * entry[=].resource = 07eb074b-be00-47e5-8bcb-484990a1a97e
 * entry[+].fullUrl = "Subject/bbcd4817-1c4b-4089-a712-346f65ec16f9"
@@ -119,16 +158,28 @@ Usage: #example
 * entry[=].resource = 008e1c02-605d-458e-8cb8-3eeb16a69aac
 * entry[+].fullUrl = "Provenance/8ce47645-4d69-4fa6-a51d-c2bb49d87efb"
 * entry[=].resource = 8ce47645-4d69-4fa6-a51d-c2bb49d87efb
+* entry[+].fullUrl = "Observation/3fd3835d-1758-4d22-8547-000182752817"
+* entry[=].resource = 3fd3835d-1758-4d22-8547-000182752817
+* entry[+].fullUrl = "Observation/ba691ee4-6d38-4f5b-82f1-40b54e3b8ad1"
+* entry[=].resource = ba691ee4-6d38-4f5b-82f1-40b54e3b8ad1
+* entry[+].fullUrl = "Observation/8917f29d-269c-4bb3-8ce9-d255c351d52b"
+* entry[=].resource = 8917f29d-269c-4bb3-8ce9-d255c351d52b
+* entry[+].fullUrl = "Observation/6bf03841-8397-4a2a-9f9a-8966b0cfa571"
+* entry[=].resource = 6bf03841-8397-4a2a-9f9a-8966b0cfa571
+* entry[+].fullUrl = "Observation/85fd1372-cf02-49c6-bd45-7205f5541a66"
+* entry[=].resource = 85fd1372-cf02-49c6-bd45-7205f5541a66
+* entry[+].fullUrl = "Observation/f64a0a78-53cf-4a7f-9b89-4a2338a4935c"
+* entry[=].resource = f64a0a78-53cf-4a7f-9b89-4a2338a4935c
 
 
 
 Instance: 5f341feb-9a20-463a-96cc-a9ca8ace5567
 InstanceOf: MedComHomeCareObservationMessage
-Title: "HomeCareDiagnosticRepport message-retracted."
-Description: "Example of a retracted HomeCareDiagnosticRepport with clinical and analysis comment."
+Title: "HomeCareObservation message-retracted."
+Description: "Example of a retracted HomeCareObservation with clinical and analysis comment."
 Usage: #example
 * type = $BundleType#message
-* timestamp = 2023-09-13T14:00:00+01:00
+* timestamp = 2023-09-12T13:00:00+02:00
 * entry[+].fullUrl = "MessageHeader/36cb86f1-a01a-4115-a84d-9390aa0ddcbd"
 * entry[=].resource = 36cb86f1-a01a-4115-a84d-9390aa0ddcbd
 * entry[+].fullUrl = "Subject/bbcd4817-1c4b-4089-a712-346f65ec16f9"
@@ -147,3 +198,15 @@ Usage: #example
 * entry[=].resource = 008e1c02-605d-458e-8cb8-3eeb16a69aac
 * entry[+].fullUrl = "Provenance/babb316c-796c-4d10-b97b-45274b5a0c44"
 * entry[=].resource = babb316c-796c-4d10-b97b-45274b5a0c44
+* entry[+].fullUrl = "Observation/3fd3835d-1758-4d22-8547-000182752817"
+* entry[=].resource = 3fd3835d-1758-4d22-8547-000182752817
+* entry[+].fullUrl = "Observation/ba691ee4-6d38-4f5b-82f1-40b54e3b8ad1"
+* entry[=].resource = ba691ee4-6d38-4f5b-82f1-40b54e3b8ad1
+* entry[+].fullUrl = "Observation/8917f29d-269c-4bb3-8ce9-d255c351d52b"
+* entry[=].resource = 8917f29d-269c-4bb3-8ce9-d255c351d52b
+* entry[+].fullUrl = "Observation/6bf03841-8397-4a2a-9f9a-8966b0cfa571"
+* entry[=].resource = 6bf03841-8397-4a2a-9f9a-8966b0cfa571
+* entry[+].fullUrl = "Observation/85fd1372-cf02-49c6-bd45-7205f5541a66"
+* entry[=].resource = 85fd1372-cf02-49c6-bd45-7205f5541a66
+* entry[+].fullUrl = "Observation/f64a0a78-53cf-4a7f-9b89-4a2338a4935c"
+* entry[=].resource = f64a0a78-53cf-4a7f-9b89-4a2338a4935c

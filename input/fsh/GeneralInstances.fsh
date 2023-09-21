@@ -38,13 +38,6 @@ Description: "Example of an organization with a SOR and an EAN and Ydrenummer id
 * contact.name.given = "OKM"
 * name = "Skødstrup Lægepraksis"
 
-//Practitioner 
-Instance: 7c7f31d6-690d-11ed-9022-0242ac120002
-InstanceOf: MedComCorePractitioner
-Title: "Simple practitioner with a name"
-Description: "Simple practitioner with a name"
-* name.given = "Maibrit"
-* telecom.value = "+45 005566778"
 
 //Akutsygeplerjerske
 Instance: b56708c6-2df3-4e4a-a110-2f924b9fc072
@@ -52,6 +45,7 @@ InstanceOf: MedComCorePractitioner
 Title: "Acute nurse"
 Description: "Acute nurse"
 * name.given = "Mia"
+* telecom.system = #phone
 * telecom.value = "+45 05577668"
 
 
@@ -71,8 +65,8 @@ Title: "HomeCareDiagnosticReport example. The Provenance instance is only valid 
 Description: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #example
 * target = Reference(8dbf63f4-b784-4d40-8802-c1bdb1ecfa63)
-* occurredDateTime = 2023-07-13T12:00:00+01:00
-* recorded = 2023-07-13T12:00:00+01:00
+* occurredDateTime = 2023-09-13T12:24:00+02:00
+* recorded = 2023-09-13T12:24:00+02:00
 * activity.coding = $HCOActivityCodes#new-message
 * agent.who = Reference(ef5cb9a6-835f-4d18-a34e-179c578b9a2a)
 
@@ -112,13 +106,6 @@ Description: "Example of an organization with a SOR and an EAN and Ydrenummer id
 * contact.name.given = "OKM"
 * name = "Skødstrup Lægepraksis"
 
-//Practitioner 
-Instance: a7902d60-45f5-43f1-86e0-c5b0cdd1dc44
-InstanceOf: MedComCorePractitioner
-Title: "Simple practitioner with a name"
-Description: "Simple practitioner with a name"
-* name.given = "Maibrit"
-* telecom.value = "+45 005566778"
 
 //Akutsygeplerjerske
 Instance: be9f367d-a84a-4815-90a8-c83a03813fd8
@@ -126,6 +113,7 @@ InstanceOf: MedComCorePractitioner
 Title: "Acute nurse"
 Description: "Acute nurse"
 * name.given = "Mia"
+* telecom.system = #phone
 * telecom.value = "+45 05577668"
 
 
@@ -145,78 +133,10 @@ Title: "HomeCareDiagnosticReport example. The Provenance instance is only valid 
 Description: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #example
 * target = Reference(e9f4cc68-b1b7-46b2-ba74-7cc39a914bfa)
-* occurredDateTime = 2023-07-13T12:00:00+01:00
-* recorded = 2023-07-13T12:00:00+01:00
+* occurredDateTime = 2023-09-13T12:24:08+02:00
+* recorded = 2023-09-13T12:24:08+02:00
 * activity.coding = $HCOActivityCodes#new-message
 * agent.who = Reference(72cc3a2c-1dda-4b95-b50a-0f7ac19640f4)
-
-
-// Instancer til ny message med attachement
-Instance: 608c52b6-c771-42bc-846f-9475491a5026
-InstanceOf: MedComCorePatient
-Title: "Bruno Test Elmer"
-Description: "Patient described with minimal information. Valid only if used in a Bundle."
-Usage: #example
-* identifier[cpr].system = "urn:oid:1.2.208.176.1.2"
-* identifier[cpr].value = "2509479989"
-* name[official].use = #official
-* name[official].family = "Elmer"
-
-// Sender instance - new message
-Instance: c712323c-c167-42c6-9e82-700a5a391435
-InstanceOf: MedComCoreProducerOrganization 
-Title: "Example of a sender organization with a SOR, and an EAN identifier and producentID."
-Description: "Example of an organization with a SOR, an EAN identifier and ProducentID."
-* identifier[SOR-ID].value = "1144561000016002" 
-* identifier[EAN-ID].value = "5790000123117" 
-* identifier[ProducentID].system = $ProducenID
-* identifier[ProducentID].value = "KAF"
-* name = "Pleje og Rehabilitering"
-
-
-
-// Reciever instance - new message
-Instance: 76a79dcf-0bf0-4799-8d2d-0a82f40eeb7c
-InstanceOf: MedComMessagingRequesterOrganization 
-Title: "Example of a reciever organization with a SOR, an EAN  and Ydrenummer identifier."
-Description: "Example of an organization with a SOR and an EAN and Ydrenummer identifier."
-* identifier[SOR-ID].value = "52581000016005" 
-* identifier[EAN-ID].value = "5790000127092"
-* identifier[Ydernummer].value = "061654"
-* contact.name.given = "OKM"
-* name = "Skødstrup Lægepraksis"
-
-
-//Akutsygeplerjerske
-Instance: c66ec7ee-4279-4202-9769-80c84c7b765a
-InstanceOf: MedComCorePractitioner
-Title: "Acute nurse"
-Description: "Acute nurse"
-* name.given = "Mia"
-* telecom.value = "+45 05577668"
-
-
-//Practitioner rolle
-Instance: f90d522a-c236-475e-b718-aa4be26fae2f
-InstanceOf: MedComCorePractitionerRole
-Title: "PractitionerRole with a role and reference to a practitioner"
-Description: "PractitionerRole with a role and reference to a practitioner"
-* practitioner = Reference(c66ec7ee-4279-4202-9769-80c84c7b765a)
-* code = $PractitionerRole#sygeplejerske
-
-
-// HomeCareDiagnosticReport example - new message
-Instance: 31cc6076-39d9-4323-ab8c-aad7735ec30f
-InstanceOf: MedComMessagingProvenance
-Title: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - new message"
-Description: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - new message"
-Usage: #example
-* target = Reference(8dbf63f4-b784-4d40-8802-c1bdb1ecfa63)
-* occurredDateTime = 2023-07-13T12:00:00+01:00
-* recorded = 2023-07-13T12:00:00+01:00
-* activity.coding = $HCOActivityCodes#new-message
-* agent.who = Reference(c712323c-c167-42c6-9e82-700a5a391435)
-
 
 
 
@@ -263,6 +183,7 @@ InstanceOf: MedComCorePractitioner
 Title: "Acute nurse"
 Description: "Acute nurse"
 * name.given = "Mia"
+* telecom.system = #phone
 * telecom.value = "+45 05577668"
 
 
@@ -282,8 +203,8 @@ Title: "HomeCareDiagnosticReport example. The Provenance instance is only valid 
 Description: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - new message"
 Usage: #example
 * target = Reference(489de4f2-0d8d-4de2-a7ce-ccb93568799f)
-* occurredDateTime = 2023-09-13T12:00:00+01:00
-* recorded = 2023-09-13T12:00:00+01:00
+* occurredDateTime = 2023-09-13T12:24:00+02:00
+* recorded = 2023-09-13T12:24:00+02:00
 * activity.coding = $HCOActivityCodes#new-message
 * agent.who = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
 
@@ -294,8 +215,8 @@ Title: "HomeCareDiagnosticReport example. The Provenance instance is only valid 
 Description: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - modified message"
 Usage: #example
 * target = Reference(07eb074b-be00-47e5-8bcb-484990a1a97e)
-* occurredDateTime = 2023-09-13T13:00:00+01:00
-* recorded = 2023-09-13T13:00:00+01:00
+* occurredDateTime = 2023-09-12T12:30:00+02:00
+* recorded = 2023-09-12T12:30:00+02:00
 * activity.coding = $HCOActivityCodes#modified-message
 * agent.who = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
 * entity.role = #revision
@@ -309,8 +230,8 @@ Title: "HomeCareDiagnosticReport example. The Provenance instance is only valid 
 Description: "HomeCareDiagnosticReport example. The Provenance instance is only valid if used in a bundle (message) - cancelled message"
 Usage: #example
 * target = Reference(07eb074b-be00-47e5-8bcb-484990a1a97e)
-* occurredDateTime = 2023-09-13T13:00:00+01:00
-* recorded = 2023-09-13T13:00:00+01:00
+* occurredDateTime = 2023-09-12T13:00:00+02:00
+* recorded = 2023-09-12T13:00:00+02:00
 * activity.coding = $HCOActivityCodes#retract-message
 * agent.who = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
 * entity.role = #revision

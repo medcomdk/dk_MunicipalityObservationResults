@@ -46,10 +46,10 @@ Expression: "reference.resolve().practitioner.resolve().telecom.exists()"
 Instance: 870333ac-3134-4ae6-8257-86e0b0537c5f
 InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
-Title: "HomeCareObservation repport: spot test and EKG"
+Title: "HomeCareDiagnosticReport: spot test and EKG"
 Description: "Spot test and EKG performed by the acute care team on a subject."
 * status = $StatusCodeDiagnosticReportSystem#final
-* issued = 2023-07-13T12:24:08+02:00
+* issued = 2023-09-12T12:24:08+02:00
 * code = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 * performer[ProducerOrganization] = Reference(ef5cb9a6-835f-4d18-a34e-179c578b9a2a)
@@ -72,10 +72,10 @@ Description: "Spot test and EKG performed by the acute care team on a subject."
 Instance: 6d08f000-33cc-41f3-a7c2-c086d53d31a7
 InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
-Title: "HomeCareObservation repport: Urine dipsticks tests and refused consent"
+Title: "HomeCareDiagnosticReport: Urine dipsticks tests and refused consent"
 Description: "Urine dipstick tests performed by the acute care team on a subject, that has refused consent."
 * status = $StatusCodeDiagnosticReportSystem#final
-* issued = 2023-07-12T12:24:08+02:00
+* issued = 2023-09-12T12:24:08+02:00
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(99f5578f-c9d3-4d8c-aa3e-21690e03e27c)
 * performer[ProducerOrganization] = Reference(72cc3a2c-1dda-4b95-b50a-0f7ac19640f4)
@@ -90,10 +90,10 @@ Description: "Urine dipstick tests performed by the acute care team on a subject
 Instance: efb1ed12-6a5d-4342-9572-861071644e46
 InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
-Title: "HomeCareObservation Repport: TOBS and ABC examination"
+Title: "HomeCareDiagnosticReport:TOBS and ABC examination"
 Description: "TOBS and ABC examination of Elmer"
 * status = $StatusCodeDiagnosticReportSystem#final
-* issued = 2023-09-13T12:24:13+02:00
+* issued = 2023-09-12T12:24:19+02:00
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
 * performer[ProducerOrganization] = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
@@ -117,10 +117,10 @@ E.	Temperatur 38,7 Målt rektalt "
 Instance: cfa9e95b-b5ac-4cfe-abe7-ea29e6b67919
 InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
-Title: "HomeCareObservation Repport: TOBS and ABC examination"
-Description: "Example of a modified DiagnosticRepport, with TOBS and ABC examination of Elmer"
+Title: "HomeCareDiagnosticReport:TOBS and ABC examination"
+Description: "Example of a modified HomeCareDiagnosticReport with TOBS and ABC examination of Elmer"
 * status = $StatusCodeDiagnosticReportSystem#corrected
-* issued = 2023-09-13T13:24:13+02:00
+* issued = 2023-09-12T12:34:00+02:00
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
 * performer[ProducerOrganization] = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
@@ -148,10 +148,10 @@ Patienten har nægtet at spise og drikke i løbet af dagen.
 Instance: 4f013d3a-575c-447d-83e1-7a5fb7f7b0de
 InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
-Title: "HomeCareObservation Repport: TOBS and ABC examination"
-Description: "Example of a modified DiagnosticRepport, with TOBS and ABC examination of Elmer"
+Title: "HomeCareDiagnosticReport: TOBS and ABC examination"
+Description: "Example of a modified HomeCareDiagnosticReport, with TOBS and ABC examination of Elmer"
 * status = $StatusCodeDiagnosticReportSystem#cancelled
-* issued = 2023-09-13T14:24:13+02:00
+* issued = 2023-09-12T13:00:00+02:00
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
 * performer[ProducerOrganization] = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
@@ -164,15 +164,4 @@ Description: "Example of a modified DiagnosticRepport, with TOBS and ABC examina
 * result[+] = Reference(f64a0a78-53cf-4a7f-9b89-4a2338a4935c)
 * conclusion = "
 Cancellation due to incorrect CPR-number!
-
-ABCDE
-SeFølLyt-Princippet
-A.	RF 19 – påskyndet men regelmæssig, fri respiration. SAT 93%
-B.	Puls 92 palperet på venstre håndled. Fyldig regelmæssig. Fin kapilærrespons
-C.	BT 147/83 – klamtsvedende. Kolde ekstremiteter. 
-D.	Reagerer habituelt. Pupilreaktion i.a. VAS 7. Bl.s. 6,8
-E.	Temperatur 38,7 Målt rektalt
-
-
-Patienten har nægtet at spise og drikke i løbet af dagen. 
 "
