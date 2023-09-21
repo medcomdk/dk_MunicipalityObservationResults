@@ -31,11 +31,9 @@ It is required to send the siganure of the MedComHomeCareDiagnosticReport perfor
 * Telephone nummer: Relevant telephone number e.g. to the department or organization where the person who is reposnible for the report works. 
 
 ##### Producer-ID
-The producer-ID is described in [MedComObservationProducerOrganization](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-core-observationporducerorg) profile. 
-The producer-ID consist of a three letter code and a municipal code.  <a href ="http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes">The municipal code, and the producer-ID, can be found in valuesets exhibited,on terminology server, that can be found here.</a>
-
+The producer-ID consist of a three letter code and a SOR-ID for the municiplity where the acute care team is owned by. 
 The three letter code is exhibited by MedCom and is an abbreviation for the producer (e.g. unit or organization) that is responsible for the observations results. The municipal acute care team  is responsible for performig and producing the observations results in the MedCom HomeCareObservation. Therefore the code for the municiapl acute careteam is "KAF". 
-The three letter code is exibited in code system on the terminology IG. <a href= "http://medcomfhir.dk/ig/terminology/CodeSystem-MedComProducentID">Click here to see the code system. </a>
+The three letter code is exibited in code system on the terminology IG. <a href= "http://medcomfhir.dk/ig/terminology/CodeSystem-MedComProducentID.html">Click here to see the code system. </a>
 
 #### Use of security labet on patient consent 
 If a patient gives a negative consent to sharing the observation results with other than the general practitioner a securety labe shall be used. 
