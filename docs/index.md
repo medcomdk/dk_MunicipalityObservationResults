@@ -3,37 +3,34 @@
 <!-- below is the table of content. Ensure to update it. -->
 **Table of Content**
 * [1 Standard Documentation](#standard)
-  * [1.1 Clinical Guidelines for application](#11-clinical-guidelines-for-application)
+  * [1.1 Clinical Guidelines and documentation](#11-clinical-guidelines-and-documentation)
   * [1.2 Use Cases](#12-use-cases)
-* [2 Test and Certification](#2-test-and-certification)
+* [2 Test and Trial use approvemnet](#2-test-and-Trial-approvement)
 
 
 *Short description concerning the purpose of the standard. Remember to include both the English and Danish name of the standard.*
  
-> Clinical Guidelines for application and use cases are in both Danish and English. The remaining documentation will be in English.
+> Clinical Guidelines and documentation and use cases are in  Danish. The remaining documentation will be in English.
 
 ## 1 Standard Documentation {#standard}
 The standard documentation below provides the necessary content to understand the needs for modernization, the role of the MedCom HomeCareObservation message, what to implement and how to get a MedCom certificate. The standard documentation for MedCom HomeCareObservation includes:
-  * Clinical Guidelines
+  * Clinical Guidelines and documentation
   * Use cases
   * Technical Specifications in terms of the relevant IGs and clinical introduction to the content of the IG.
   * *mention other relevant documentation*
 <p>&nbsp;</p>
 
-### 1.1 Clinical Guidelines for application 
-The Clinical Guidelines for application is the foundation for the MedCom HomeCareObservation standard. It describes the clinical needs for the modernization, the requirement for the content of the standard and how the standard supports the business requirements. It is the primary textual part of the documentation for MedCom HomeCareObservation. It is important for both implementers and business specialists to understand the Clinical Guidelines for application to ensure that the implemented standard supports the requirements.
+### 1.1 Clinical Guidelines and documentation 
+The Clinical Guidelines and documentation is the foundation for the MedCom HomeCareObservation standard. It describes the clinical needs for the modernization, the requirement for the content of the standard and how the standard supports the business requirements. It is the primary textual part of the documentation for MedCom HomeCareObservation. It is important for both implementers and business specialists to understand the Clinical Guidelines and documentation to ensure that the implemented standard supports the requirements.
 
-Below can the Clinical Guidelines for application in Danish be found:
+Below can the Clinical Guidelines and documentation in Danish be found:
 
-[Danish: Sundhedsfaglige retningslinjer for anvendelse](assets/documents/Clinical-guidelines-DA.md) <br> 
+[Danish: Sundhedsfaglige dokumentation](assets/documents/Clinical-guidelines-DA.md) <br> 
 
 ### 1.2 Use Cases
 
 Use cases describe the different scenarios a standard support. For a certain real-world scenario, it describes the requirements for the content of a message. The purpose of the use cases is to ensure a coherent implementation and use of the MedCom HomeCareObservation. The descriptions are targeted IT-system vendors and the people responsible for the implementation in regions and municipalities.
 
-The use cases for HospitalNotification are qualified in collaboration with EPR- and vendors catering to the municipalities.
-
-Below can the use cases in Danish and English be found:
 
 [Danish: Use cases](assets/documents/UseCases-DA.md) <br> 
 
@@ -50,18 +47,9 @@ The link below gives an overview of the included profiles, what their purpose is
 
 
 
-## 2 Test and Certification
-Certification of a system implies both an approved testprotocol and run-through of TouchStone test scripts. TouchStone describes an infrastructure that allows for automated test and validation against the IG's developed by MedCom. 
->The testprotocols and touchstone testscripts wille be added as soon as they are prepared.
+## 2 Test and Trial use approvemnet 
+ Approvement of a system  to trial use implies both an approved testprotocol and run-through of TouchStone test scripts. TouchStone describes an infrastructure that allows for automated test and validation against the IG's developed by MedCom.
 
- <!-- [Click here to find the description of test and certification of FHIR standards in MedCom.](https://tmsmedcom.github.io/GitHubPagesTest/#test-and-certification). 
+>The testprotocols and touchstone testscripts wille be added as soon as they are prepared.!
 
-**Sending a STANDARDNAME message**
-  * Testprotocol
-  * TouchStone Testscripts
-<p>&nbsp;</p>
- 
-**Receiving a STANDARDNAME message**
-  * Testprotocol
-  * TouchStone Testscripts
-<p>&nbsp;</p> -->
+
