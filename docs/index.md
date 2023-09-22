@@ -1,14 +1,16 @@
 <!-- HomePage -->
-# MedCom GitHub Pages 
+# MedCom HomeCareObservation
 <!-- below is the table of content. Ensure to update it. -->
 **Table of Content**
 * [1 Standard Documentation](#standard)
   * [1.1 Clinical Guidelines and documentation](#11-clinical-guidelines-and-documentation)
   * [1.2 Use Cases](#12-use-cases)
-* [2 Test and Trial use approvemnet](#2-test-and-Trial-approvement)
+* [2 Test and approvemnet](#2-test-and-approvement)
+
+> Note: This Standard is developed to be part of a production trial of the communication between the general practitioner and municipal acute care team.
 
 
-*Short description concerning the purpose of the standard. Remember to include both the English and Danish name of the standard.*
+This page presents MedCom HomeCareObservation (Danish: Kommunale Prøvesvar) standard. The purpose of the standard is to support digital structured communication of results and observations performed and produced by the municipal acute care team.The HomeCareObservation will be sent from the municipal acute care team to the general practitioner on the condition that the general practitioner previously has requisitioned the acute care team to perform an emergency visit. With HomeCareObservation the quality of the results and observations (hereafter mentioned as observations results) are increased as structured data concerning sender, producer of the results, analysis codes and clinical observations, among others, are part of the HomeCareObservation. This allows the general practitioner to easily create an overview of the citizens health data.
  
 > Clinical Guidelines and documentation and use cases are in  Danish. The remaining documentation will be in English.
 
@@ -16,8 +18,6 @@
 The standard documentation below provides the necessary content to understand the needs for modernization, the role of the MedCom HomeCareObservation message, what to implement and how to get a MedCom certificate. The standard documentation for MedCom HomeCareObservation includes:
   * Clinical Guidelines and documentation
   * Use cases
-  * Technical Specifications in terms of the relevant IGs and clinical introduction to the content of the IG.
-  * *mention other relevant documentation*
 <p>&nbsp;</p>
 
 ### 1.1 Clinical Guidelines and documentation 
@@ -47,9 +47,9 @@ The link below gives an overview of the included profiles, what their purpose is
 
 
 
-## 2 Test and Trial use approvemnet 
- Approvement of a system  to trial use implies both an approved testprotocol and run-through of TouchStone test scripts. TouchStone describes an infrastructure that allows for automated test and validation against the IG's developed by MedCom.
+## 2 Test and approvement 
+Approvement of a system to production trial implies both an approved testprotocol and run-through of TouchStone test scripts. TouchStone describes an infrastructure that allows for automated test and validation against the IG's developed by MedCom.
 
->The testprotocols and touchstone testscripts wille be added as soon as they are prepared.!
+>Note: The testprotocols and touchstone testscripts wille be added as soon as they are prepared.!
 
 
