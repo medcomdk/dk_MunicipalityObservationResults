@@ -19,7 +19,7 @@ In the MedComHomeCareDiagnosticReport it is possible to send comments regarding 
 Analysis comment (Danish: Analysekommentar) is a comment that the user can choose to add, if relevant, to an individual observation result. The element Observation.note in HomeCareObservation profile shall be used when adding a analysis comment about the observation. 
 
 ##### Clinical comment (overall nursing assessment)
-The clinical comment (Danish: Klinisk kommentar) is a comment to the etntire report. This comment shall contain information that is necessary to provide an overall assessment of the citizen in the acute situation. It is recommended that the municipal acute careteam send the relevant clinical observations (nursing assessment) that are necessary in order to understand and interpret the citizens overall results and health status. When adding a clinical comment the element DiagnosticReport.conclusion shall be used. 
+The clinical comment (Danish: Klinisk kommentar) is a comment to the etntire report. This comment shall contain information that is necessary to provide an overall assessment of the citizen in the acute situation. It is recommended that the municipal acute careteam send the relevant clinical observations (nursing assessment) that are necessary in order to understand and interpret the citizens overall results and health status. When adding a clinical comment the element DiagnosticReport.conclusion shall be used. The clinical comment shall not exceed 1 MB (1024 x 1024 characters) in size. 
 
 #### Performer 
 In the MedComHomeCareDiagnosticReport it is required to describe the performer of the MedComHomeCareDiagnosticReport. The performer is organization that is responsible for creating the HomeCareDiagnosticRepport e.g acute care team . The performer shall be described using a signature and a producer-ID.
@@ -38,3 +38,15 @@ The three letter code is exibited in code system on the terminology IG. <a href=
 #### Use of security labet on patient consent 
 If a patient gives a negative consent to sharing the observation results with other than the general practitioner a securety labe shall be used. 
 This mean that the meta.security.code shall be R, and in the user interface, it shall be clearly stated that consent has been refused. 
+
+#### Attachements 
+In MedComHomeCareDiagnosticReport it is allowed to include attachments. When including an attachment to a diagnosticReport then the element DiagnosticRport.media shall be used. It is up to the user to assess when it is relevant to send an attachment. 
+Only an attachment of the following formats must be included: 
+
+* Adobe Portable Document Format (PDF)
+* Graphics Interchange Format (gif)
+* JPEG Image
+* Portable Network Graphics (PNG)
+* Tag Image File Format (tiff)
+
+If the atached file are sent, it is a requirement that the ID and title of the attached file be sent. Furthermore, MedCom recommended that the name of the author, as well as the time of creation, of the attached file be signed and sent with it.

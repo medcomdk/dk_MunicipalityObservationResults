@@ -17,6 +17,8 @@ Description: "Report containing all observation results. "
 * result ^type.aggregation = #bundled
 * performer MS
 * media MS
+* media only Reference(MedComMedia) 
+* media ^short = "Attachemts that are relevant for "
 * media.link MS SU
 * conclusion 0..1 MS
 * conclusion ^short = "A comment relevant for all observations in the report."
