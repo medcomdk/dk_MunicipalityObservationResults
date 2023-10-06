@@ -16,7 +16,7 @@ In a DiagnosticRepport resource, it is required to specify the status of the rep
 In the MedComHomeCareDiagnosticReport it is possible to send comments regarding the performed and produced observation results by the municipal acute care team. There are two types of comments that can be send; analysis comments about individual analysis and results, and a clinical comment (overall nursing assessment) about the entire report.
 
 ##### Analysis comment about an individual observation
-Analysis comment (Danish: Analysekommentar) is a comment that the user can choose to add, if relevant, to an individual observation result. The element Observation.note in HomeCareObservation profile shall be used when adding a analysis comment about the observation. 
+Analysis comment (Danish: Analysekommentar) is a comment that the user can choose to add, if relevant, to an individual observation result. The element Observation.note in HomeCareObservation profile shall be used when adding a analysis comment about the observation. The analysis comment shall not exceed 1 MB (1024 x 1024 characters) in size.
 
 ##### Clinical comment (overall nursing assessment)
 The clinical comment (Danish: Klinisk kommentar) is a comment to the etntire report. This comment shall contain information that is necessary to provide an overall assessment of the citizen in the acute situation. It is recommended that the municipal acute careteam send the relevant clinical observations (nursing assessment) that are necessary in order to understand and interpret the citizens overall results and health status. When adding a clinical comment the element DiagnosticReport.conclusion shall be used. The clinical comment shall not exceed 1 MB (1024 x 1024 characters) in size. 
@@ -36,7 +36,7 @@ The three letter code is exhibited by MedCom and is an abbreviation for the prod
 The three letter code is exibited in code system on the terminology IG. <a href= "http://medcomfhir.dk/ig/terminology/CodeSystem-MedComProducentID.html">Click here to see the code system. </a>
 
 #### Use of security labet on patient consent 
-If a patient gives a negative consent to sharing the observation results with other than the general practitioner a securety labe shall be used. 
+If a patient not allow to share the observation results with other than the general practitioner a securety labe shall be used. 
 This mean that the meta.security.code shall be R, and in the user interface, it shall be clearly stated that consent has been refused. 
 
 #### Attachements 

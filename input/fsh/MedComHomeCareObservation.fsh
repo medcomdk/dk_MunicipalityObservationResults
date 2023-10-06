@@ -103,7 +103,7 @@ Usage: #example
 Title: "Neutrophilocytes observation"
 Description: "Neutrophilocytes observation performed on o subject by the acute care team"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU02902 "Neutrofilocytter;B"
+* code.coding[NPU] = #NPU02902 "B—Neutrophilocytter; antalk. = ? × 109/L"
 * valueQuantity.value = 10.1
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-09-12T10:34:08+02:00
@@ -117,7 +117,7 @@ Usage: #example
 Title: "Eosinofilocyt observation"
 Description: "Eosinofilocyt observation performed on a subject by the auce care team"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU01933 "Eosinofilocytter;B"
+* code.coding[NPU] = #NPU01933 "B—Eosinophilocytter; antalk. = ? × 109/L"
 * valueQuantity.value = 0.10
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-09-12T10:36:08+02:00
@@ -132,7 +132,7 @@ Usage: #example
 Title: "Basofilocyt observation"
 Description: "Basofilocyt observation performed on a subject by the auce care team"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU01349 "Basofilocytter;B"
+* code.coding[NPU] = #NPU01349 "B—Basophilocytter; antalk. = ? × 109/L"
 * valueQuantity.value = 0.05
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-09-12T10:38:08+02:00
@@ -145,7 +145,7 @@ Usage: #example
 Title: "Glucose measurement"
 Description: "Glucose measurement on the subject. "
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU22089 "Glukose;P(kB)"
+* code.coding[NPU] = #NPU22089 "P(kB)—Glucose; stofk. = ? mmol/L"
 * valueQuantity.value = 6.8
 * valueQuantity.unit = "mmol/L"
 * effectiveDateTime = 2023-09-12T10:40:08+02:00
@@ -159,7 +159,7 @@ Usage: #example
 Title: "Coagulation factor test"
 Description: "Coagulation factor on the subject"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU01685 "Koagulationsfaktor II+VII+X [INR];P"
+* code.coding[NPU] = #NPU01685 "P—Koagulation, vævsfaktor-induceret; rel.tid(aktuel/norm; INR; IRP 67/40; proc.) = ?"
 * valueQuantity.value = 0.9
 * effectiveDateTime = 2023-09-12T10:42:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
@@ -178,7 +178,7 @@ Usage: #example
 Title: "Urine dipstick tests"
 Description: "Urine dipstick tests on Bruno "
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU04206 "Protein(semikvant);U"
+* code.coding[NPU] = #NPU04206 "U—Protein; arb.k.(proc.) = ?"
 * valueQuantity.value = 1
 * valueQuantity.unit = "+"
 * effectiveDateTime = 2023-09-13T12:24:08+02:00
@@ -191,7 +191,7 @@ Usage: #example
 Title: "Nitrite observation"
 Description: "Nitrit observation on Bruno"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU21578 "Nitrit(semikvant);U"
+* code.coding[NPU] = #NPU21578 "U—Nitrit; arb.k.(proc.) = ?"
 * valueString = "Negative" 
 * effectiveDateTime = 2023-09-13T12:24:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
@@ -203,7 +203,7 @@ Usage: #example
 Title: "Leukocyt urine test"
 Description: "Test of leucocyt using urine dipstick"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU03987 "Leukocytter(semikvant);U"
+* code.coding[NPU] = #NPU03987 "U—Leukocytter; arb.k.(proc.) = ?"
 * valueQuantity.value = 2
 * valueQuantity.unit = "+"
 * effectiveDateTime = 2023-09-13T12:24:08+02:00
@@ -221,7 +221,7 @@ Usage: #example
 Title: "Respiration frequency"
 Description: "Respiration frequency of Elmer"
 * status = $ObsStatusCodeSystem#final
-* code.coding[MedCom] = #MCS88122 "Respirationsfrekvens;Pt"
+* code.coding[MedCom] = #MCS88122 "Pt—Respiration; frekvens = ? X 1/min"
 * valueQuantity.value = 19
 * valueQuantity.unit = "1/min"
 * effectiveDateTime = 2023-09-13T09:24:08+02:00
@@ -234,7 +234,7 @@ Usage: #example
 Title: "Heart Rate"
 Description: "HeartRate of Elmer"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU21692 "Puls;Hjerte"
+* code.coding[NPU] = #NPU21692 "Hjerte—Systole; frekv. = ? × 1/min"
 * valueQuantity.value = 92
 * valueQuantity.unit = " 1/min"
 * note.text = "Patienten har været ud og går lige inden målingen."
@@ -248,7 +248,7 @@ Usage: #example
 Title: "Systolic Blood Pressure"
 Description: "Systolic Blood Pressure of Elmer"
 * status = $ObsStatusCodeSystem#final 
-* code.coding[NPU] = #DNK05472 "Blodtryk systolisk;Arm"
+* code.coding[NPU] = #DNK05472 "Arm—Blodtryk(systolisk); tryk = ? mmHg"
 * valueQuantity.value = 147
 * valueQuantity.unit = "mmHg"
 * effectiveDateTime = 2023-09-13T09:24:10+02:00
@@ -261,7 +261,7 @@ Usage: #example
 Title: "Consciousness"
 Description: "Consciousness of Elmer"
 * status = $ObsStatusCodeSystem#final
-* code.coding[MedCom] = #MCS88126 "Bevidsthed;Pt"
+* code.coding[MedCom] = #MCS88126 "Pt—Bevidsthedsniveau; arb.antal(værdi 0-3) = ?"
 * valueQuantity.value = 0
 * effectiveDateTime = 2023-09-13T09:24:11+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
@@ -273,7 +273,7 @@ Usage: #example
 Title: "Temperature"
 Description: "Temperature of the elmerElmer"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU08676 "Legeme temp.;Pt"
+* code.coding[NPU] = #NPU08676 "Pt—Legeme; temp. = ? °C"
 * valueQuantity.value = 38.7
 * valueQuantity.unit = "°C"
 * effectiveDateTime = 2023-09-13T09:24:12+02:00
@@ -286,7 +286,7 @@ Usage: #example
 Title: "TOBS"
 Description: "TOBS of Emler"
 * status = $ObsStatusCodeSystem#final
-* code.coding[MedCom] = #MCS88125 "TOBS score;Pt" 
+* code.coding[MedCom] = #MCS88125 "Pt—Tidlig Opsporing af Begyndende Sygdom (TOBS) score; antal (værdi 0-15) = ?" 
 * valueQuantity.value = 3
 * effectiveDateTime = 2023-09-13T09:24:13+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)

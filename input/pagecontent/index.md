@@ -57,7 +57,8 @@ The [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefin
 
 #### MedComMessagingRequesterOrganization 
 The [MedComMessagingRequesterOrganization]( http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-messaging-requesterorganization.html) represents the receiver of the HomeCareObservation message. The receiver information consist of the initials of the general practitioner that requisitioned acute homecare visit and observation, if known, and identifiers such as SOR-, EAN and Ydernummer-identifier to represent the general practitioner.
-If the initials of the general practitioner are unknown, then the code "unknown" form the [data-absent-reason ValueSet](http://hl7.org/fhir/R4/valueset-data-absent-reason.html) shall be sent. 
+If the initials of the general practitioner are unknown, then the code "unknown" form the [data-absent-reason ValueSet](http://hl7.org/fhir/R4/valueset-data-absent-reason.html) shall be sent.  In MedComMessagingRequesterOrganization the contact.name.given shall be used to express the initials of the general practitioner. The standard follows HL7 rulse to expres initals. [Click here to read the rules](http://hl7.org/fhir/R4/datatypes.html#HumanName)
+
 
 
 #### MedComMessagingOrganization 
@@ -91,7 +92,7 @@ The receiver system shall be able to receive and show modification of an already
 
 ##### Cancel HomeCareObservation Messsage
 The sender of the HomeCareObservation Message shall be able to cancel the already sent HomeCareObservation Message if the message has been sent on an incorrect civil registration number, if the receiver is incorrect or if the content in an attachment is concerning an incorrect civic registration number. If the sender cancel the already sent HomeCareObservation Message then the cancellation applies to whole message and not only to the wrong observation result. 
-If the user wants to cancel the message, then the reason of cancellation shall be written in the clinical comment. Alternatively, the user can also add one of MedCom's predefined cancellation reason phrases that should be added to the clinical comment. <a href="https://medcomfhir.dk/ig/terminology/CodeSystem-medcom-messaging-cancellation-reason.html">Click here to read MedCom's predefined phrases.</a>. 
+If the user wants to cancel the message, then the reason of cancellation shall be written in the clinical comment. Alternatively, the user can also add one of MedCom's predefined cancellation reason phrases that should be added to the clinical comment. <a href="https://medcomfhir.dk/ig/terminology/CodeSystem-medcom-messaging-cancellation-reason.html">Click here to read MedCom's predefined phrases.</a>. The cancellation reason shall be added to the DiagnosticRepport.conclusion element. 
 
 The receiver system shall be able to receive a cancellation of an already received HomeCareObservation Message and show clearly that the message has been cancelled in the user interface. The cancelled HomeCareObservation Message should not be deleted for reasons of subsequent traceability, but should instead be archived and clearly marked as cancelled.
 
