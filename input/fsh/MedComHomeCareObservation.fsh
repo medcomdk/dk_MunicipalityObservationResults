@@ -32,7 +32,7 @@ Usage: #example
 Title: "C-reaktive protein [CRP];P"
 Description: "C-reaktive protein [CRP] test performed by acute care team on the subject."
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU19748 "C-reaktivt protein [CRP];P"
+* code.coding[NPU] = #NPU19748 "P—C-reaktivt protein; massek. = ? mg/L"
 * valueQuantity.value = 26
 * valueQuantity.unit = "mg/L"
 * effectiveDateTime = 2023-09-12T10:24:08+02:00
@@ -46,7 +46,7 @@ Usage: #example
 Title: "Observation of the haemoglobin"
 Description: "Observation of the haemoglobin"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU02319 "Hæmoglobin;B"
+* code.coding[NPU] = #NPU02319 "B—Hæmoglobin(Fe); stofk. = ? mmol/L"
 * valueQuantity.value = 7.8
 * valueQuantity.unit = "mmol/L"
 * effectiveDateTime = 2023-09-12T10:25:08+02:00
@@ -62,7 +62,7 @@ Usage: #example
 Title: "Leukocyt Observation"
 Description: "Test of leucocyte on the subject by acute care team"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU02593 "Leukocytter;B"
+* code.coding[NPU] = #NPU02593 "B—Leukocytter; antalk. = ? × 109/L"
 * valueQuantity.value = 9.1
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-09-12T10:27:08+02:00
@@ -75,7 +75,7 @@ Usage: #example
 Title: "Lymphocyte observation"
 Description: "Lymphocyte observation on the subject by acute care team"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU02636 "Lymfocytter;B"
+* code.coding[NPU] = #NPU02636 "B—Lymphocytter; antalk. = ? × 109/L"
 * valueQuantity.value = 2.6
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-09-12T10:30:08+02:00
@@ -90,7 +90,7 @@ Usage: #example
 Title: "Monocytes observation"
 Description: "Monocytes observation performed on o subject by the acute care team"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU02840 "Monocytter;B"
+* code.coding[NPU] = #NPU02840 "B—Monocytter; antalk. = ? × 109/L"
 * valueQuantity.value = 0.7
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-09-12T10:32:08+02:00
@@ -234,7 +234,7 @@ Usage: #example
 Title: "Heart Rate"
 Description: "HeartRate of Elmer"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] =#NPU21692 "Puls;Hjerte"
+* code.coding[NPU] = #NPU21692 "Puls;Hjerte"
 * valueQuantity.value = 92
 * valueQuantity.unit = " 1/min"
 * note.text = "Patienten har været ud og går lige inden målingen."
