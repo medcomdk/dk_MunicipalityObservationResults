@@ -9,7 +9,7 @@ Description: "The HomeCareObservation Message is used exchange of the observatio
 Invariant: medcom-homecareObsMessage-1
 Description: "The MessageHeader shall conform to medcom-MedComHomeCareObservation-messageHeader profile"
 Severity: #error
-Expression: "entry.resource.ofType(MessageHeader).conformsTo('http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-homecareobservation-MessageHeader')"
+Expression: "entry[0].conformsTo('http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-homecareobservation-MessageHeader')"
 
 
 

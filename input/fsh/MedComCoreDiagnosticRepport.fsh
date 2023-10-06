@@ -17,7 +17,7 @@ Description: "Report containing all observation results. "
 * result ^type.aggregation = #bundled
 * performer MS
 * media MS
-* media only Reference(MedComMedia) 
+* media.link only Reference(MedComMedia) 
 * media ^short = "Attachemts that are relevant for assesment of the patient's condition "
 * media.link MS SU
 * conclusion 0..1 MS

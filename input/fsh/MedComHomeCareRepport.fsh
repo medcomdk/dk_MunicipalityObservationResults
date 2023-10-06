@@ -8,9 +8,10 @@ Description: "This resource is intenden to be used in relation when a HomeCareOb
 * result ^type.aggregation = #bundled
 * status.value = #final
 * performer 2..2 MS
+* performer only Reference(MedComCoreProducerOrganization or MedComCorePractitionerRole)
 * performer ^slicing.discriminator.type = #profile
 * performer ^slicing.discriminator.path = "resolve()"
-* performer ^slicing.rules = #open
+* performer ^slicing.rules = #closed
 * performer ^slicing.ordered = false
 * performer ^slicing.description = " Slice of observation codes"
 * performer contains 
@@ -39,7 +40,7 @@ Expression: "reference.resolve().practitioner.resolve().name.exists()"
 Invariant: medcom-homecareReport-3
 Description: "There shall exist a telecom to the organization form the healthcare worker is part of, as author in a HomeCare Report."
 Severity: #error
-Expression: "reference.resolve().practitioner.resolve().telecom.exists()"
+Expression: "reference.resolve().practitioner.resolve().telecom.where(system = 'phone').exists()"
 
 
 
@@ -48,7 +49,7 @@ InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
 Title: "HomeCareDiagnosticReport: spot test and EKG"
 Description: "Spot test and EKG performed by the acute care team on a subject."
-* status = $StatusCodeDiagnosticReportSystem#final
+* status = $StatusCodeDiagnosticRepport#final
 * issued = 2023-09-12T12:24:08+02:00
 * code = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
@@ -74,7 +75,7 @@ InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
 Title: "HomeCareDiagnosticReport: Urine dipsticks tests and refused consent"
 Description: "Urine dipstick tests performed by the acute care team on a subject, that has refused consent."
-* status = $StatusCodeDiagnosticReportSystem#final
+* status = $StatusCodeDiagnosticRepport#final
 * issued = 2023-09-12T12:24:08+02:00
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(99f5578f-c9d3-4d8c-aa3e-21690e03e27c)
@@ -92,7 +93,7 @@ InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
 Title: "HomeCareDiagnosticReport:TOBS and ABC examination"
 Description: "TOBS and ABC examination of Elmer"
-* status = $StatusCodeDiagnosticReportSystem#final
+* status = $StatusCodeDiagnosticRepport#final
 * issued = 2023-09-12T12:24:19+02:00
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
@@ -119,7 +120,7 @@ InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
 Title: "HomeCareDiagnosticReport:TOBS and ABC examination"
 Description: "Example of a modified HomeCareDiagnosticReport with TOBS and ABC examination of Elmer"
-* status = $StatusCodeDiagnosticReportSystem#corrected
+* status = $StatusCodeDiagnosticRepport#corrected
 * issued = 2023-09-12T12:34:00+02:00
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
@@ -150,7 +151,7 @@ InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
 Title: "HomeCareDiagnosticReport: TOBS and ABC examination"
 Description: "Example of a modified HomeCareDiagnosticReport, with TOBS and ABC examination of Elmer"
-* status = $StatusCodeDiagnosticReportSystem#cancelled
+* status = $StatusCodeDiagnosticRepport#cancelled
 * issued = 2023-09-12T13:00:00+02:00
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)

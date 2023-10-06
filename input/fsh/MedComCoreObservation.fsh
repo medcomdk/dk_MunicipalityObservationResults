@@ -9,6 +9,8 @@ Description: "Observation profile intended to be used in MedComHomeCareObservati
 * effectiveDateTime MS 
 * effectiveDateTime ^short = "Tha date and time the sample was taken (Danish: prøvetegningstidspunkt)."
 * code MS
+* code.coding.code MS
+* code.coding.system MS
 * subject 1..1 MS
 * subject only Reference(MedComCorePatient)
 * subject ^type.aggregation = #bundled

@@ -1,4 +1,4 @@
-Alias: $StatusCodeDiagnosticRepport =http://medcomfhir.dk/ig/terminology/ValueSet/medcom-corediagnosticrepport-status
+Alias: $StatusCodeDiagnosticRepport = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-corediagnosticrepport-status
 // Alias: $StatusCodeDiagnosticReportSystem = http://hl7.org/fhir/diagnostic-report-status
 Alias: $ObsStatusCodes = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-core-observation-status
 Alias: $ObsStatusCodeSystem = http://hl7.org/fhir/observation-status

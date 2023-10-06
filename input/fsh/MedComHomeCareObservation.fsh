@@ -234,7 +234,7 @@ Usage: #example
 Title: "Heart Rate"
 Description: "HeartRate of Elmer"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = #NPU21692 "Puls;Hjerte"
+* code.coding[NPU] =#NPU21692 "Puls;Hjerte"
 * valueQuantity.value = 92
 * valueQuantity.unit = " 1/min"
 * note.text = "Patienten har været ud og går lige inden målingen."
