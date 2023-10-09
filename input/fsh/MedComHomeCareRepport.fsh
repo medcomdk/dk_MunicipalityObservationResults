@@ -84,7 +84,7 @@ Description: "Urine dipstick tests performed by the acute care team on a subject
 * result[+] = Reference(4b8f899a-df12-4301-8287-9a77d46ded3d)
 * result[+] = Reference(f58819ff-d727-4740-a4ef-44eefc77022e)
 * result[+] = Reference(2fc2c078-825b-491d-9f8e-34926eb4f06f)
-* meta.security.code.value = #R
+* meta.security.code.value = $v3-Confidentiality#R
 * meta.security.display = "Restricted"
 
 

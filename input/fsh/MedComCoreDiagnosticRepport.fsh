@@ -23,4 +23,4 @@ Description: "Report containing all observation results. "
 * conclusion 0..1 MS
 * conclusion ^short = "A comment relevant for all observations in the report."
 * meta.security 0..1 MS SU
-* meta.security = $v3-Confidentiality#R "Restricted" 
+* meta.security = $v3-Confidentiality#R "Restricted" SU
