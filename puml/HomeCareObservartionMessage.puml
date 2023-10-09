@@ -7,26 +7,22 @@ top to bottom direction
 class "MedComHomeCareObservationMessage" as message <<MedComMessagingMessage>>
 class "MedComHomeCareObservationMessageHeader" as messageheader <<MedComMessagingMessageHeader>>
 class "MedComMessagingProvenance" as provenance
-class "MedComMessagingOrganization" as messagingOrganization <<MedComCoreOrganization>>
 class "MedComMessagingRequesterOrganization" as observationRequester <<MedComMessagingOrganization>>
 class "MedComCorePatient" as patient
 class "MedComCoreProducerOrganization" as organization 
-' class "MedComCorePractitioner" as author
 class "MedComHomeCareDiagnosticReport" as diagnosticReport <<MedComCoreDiagnosticReport>>
 class "MedComHomeCareObservation" as coreobservation <<MedComCoreObservation>>
 
-message -- messageheader : "entry"
-messageheader -- diagnosticReport : "focus"
-message -- provenance : "entry"
-provenance -- messageheader : "target" 
-provenance -- messagingOrganization : "agent.who"
-diagnosticReport -- patient : "subject"
-diagnosticReport -- organization: "performer"
-diagnosticReport -- coreobservation : "result"
-coreobservation -- organization:"performer"
-
-
-messageheader -- observationRequester : "receiver"
-messageheader -- organization : "sender"
+message --> messageheader : "entry"
+messageheader --> diagnosticReport : "focus"
+messageheader --> organization : "sender"
+message --> provenance : "entry"
+provenance --> messageheader : "target" 
+provenance --> organization : "agent.who"
+messageheader --> observationRequester : "receiver"
+diagnosticReport --> organization: "performer"
+diagnosticReport --> patient : "subject"
+diagnosticReport --> coreobservation : "result"
+coreobservation --> organization:"performer"
 
 @enduml
