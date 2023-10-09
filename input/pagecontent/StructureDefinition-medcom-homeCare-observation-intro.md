@@ -24,5 +24,6 @@ In a Observation resource, it is required to specify the status of the result. W
 In HomeCareObservation it is required to send information that result of the observation is not interpreted (Dansk: ikke reference vurderet). 
 Therefore i is required that the observation.interpretation.coding.code is "NI" not interpreted. 
 
-<!-- #### Observation result 
-The result of the observation shall be expresed using Observation.value[x]:valueQuantity element. The Observation.value[x]:valueQuantity element is rescrited to max 12 characters. If the result is larger than the 12 charactes is shall be added to clinicla comment.  -->
+#### Observation result 
+The result of the observation shall be expresed using eighter Observation.value[x]:valueQuantity og Observation.value[x]:valueString element. If the observation result is numerical then the Observation.value[x]:valueQuantity shall be used and if the result is alphanumeric e.g. positive/negative then the Observation.value[x]:valueString element shall be used. Both elemets Observation.value[x]:valueQuantity og Observation.value[x]:valueString are  restricted to max 12 character due to limitations in laborartory kort.  
+ <!-- The Observation.value[x]:valueQuantity element is rescrited to max 12 characters. If the result is larger than the 12 charactes is shall be added to clinicla comment.  -->
