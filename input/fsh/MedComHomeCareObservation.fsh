@@ -3,8 +3,11 @@ Parent: MedComCoreObservation
 Id: medcom-homeCare-observation
 Title: "MedComHomeCareObservation"
 Description: "This profile is intended to be used in HomeCareObservation to hold information about the observation results."
-* effectiveDateTime MS 
-* valueQuantity 1..1 MS
+* effectiveDateTime MS
+* valueString 0..1 MS
+* valueString
+  * ^maxLength = 12
+* valueQuantity 0..1 MS
 * valueQuantity
   * ^maxLength = 12
 * code.coding[NPU].system from $NPUObservationCodesValueSet 
