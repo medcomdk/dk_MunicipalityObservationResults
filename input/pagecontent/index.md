@@ -84,7 +84,7 @@ The HomeCareObservation message includes several timestamps. These timestamps ar
 
 It is assumed that in most cases, the Bundle.timestamp, provenance.occuredDateTime[x] and provenance.recorded will be equal,as the events happens instantly after eachother. However, there might be systems where the sending is delayed compared to the real world-event and bundle generation, hence will the Provenance timestamps differentiate from Bundle timestamp.
 
-#### Simplified examples of the new HomeCareObservation Message
+#### Simplified examples of the HomeCareObservation Message
 
 ##### HomeCareObservation Message-Spot test and EKG image
 Blow can a simplified example of a new HomeCareObservation Message be seen with an attachment. Since the example is a new message is the activity in the Provenance instance 'new-message'.
@@ -102,10 +102,10 @@ Blow can a simplified example of a new HomeCareObservation Message containg TOBS
 [Click here to see the generated example of HomeCareObservation containg TOBS result and clinical and analysis comment](./Bundle-401cbc36-db1e-4fe0-bf90-6df331dde179.html)
 
 
-#### Modification and Cancellation of the HomeCareObservationMessage
+##### Modification and Cancellation of the HomeCareObservationMessage
 It is allowed to modify and cancel a HomeCareObservation Message. If the message is modified or cancelled it shall be clearly indicated on the user interface. When sending a modification or cancellation of the HomeCareObservation the MessageHeader.id should be the same so the receiver system can see if there are some changes or if the message has been cancelled. 
 
-##### Modify HomeCareObservation Message
+###### Modify HomeCareObservation Message
 It is a requirement that the sender of HomeCareObservation message can modify an already sent HomeCareObservation message if the user wants to correct the content.
 The modification can only happen if the modification is regarding observation sampling date and time, observation result, a clinical comment (overall nursing assessment), an analysis comment, content of an attached file (as long as the content is send on the correct civil registration number (Danish: CPR-nummer)), the initials of the requisitioning general practitioner or sender's signature. 
 When sending a modification it is requirede to have a Provenance instance referencing the message being modified, and a Provenance instance referencing the modification message, where Provenance.entity.what.reference element points to the MessageHeader.id of the previous message.the It is also required that the Provenance instance referencing the modification message, have a Provenance.entity.role that shall be *revision* and the Provenance.activity shall be *modify-message*. 
@@ -115,7 +115,7 @@ When sending a modification it is requirede to have a Provenance instance refere
 The receiver system shall be able to receive and show modification of an already received HomeCareObservation message. It is also required that the receiver system clearly shows what was modified in the received correction, in the user interface of the receiver system. Further, there shall be traceability to previously received HomeCareObservation message in the receiver system.  
 
 
-##### Cancel HomeCareObservation Messsage
+###### Cancel HomeCareObservation Messsage
 The sender of the HomeCareObservation Message shall be able to cancel the already sent HomeCareObservation Message if the message has been sent on an incorrect civil registration number, if the receiver is incorrect or if the content in an attachment is concerning an incorrect civic registration number. If the sender cancel the already sent HomeCareObservation Message then the cancellation applies to whole message and not only to the wrong observation result. 
 If the user wants to cancel the message, then the reason of cancellation shall be written in the clinical comment. Alternatively, the user can also add one of MedCom's predefined cancellation reason phrases that should be added to the clinical comment. <a href="https://medcomfhir.dk/ig/terminology/CodeSystem-medcom-messaging-cancellation-reason.html">Click here to read MedCom's predefined phrases.</a>. The cancellation reason shall be added to the DiagnosticRepport.conclusion element. 
 There shall be a Provenance instance referencing to the message being cancelled, and a Provenance instance referencing the cancellation message, where Provenance.entity.what.reference element points to the message being cancelled.
