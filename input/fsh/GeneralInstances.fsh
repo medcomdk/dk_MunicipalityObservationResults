@@ -234,7 +234,7 @@ Usage: #example
 * recorded = 2023-09-12T13:00:00+02:00
 * activity.coding = $HCOActivityCodes#retract-message
 * agent.who = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
-* entity.role = #revision
+* entity.role = #removal
 * entity.what = Reference(489de4f2-0d8d-4de2-a7ce-ccb93568799f)
 
 
