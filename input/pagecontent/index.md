@@ -52,7 +52,10 @@ It is alsao allowed to send an analysis comment on the individual result, if thi
 Further it is required to send information that the result of the observation is not reference assessed (Dansk: ikke reference vurderet).
 
 #### MedComCorePatient
-The [MedComCorePatient](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) profile is used in a MedComHomeCareObservations message to represent the patient. #### MedComMessagingProvenance
+The [MedComCorePatient](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) profile is used in a MedComHomeCareObservations message to represent the patient. 
+
+
+#### MedComMessagingProvenance
 The [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) profile is used to track information about the activity of the HomeCareObservation message, e.g 'new-message' or 'modify-message'. The allowed activity codes for HomeCareObservation message can be found in [MedComHomeCareObservationMessageAcitivityCodes](http://medcomfhir.dk/ig/terminology/ValueSet-medcom-HomeCareObservation-messagingActivities.html) on the Terminology IG. 
 
 #### MedComMessagingRequesterOrganization 
