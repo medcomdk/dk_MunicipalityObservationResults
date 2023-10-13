@@ -84,6 +84,24 @@ The HomeCareObservation message includes several timestamps. These timestamps ar
 
 It is assumed that in most cases, the Bundle.timestamp, provenance.occuredDateTime[x] and provenance.recorded will be equal,as the events happens instantly after eachother. However, there might be systems where the sending is delayed compared to the real world-event and bundle generation, hence will the Provenance timestamps differentiate from Bundle timestamp.
 
+#### Simplified examples of the new HomeCareObservation Message
+
+##### HomeCareObservation Message-Spot test and EKG image
+Blow can a simplified example of a new HomeCareObservation Message be seen with an attachment. Since the example is a new message is the activity in the Provenance instance 'new-message'.
+
+[Click here to see the generated example of HomeCareObservation containing results from Spot test and EKG image](./Bundle-add5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c.html)
+
+
+##### HomeCareObservation Message-Urinestix and refused consent
+Blow can a simplified example of a new HomeCareObservation Message containg urinestix results and refused consent to exchange the results. Since the example is a new message is the activity in the Provenance instance 'new-message'.
+[Click here to see the generated example of HomeCareObservation caontaing result from Urinestix and refusec consent](./Bundle-faa0c104-0ebf-49cb-bad1-9e0f59436e18.html)
+
+
+##### HomeCareObservation Message-TOBS with clinical and analysis comment
+Blow can a simplified example of a new HomeCareObservation Message containg TOBS results and clinical and analysis comment. Since the example is a new message is the activity in the Provenance instance 'new-message'.
+[Click here to see the generated example of HomeCareObservation containg TOBS result and clinical and analysis comment](./Bundle-401cbc36-db1e-4fe0-bf90-6df331dde179.html)
+
+
 #### Modification and Cancellation of the HomeCareObservationMessage
 It is allowed to modify and cancel a HomeCareObservation Message. If the message is modified or cancelled it shall be clearly indicated on the user interface. When sending a modification or cancellation of the HomeCareObservation the MessageHeader.id should be the same so the receiver system can see if there are some changes or if the message has been cancelled. 
 

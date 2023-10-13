@@ -63,8 +63,8 @@ Usage: #example
 // HomeCareReport  modify example
 Instance: 07eb074b-be00-47e5-8bcb-484990a1a97e
 InstanceOf: MedComHomeCareObservationMessageHeader
-Title: "Instance of a MessageHeader resource used in a new message."
-Description: "Example of a MessageHeader in a new HomeCareDiagnosticReport message. Valid only if used in a bundle (message)."
+Title: "Instance of a MessageHeader resource used in a modified message message."
+Description: "Example of a MessageHeader in a modified HomeCareDiagnosticReport message. Valid only if used in a bundle (message)."
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#homecareobservation-message
@@ -78,8 +78,8 @@ Usage: #example
 // HomeCareReport  Cancelled example
 Instance: 36cb86f1-a01a-4115-a84d-9390aa0ddcbd
 InstanceOf: MedComHomeCareObservationMessageHeader
-Title: "Instance of a MessageHeader resource used in a new message."
-Description: "Example of a MessageHeader in a new HomeCareDiagnosticReport message. Valid only if used in a bundle (message)."
+Title: "Instance of a MessageHeader resource used in a cancelled message."
+Description: "Example of a MessageHeader in a cancelled HomeCareDiagnosticReport message. Valid only if used in a bundle (message)."
 Usage: #example
 * destination[primary].extension[use] = b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 * eventCoding = $MessageEvents#homecareobservation-message
