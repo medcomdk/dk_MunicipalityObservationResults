@@ -92,7 +92,7 @@ It is a requirement that the sender of HomeCareObservation message can modify an
 The modification can only happen if the modification is regarding observation sampling date and time, observation result, a clinical comment (overall nursing assessment), an analysis comment, content of an attached file (as long as the content is send on the correct civil registration number (Danish: CPR-nummer)), the initials of the requisitioning general practitioner or sender's signature. 
 
 The receiver system shall be able to receive and show modification of an already received HomeCareObservation message. It is also required that the receiver system clearly shows what was modified in the received correction, in the user interface of the receiver system. Further, there shall be traceability to previously received HomeCareObservation message in the receiver system.  
-Provenance
+
 
 ##### Cancel HomeCareObservation Messsage
 The sender of the HomeCareObservation Message shall be able to cancel the already sent HomeCareObservation Message if the message has been sent on an incorrect civil registration number, if the receiver is incorrect or if the content in an attachment is concerning an incorrect civic registration number. If the sender cancel the already sent HomeCareObservation Message then the cancellation applies to whole message and not only to the wrong observation result. 
