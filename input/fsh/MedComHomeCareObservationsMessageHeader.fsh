@@ -87,5 +87,5 @@ Usage: #example
 * destination[primary].receiver = Reference(1ab9c2d9-c348-4d75-9122-60ea8a6fdcf1)
 * sender = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1144561000016002"
-* focus[0] = Reference(4f013d3a-575c-447d-83e1-7a5fb7f7b0de)
-* focus[1] = Reference(cfa9e95b-b5ac-4cfe-abe7-ea29e6b67919)
+* focus[0] = Reference(cfa9e95b-b5ac-4cfe-abe7-ea29e6b67919)
+* focus[1] = Reference(4f013d3a-575c-447d-83e1-7a5fb7f7b0de)
