@@ -87,18 +87,18 @@ It is assumed that in most cases, the Bundle.timestamp, provenance.occuredDateTi
 #### Simplified examples of the HomeCareObservation Message
 
 ##### HomeCareObservation Message-Spot test and EKG image
-Blow can a simplified example of a new HomeCareObservation Message be seen with an attachment. Since the example is a new message is the activity in the Provenance instance 'new-message'.
+Below can a simplified example of a new HomeCareObservation Message be seen with an attachment. Since the example is a new message is the activity in the Provenance instance 'new-message'.
 
 [Click here to see the generated example of HomeCareObservation containing results from Spot test and EKG image](./Bundle-add5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c.html)
 
 
 ##### HomeCareObservation Message-Urinestix and refused consent
-Blow can a simplified example of a new HomeCareObservation Message containg urinestix results and refused consent to exchange the results. Since the example is a new message is the activity in the Provenance instance 'new-message'.
+Below can a simplified example of a new HomeCareObservation Message containg urinestix results and refused consent to exchange the results. Since the example is a new message is the activity in the Provenance instance 'new-message'.
 [Click here to see the generated example of HomeCareObservation caontaing result from Urinestix and refusec consent](./Bundle-faa0c104-0ebf-49cb-bad1-9e0f59436e18.html)
 
 
 ##### HomeCareObservation Message-TOBS with clinical and analysis comment
-Blow can a simplified example of a new HomeCareObservation Message containg TOBS results and clinical and analysis comment. Since the example is a new message is the activity in the Provenance instance 'new-message'.
+Below can a simplified example of a new HomeCareObservation Message containg TOBS results and clinical and analysis comment. Since the example is a new message is the activity in the Provenance instance 'new-message'.
 [Click here to see the generated example of HomeCareObservation containg TOBS result and clinical and analysis comment](./Bundle-401cbc36-db1e-4fe0-bf90-6df331dde179.html)
 
 
