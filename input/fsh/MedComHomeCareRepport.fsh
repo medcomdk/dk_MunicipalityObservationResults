@@ -118,7 +118,7 @@ E.	Temperatur 38,7 Målt rektalt "
 Instance: cfa9e95b-b5ac-4cfe-abe7-ea29e6b67919
 InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
-Title: "HomeCareDiagnosticReport:TOBS and ABC examination"
+Title: "Modified HomeCareDiagnosticReport:TOBS and ABC examination"
 Description: "Example of a modified HomeCareDiagnosticReport with TOBS and ABC examination of Elmer"
 * status = $StatusCodeDiagnosticReportSystem#corrected
 * issued = 2023-09-12T12:34:00+02:00
@@ -149,8 +149,8 @@ Patienten har nægtet at spise og drikke i løbet af dagen.
 Instance: 4f013d3a-575c-447d-83e1-7a5fb7f7b0de
 InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
-Title: "HomeCareDiagnosticReport: TOBS and ABC examination"
-Description: "Example of a modified HomeCareDiagnosticReport, with TOBS and ABC examination of Elmer"
+Title: "Cancelled HomeCareDiagnosticReport: TOBS and ABC examination"
+Description: "Example of a cancelled HomeCareDiagnosticReport, with TOBS and ABC examination of Elmer"
 * status = $StatusCodeDiagnosticReportSystem#cancelled
 * issued = 2023-09-12T13:00:00+02:00
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
