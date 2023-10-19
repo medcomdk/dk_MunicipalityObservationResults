@@ -8,10 +8,10 @@ This implementation guide (IG) is provided by MedCom to describe the use of FHIR
 This IG contains profiles for MedCom HomeCareObservation (Danish: Kommunale Prøvesvar).The purpose of the HomeCareObservation is to support digital structured communication of results and observations performed and produced by the municipal acute care team.The HomeCareObservation will be sent from the municipal acute care team to the general practitioner on the condition that the general practitioner previously has requisitioned the acute care team to perform an emergency visit. With HomeCareObservation the quality of the results and observations (hereafter mentioned as observations results) are increased as structured data concerning sender, producer of the results, analysis codes and clinical observations, among others, are part of the HomeCareObservation. This allows the general practitioner to easily create an overview of the citizens health data.
 
 The MedCom HomeCareObservation supports following content in relation to healthcare:
-•	exchange of observation results that the municipal acute care team has performed, analyzed and produced
-•	exchange of clinical observations (nursing assessments) that are necessary in order to understand and interpret the citizens overall results and health status 
-•	exchange of analysis comments that are necessary in order to understand and interpret individual analysis and results
-•	exchange of relevant files (e.g. images or PDF)
+* exchange of observation results that the municipal acute care team has performed, analyzed and produced
+* exchange of clinical observations (nursing assessments) that are necessary in order to understand and interpret the citizens overall results and health status 
+* exchange of analysis comments that are necessary in order to understand and interpret individual analysis and results
+* exchange of relevant files (e.g. images or PDF)
 
 
 More information about the clinical guidelines for applications can be found here. 
@@ -29,9 +29,13 @@ MedCom HomeCareObservation follows the general MedCom FHIR messaging model, exce
 
 
 #### MedComHomeCareObservationMessage
-The [MedComHomeCareObservationMessage](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-message.html) constraints of the [MedComMessagingMessage](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-message.html). The MedComHomeCareObservationMessage profile is used to bundle all observations and relevant information together. All referenced resources in the HomeCareObservationMessage shall be contained in the entry list in MedComHomeCareObservationMessage. 
+The MedComHomeCareObservationMessage profile is used to bundle all observations and relevant information together. All referenced resources in the HomeCareObservationMessage shall be contained in the entry list in MedComHomeCareObservationMessage. 
 
-The MedComMessaging requires to use the [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecareobservation-MessageHeader.html) and requires to use exactly one [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html) resource in the message.Furthermore, it contains rules that constrains the ValueSet of activities in the <a href="https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html">MedComMessagingProvenance</a> profile to only contain activities from the [MedComHomeCareObservationMessageAcitivityCodes](http://medcomfhir.dk/ig/terminology/ValueSet-medcom-HomeCareObservation-messagingActivities.html) ValueSet, which contains activities such as new-message, forward-message, and other activities triggering the message.
+The [MedComHomeCareObservationMessage](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-message.html) is a constraint of the [MedComMessagingMessage](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-message.html) further to use the [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecareobservation-MessageHeader.html) and to require exactly one [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html).
+Furthermore, it contains rules that constrains the ValueSet of activities in the <a href="https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html">MedComMessagingProvenance</a> profile to only contain activities from the [MedComHomeCareObservationMessageAcitivityCodes](http://medcomfhir.dk/ig/terminology/ValueSet-medcom-HomeCareObservation-messagingActivities.html) ValueSet, which contains activities such as new-message, forward-message, and other activities triggering the message.
+
+
+
 
 #### MedComHomeCareObservationMessageHeader
 The [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecareobservation-MessageHeader.html) constrains the [MedComMessagingMessageHeader](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-messageHeader.html) further to specify the fixed coding for this message and constrains the use of carbon-copy destination. 
@@ -41,13 +45,13 @@ The [MedComHomeCareDiagnosticReport](http://medcomfhir.dk/ig/homecareobservation
 The profile also includes information about the performer, i.e the preson who performed and produced observations results. The perfomer informations consist of a signature that requires the name, title and relevant telephone number.Further, this profile also contains the clinical observations (nursing assessments) regarding the citizens overall results and health status.
 [Click here for read more information about the clinical observations.](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-diagnosticreport.html)
 
-This profile also allows to send relevant files from the acute home care visit.  Files that are allowed to sendt with the HomeCareDiagnosticReport are: pdf, jpeg, png, tiff or gif.
+This profile also allows to send relevant attachments from the acute home care visit.  Attachment that are allowed to sendt with the HomeCareDiagnosticReport are: pdf, jpeg, png, tiff or gif.
 
 If the attached file are send, it is a requirement that the ID and title of the attached file be sent. Furthermore, MedCom recommended that the name of the author, as well as the time of creation, of the attached file be signed and sent with it.
 
 
 #### MedComHomeCareObservation
-The [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homeCare-observation.html) profile inherits from the MedComCoreObservation profile. This profile includes infromation about what observation was performed, what date & time, by whom, and what result was obtaind. Codes form two Codesystems for NPU and MCS are used to stated what observation is performed in Observation.code.coding. Both codystsems are exibitet on terminology server.
+The [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homeCare-observation.html) profile inherits from the MedComCoreObservation profile. This profile includes infromation about what observation was performed, what date & time, by whom, and what result was obtained. Codes form two Codesystems for NPU and MCS are used to stated what observation is performed in Observation.code.coding. Both codystsems are exibitet on terminology server.
 It is alsao allowed to send an analysis comment on the individual result, if this comment is relevant to include. 
 Further it is required to send information that the result of the observation is not reference assessed (Dansk: ikke reference vurderet).
 
@@ -84,6 +88,26 @@ The HomeCareObservation message includes several timestamps. These timestamps ar
 
 It is assumed that in most cases, the Bundle.timestamp, provenance.occuredDateTime[x] and provenance.recorded will be equal,as the events happens instantly after eachother. However, there might be systems where the sending is delayed compared to the real world-event and bundle generation, hence will the Provenance timestamps differentiate from Bundle timestamp.
 
+
+##### Modification and Cancellation of the HomeCareObservationMessage
+It is allowed to modify and cancel a HomeCareObservation Message. If the message is modified or cancelled it shall be clearly indicated on the user interface. When sending a modification or cancellation of the HomeCareObservation the MessageHeader.id should be the same so the receiver system can see if there are some changes or if the message has been cancelled. 
+
+###### Modify HomeCareObservation Message
+It is a requirement that the sender of HomeCareObservation message can modify an already sent HomeCareObservation message if the user wants to correct the content.
+The modification can only happen if the modification is regarding observation sampling date and time, observation result, a clinical comment (overall nursing assessment), an analysis comment, content of an attached file (as long as the content is send on the correct civil registration number (Danish: CPR-nummer)), the initials of the requisitioning general practitioner or sender's signature. 
+When sending a modification it is requirede to have a Provenance instance referencing the message being modified, and a Provenance instance referencing the modification message, where Provenance.entity.what.reference element points to the MessageHeader.id of the previous message.the It is also required that the Provenance instance referencing the modification message, have a Provenance.entity.role that shall be *revision* and the Provenance.activity shall be *modify-message*. 
+
+The receiver system shall be able to receive and show modification of an already received HomeCareObservation message. It is also required that the receiver system clearly shows what was modified in the received correction, in the user interface of the receiver system. Further, there shall be traceability to previously received HomeCareObservation message in the receiver system.  
+
+
+###### Cancel HomeCareObservation Messsage
+The sender of the HomeCareObservation Message shall be able to cancel the already sent HomeCareObservation Message if the message has been sent on an incorrect civil registration number, if the receiver is incorrect or if the content in an attachment is concerning an incorrect civic registration number. If the sender cancel the already sent HomeCareObservation Message then the cancellation applies to whole message and not only to the wrong observation result. 
+If the user wants to cancel the message, then the reason of cancellation shall be written in the clinical comment. Alternatively, the user can also add one of MedCom's predefined cancellation reason phrases that should be added to the clinical comment. <a href="https://medcomfhir.dk/ig/terminology/CodeSystem-medcom-messaging-cancellation-reason.html">Click here to read MedCom's predefined phrases.</a>. The cancellation reason shall be added to the DiagnosticRepport.conclusion element. 
+There shall be a Provenance instance referencing to the message being cancelled, and a Provenance instance referencing the cancellation message, where Provenance.entity.what.reference element points to the message being cancelled.
+In the latter instance of the Provenance resource, the Provenance.entity.role shall be *removal* and the Provenance.activity shall be *retract-message*. 
+
+The receiver system shall be able to receive a cancellation of an already received HomeCareObservation Message and show clearly that the message has been cancelled in the user interface. The cancelled HomeCareObservation Message should not be deleted for reasons of subsequent traceability, but should instead be archived and clearly marked as cancelled.
+
 #### Simplified examples of the HomeCareObservation Message
 
 ##### HomeCareObservation Message-Spot test and EKG image
@@ -102,28 +126,19 @@ Below can a simplified example of a new HomeCareObservation Message containg TOB
 [Click here to see the generated example of HomeCareObservation containg TOBS result and clinical and analysis comment](./Bundle-401cbc36-db1e-4fe0-bf90-6df331dde179.html)
 
 
-##### Modification and Cancellation of the HomeCareObservationMessage
-It is allowed to modify and cancel a HomeCareObservation Message. If the message is modified or cancelled it shall be clearly indicated on the user interface. When sending a modification or cancellation of the HomeCareObservation the MessageHeader.id should be the same so the receiver system can see if there are some changes or if the message has been cancelled. 
 
-###### Modify HomeCareObservation Message
-It is a requirement that the sender of HomeCareObservation message can modify an already sent HomeCareObservation message if the user wants to correct the content.
-The modification can only happen if the modification is regarding observation sampling date and time, observation result, a clinical comment (overall nursing assessment), an analysis comment, content of an attached file (as long as the content is send on the correct civil registration number (Danish: CPR-nummer)), the initials of the requisitioning general practitioner or sender's signature. 
-When sending a modification it is requirede to have a Provenance instance referencing the message being modified, and a Provenance instance referencing the modification message, where Provenance.entity.what.reference element points to the MessageHeader.id of the previous message.the It is also required that the Provenance instance referencing the modification message, have a Provenance.entity.role that shall be *revision* and the Provenance.activity shall be *modify-message*. 
+##### Modify HomeCareObservation Message
 
 [Click here to see the generated example of simplified example of modify HomeCareObservation Message](./Bundle-73996cdc-3192-4d15-bd16-c365ef0085e7.html)
 
-The receiver system shall be able to receive and show modification of an already received HomeCareObservation message. It is also required that the receiver system clearly shows what was modified in the received correction, in the user interface of the receiver system. Further, there shall be traceability to previously received HomeCareObservation message in the receiver system.  
 
 
 ###### Cancel HomeCareObservation Messsage
-The sender of the HomeCareObservation Message shall be able to cancel the already sent HomeCareObservation Message if the message has been sent on an incorrect civil registration number, if the receiver is incorrect or if the content in an attachment is concerning an incorrect civic registration number. If the sender cancel the already sent HomeCareObservation Message then the cancellation applies to whole message and not only to the wrong observation result. 
-If the user wants to cancel the message, then the reason of cancellation shall be written in the clinical comment. Alternatively, the user can also add one of MedCom's predefined cancellation reason phrases that should be added to the clinical comment. <a href="https://medcomfhir.dk/ig/terminology/CodeSystem-medcom-messaging-cancellation-reason.html">Click here to read MedCom's predefined phrases.</a>. The cancellation reason shall be added to the DiagnosticRepport.conclusion element. 
-There shall be a Provenance instance referencing to the message being cancelled, and a Provenance instance referencing the cancellation message, where Provenance.entity.what.reference element points to the message being cancelled.
+
 In the latter instance of the Provenance resource, the Provenance.entity.role shall be *removal* and the Provenance.activity shall be *retract-message*. 
 [Click here to see the generated example of simplified example of cancelled HomeCareObservation Message](./Bundle-5f341feb-9a20-463a-96cc-a9ca8ace5567.html)
 
 
-The receiver system shall be able to receive a cancellation of an already received HomeCareObservation Message and show clearly that the message has been cancelled in the user interface. The cancelled HomeCareObservation Message should not be deleted for reasons of subsequent traceability, but should instead be archived and clearly marked as cancelled.
 
 #### Terminology
 On [MedCom Terminology IG](http://medcomfhir.dk/ig/terminology/) all referenced CodeSystem and ValueSets developed by MedCom can be found.
