@@ -15,7 +15,7 @@ This page presents MedCom HomeCareObservation (Danish: Kommunale Prøvesvar) sta
 > Clinical Guidelines and documentation and use cases are in  Danish. The remaining documentation will be in English.
 
 ## 1 Standard Documentation {#standard}
-The standard documentation below provides the necessary content to understand the needs for modernization, the role of the MedCom HomeCareObservation message, what to implement and how to get a MedCom certificate. The standard documentation for MedCom HomeCareObservation includes:
+The standard documentation below provides the necessary content to understand the needs for modernization, the role of the MedCom HomeCareObservation message, what to implement and how to get a MedCom certification. The standard documentation for MedCom HomeCareObservation includes:
   * Clinical Guidelines and documentation
   * Use cases
 <p>&nbsp;</p>
