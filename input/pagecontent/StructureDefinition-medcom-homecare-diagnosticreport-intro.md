@@ -40,7 +40,7 @@ If a patient not allow to share the observation results with other than the gene
 This mean that the meta.security.code shall be R, and in the user interface, it shall be clearly stated that consent has been refused. 
 
 #### Attachements 
-In MedComHomeCareDiagnosticReport it is allowed to include attachments. When including an attachment to a diagnosticReport then the element DiagnosticRport.media shall be used. It is up to the user to assess when it is relevant to send an attachment. 
+In MedComHomeCareDiagnosticReport it is allowed to include attachments. When including an attachment to a diagnosticReport then the element DiagnosticReport.media.link shall be used. It is up to the user to assess when it is relevant to send an attachment. 
 Only an attachment of the following formats must be included: 
 
 * Adobe Portable Document Format (PDF)
@@ -49,4 +49,10 @@ Only an attachment of the following formats must be included:
 * Portable Network Graphics (PNG)
 * Tag Image File Format (tiff)
 
-If the atached file are sent, it is a requirement that the ID and title of the attached file be sent. Furthermore, MedCom recommended that the name of the author, as well as the time of creation, of the attached file be signed and sent with it.
+If the atached file are sent, it is a requirement that the ID and title of the attached file shall be sent.
+The ID of the attachment shall be expressed using Media.identifier element.
+The Media.content.titel element shall be used to express the titel of the attachment. 
+
+Furthermore, MedCom recommended that the name of the author, as well as the time of creation, of the attached file be signed and sent with it.
+To express the author of the attachemn the Media.operator shal be used.
+The time of creation, of the attached file shall be expressed using Media.content.creation element  
