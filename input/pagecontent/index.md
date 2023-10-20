@@ -45,8 +45,6 @@ The profile also includes information about the performer, i.e the preson who pe
 
 This profile also allows to send relevant attachments from the acute home care visit.  Attachment that are allowed to sendt with the HomeCareDiagnosticReport are: pdf, jpeg, png, tiff or gif.
 
-If the attached file are send, it is a requirement that the ID and title of the attached file be sent. Furthermore, MedCom recommended that the name of the author, as well as the time of creation, of the attached file be signed and sent with it.
-
 
 ### MedComHomeCareObservation
 The [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homeCare-observation.html) profile inherits from the MedComCoreObservation profile. This profile includes infromation about what observation was performed, what date & time, by whom, and what result was obtained.
@@ -78,7 +76,9 @@ If the initials of the general practitioner are unknown, then the code "unknown"
 The [MedComCoreProducerOrganization](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-producer-organization.html) profile is used in a HomeCareObservation message to represent the organization that is responsible for performing and analysing, thereby producing, the observation results e.g. acute careteam. The MedComCoreProducerOrganization shall be identified using municipality SOR-ID, and a producer-ID.  The producer-ID consists of a <a href= "http://medcomfhir.dk/ig/terminology/CodeSystem-MedComProducentID.html">three letter code, which is displayed on the terminology IG</a>. In a receiver system, the interpretation of the two codes will together state that an acute care team from e.g. Aarhus municipality is the producer of the results.
 
 ### MedComCoreMedia
-The [MedComCoreMedia]()
+The [MedComCoreMedia](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-media.html) profile is used in HomeCareObservation message to represents the relevant attachements added to the HomeCareDagnosticReport. 
+
+If the attached file are send, it is a requirement that the ID and title of the attached file shall be sent. Furthermore, MedCom recommended that the name of the author, as well as the time of creation, of the attached file can be signed and sent with it.
 
 ## Timestamps
 The HomeCareObservation message includes several timestamps. These timestamps are present in the profiles [MedComHomeCareDiagnosticReport](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-diagnosticreport.html), [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homeCare-observation.html),[MedComHomeCareObservationMessage](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-message.html), and [MedComMessagingProvenance](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html) and have different purposes:
