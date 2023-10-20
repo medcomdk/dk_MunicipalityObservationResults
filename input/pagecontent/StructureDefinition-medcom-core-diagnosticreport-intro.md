@@ -15,5 +15,5 @@ If the atached file are sent, it is a requirement that the ID and title of the a
 
 
 #### Use of security labet on patient consent 
-If a patient gives a negative consent to sharing the observation results with other than the general practitioner a securety labe shall be used. 
+If a patient gives a negative consent to sharing the observation results with other than the general practitioner a security labe shall be used. 
 This mean that the meta.security.code shall be R, and in the user interface, it shall be clearly stated that consent has been refused. 
