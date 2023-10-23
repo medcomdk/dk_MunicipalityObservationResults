@@ -173,3 +173,6 @@ If you have any questions, please contact <fhir@medcom.dk> or write to MedCom's 
 
 
 
+#### Tilgængelighedserklæring
+
+[tilgængelighedserklæring](https://www.was.digst.dk/medcomfhir-dk-ig-)
