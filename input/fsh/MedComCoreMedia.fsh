@@ -29,7 +29,7 @@ Expression: "reference.resolve().practitioner.resolve().name.exists()"
 
 
 Instance: cb277ee2-5d96-4762-829d-d36449b2b17f
-InstanceOf: MedComMedia
+InstanceOf: MedComCoreMedia
 Usage: #example
 Title: "Normal EKG"
 Description: "An example of an EKG that can be sendt with an diagnostic repport"
