@@ -1,6 +1,6 @@
-Profile: MedComMedia
+Profile: MedComCoreMedia
 Parent: Media
-Id: medcom-media
+Id: medcom-core-media
 Title: "MedComMedia"
 Description: "Profile to capture relevant images,audio, video and document as part of the healthcare process  "
 * status MS
