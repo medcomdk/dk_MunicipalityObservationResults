@@ -14,7 +14,7 @@ The MedCom HomeCareObservation supports following content in relation to healthc
 * exchange of relevant files (e.g. images or PDF)
 
 
-More information about the clinical guidelines for applications can be found here. 
+[More information about the clinical guidelines for applications can be found here.](https://medcomdk.github.io/dk_HomeCareObservations/#11-clinical-guidelines-and-documentation) 
 
 ## MedCom HomeCareObservation
 The structure of a MedCom HomeCareObservation is despicted on the following diagram:
@@ -76,7 +76,7 @@ If the initials of the general practitioner are unknown, then the code "unknown"
 The [MedComCoreProducerOrganization](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-producer-organization.html) profile is used in a HomeCareObservation message to represent the organization that is responsible for performing and analysing, thereby producing, the observation results e.g. acute careteam. The MedComCoreProducerOrganization shall be identified using municipality SOR-ID, and a producer-ID.  The producer-ID consists of a <a href= "http://medcomfhir.dk/ig/terminology/CodeSystem-MedComProducentID.html">three letter code, which is displayed on the terminology IG</a>. In a receiver system, the interpretation of the two codes will together state that an acute care team from e.g. Aarhus municipality is the producer of the results.
 
 ### MedComCoreMedia
-The [MedComCoreMedia](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-media.html) profile is used in HomeCareObservation message to represents the relevant attachements added to the HomeCareDagnosticReport. 
+The [MedComCoreMedia](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-media.html) profile is used in HomeCareObservation message to represents the relevant attachements added to the HomeCareDagnosticReport. MedComCoreMedia is referred from HomCareDiagnosticReport.media.link. 
 
 If the attached file are send, it is a requirement that the ID and title of the attached file shall be sent. Furthermore, MedCom recommended that the name of the author, as well as the time of creation, of the attached file can be signed and sent with it.
 
