@@ -49,7 +49,7 @@ InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
 Title: "HomeCareDiagnosticReport: spot test and EKG"
 Description: "Spot test and EKG performed by the acute care team on a subject."
-* status = $StatusCodeDiagnosticReportSystem#final
+* status = $StatusCodeDiagnosticReport#final
 * issued = 2023-09-12T12:24:08+02:00
 * code = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
@@ -75,7 +75,7 @@ InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
 Title: "HomeCareDiagnosticReport: Urine dipsticks tests and refused consent"
 Description: "Urine dipstick tests performed by the acute care team on a subject, that has refused consent."
-* status = $StatusCodeDiagnosticReportSystem#final
+* status = $StatusCodeDiagnosticReport#final
 * issued = 2023-09-12T12:24:08+02:00
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(99f5578f-c9d3-4d8c-aa3e-21690e03e27c)
@@ -93,7 +93,7 @@ InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
 Title: "HomeCareDiagnosticReport:TOBS and ABC examination"
 Description: "TOBS and ABC examination of Elmer"
-* status = $StatusCodeDiagnosticReportSystem#final
+* status = $StatusCodeDiagnosticReport#final
 * issued = 2023-09-12T12:24:19+02:00
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
@@ -120,7 +120,7 @@ InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
 Title: "Modified HomeCareDiagnosticReport:TOBS and ABC examination"
 Description: "Example of a modified HomeCareDiagnosticReport with TOBS and ABC examination of Elmer"
-* status = $StatusCodeDiagnosticReportSystem#corrected
+* status = $StatusCodeDiagnosticReport#corrected
 * issued = 2023-09-12T12:34:00+02:00
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
@@ -151,7 +151,7 @@ InstanceOf: MedComHomeCareDiagnosticReport
 Usage: #example
 Title: "Cancelled HomeCareDiagnosticReport: TOBS and ABC examination"
 Description: "Example of a cancelled HomeCareDiagnosticReport, with TOBS and ABC examination of Elmer"
-* status = $StatusCodeDiagnosticReportSystem#cancelled
+* status = $StatusCodeDiagnosticReport#cancelled
 * issued = 2023-09-12T13:00:00+02:00
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
