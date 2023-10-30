@@ -29,7 +29,7 @@ Description: "Example of an organization with a SOR and an EAN identifier."
 
 // Reciever instance - new message
 Instance: 42541447-b58c-4a1a-9514-02b80494bbd3
-InstanceOf: MedComMessagingRequesterOrganization 
+InstanceOf: MedComRequesterOrganization 
 Title: "Example of a reciever organization with a SOR, an EAN  and Ydrenummer identifier."
 Description: "Example of an organization with a SOR and an EAN and Ydrenummer identifier."
 * identifier[SOR-ID].value = "52581000016005" 
@@ -97,7 +97,7 @@ Description: "Example of an organization with a SOR, an EAN identifier and Produ
 
 // Reciever instance - new message
 Instance: d1c1fa90-2c7e-4dd7-b2e8-e40281635a98
-InstanceOf: MedComMessagingRequesterOrganization 
+InstanceOf: MedComRequesterOrganization 
 Title: "Example of a reciever organization with a SOR, an EAN  and Ydrenummer identifier."
 Description: "Example of an organization with a SOR and an EAN and Ydrenummer identifier."
 * identifier[SOR-ID].value = "52581000016005" 
@@ -181,7 +181,7 @@ Description: "Example of an organization with a SOR, an EAN identifier and Produ
 
 // Reciever instance - new message
 Instance: 1ab9c2d9-c348-4d75-9122-60ea8a6fdcf1
-InstanceOf: MedComMessagingRequesterOrganization 
+InstanceOf: MedComRequesterOrganization 
 Title: "Example of a reciever organization with a SOR, an EAN  and Ydrenummer identifier."
 Description: "Example of an organization with a SOR and an EAN and Ydrenummer identifier."
 * identifier[SOR-ID].value = "52581000016005" 

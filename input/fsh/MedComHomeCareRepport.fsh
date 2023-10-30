@@ -2,7 +2,7 @@ Profile: MedComHomeCareDiagnosticReport
 Parent: MedComCoreDiagnosticReport
 Id: medcom-homecare-diagnosticreport
 Title: "MedComHomeCareDiagnosticReport"
-Description: "This resource is intenden to be used in relation when a HomeCareObservation message"
+Description: "This resource is intenden to be used in relation with a HomeCareObservation message"
 * conclusion ^short = "A comment relevant for all observations in the report and necessary to interpret and understand the results (Danish:Klinisk kommentar)."
 * result only Reference(MedComHomeCareObservation)
 * result ^type.aggregation = #bundled
@@ -26,6 +26,8 @@ Description: "This resource is intenden to be used in relation when a HomeCareOb
 * performer[PractitionerRole] obeys medcom-homecareReport-2
 * performer[PractitionerRole] obeys medcom-homecareReport-3
 * performer ^short = "Performer of the observations. Shall include a name, practitioner role, relevant telephone of the producer."
+* meta.security 0..1 MS SU
+* meta.security = $v3-Confidentiality#R "Restricted"
 
 Invariant: medcom-homecareReport-1
 Description: "There shall exist a practitioner role when using a PractitionerRole as author in a HomeCare Report."
