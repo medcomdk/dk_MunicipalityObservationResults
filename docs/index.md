@@ -26,12 +26,12 @@ The Clinical Guidelines and documentation is the foundation for the MedCom HomeC
 
 Below can the Clinical Guidelines and documentation in Danish be found:
 
-[Danish: Sundhedsfaglige dokumentation](assets/documents/Kommunale_prøvesvar_Sundhedsfaglig_dokumentation_v1.0.0-rc.1.pdf) <br> 
+[Danish: Sundhedsfaglige dokumentation](assets/documents/Kommunale_prøvesvar_Sundhedsfaglig_dokumentation_v1.0.0.pdf) <br> 
 
 ### 1.2 Use Cases
 
 Use cases describe the different scenarios a standard support. For a certain real-world scenario, it describes the requirements for the content of a message. The purpose of the use cases is to ensure a coherent implementation and use of the MedCom HomeCareObservation. The descriptions are targeted IT-system vendors and the people responsible for the implementation in regions and municipalities.
-[Danish: Use cases](assets/documents/Kommunale_prøvesvar_Use_cases_v1.0.0-rc.1.pdf) <br> 
+[Danish: Use cases](assets/documents/Kommunale_prøvesvar_Use_cases_v1.0.0.pdf) <br> 
 
 
 ### 1.3 Technical specification
