@@ -7,6 +7,7 @@
 
 
 ## 1 Profiles in the HomeCareObservation Standard
+In total, eleven profiles from <a href="https://medcomfhir.dk/ig/core/" target="_blank">MedCom Core IG</a>, <a href="https://medcomfhir.dk/ig/messaging/" target="_blank">MedCom Messaging IG</a> and <a href="https://medcomfhir.dk/ig/homecareobservation/" target="_blank">MedCom HomeCareObservation IG</a> constitute the HomeCareObservation standard. A short description of each profile can be seen in the <a href="#tab1">Table 1<a>.
 
 
 <style type="text/css">
@@ -18,7 +19,8 @@
 .tg .tg-lc33{background-color:#2c415c;border-color:inherit;color:#ffffff;text-align:left;vertical-align:top}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
-<div class="tg-wrap"><table class="tg">
+<div class="tg-wrap"><table class="tg" id="tab1">
+<caption style="color:#2c415c; font-weight:bold; text-align:center"> Table 1: Overview of the profiles in HomeCareObservation standard </caption>
 <thead>
   <tr>
     <th class="tg-lc33">Profile</th>
@@ -32,79 +34,83 @@
   <tr>
     <td class="tg-0pky">MedComHomeCareObservationMessage</td>
     <td class="tg-0pky">Bundle</td>
-    <td class="tg-0pky">Acts as a container for the&nbsp;&nbsp;&nbsp;content of the message. Inherited from the MedComMessagingMessage</td>
-    <td class="tg-0pky">ID                                      &nbsp;&nbsp;&nbsp;Type                                         &nbsp;&nbsp;&nbsp;Timestamp                       &nbsp;&nbsp;&nbsp;Entry</td>
+    <td class="tg-0pky">Acts as a container for the<br>content of the message. Inherited from the MedComMessagingMessage</td>
+    <td class="tg-0pky">ID                                      <br>Type                                         <br>Timestamp                       <br>Entry</td>
     <td class="tg-0pky">HomeCareObservation</td>
   </tr>
   <tr>
     <td class="tg-0pky">MedComHomeCareObservationMessageHeader</td>
     <td class="tg-0pky">MessageHeader</td>
-    <td class="tg-0pky">The header of a MedComHomeCare&nbsp;&nbsp;&nbsp;message which must always be the first referenced profile, when the type of&nbsp;&nbsp;&nbsp;the bundle is 'message'. This profile holds references to the fundamental&nbsp;&nbsp;&nbsp;information in a message, such as sender, receiver, and the content of the&nbsp;&nbsp;&nbsp;message in terms of HomeCareDiagnosticReport porfile. This profile is&nbsp;&nbsp;&nbsp;inherited form the MedComMessagingMessageHeader</td>
-    <td class="tg-0pky">Id<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Event[x]:eventCoding<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destination:primary<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destination:primary.use<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destination:primary.endpoint<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destination:primary.receiver<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sender<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Source<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Source.endpoint<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Focus</td>
+    <td class="tg-0pky">The header of a MedComHomeCare<br>message which must always be the first referenced profile, when the type of<br>the bundle is 'message'. This profile holds references to the fundamental<br>information in a message, such as sender, receiver, and the content of the<br>message in terms of HomeCareDiagnosticReport porfile. This profile is<br>inherited form the MedComMessagingMessageHeader</td>
+    <td class="tg-0pky">Id<br><br>&nbsp;&nbsp;Text<br><br>&nbsp;&nbsp;Event[x]:eventCoding<br><br>&nbsp;&nbsp;Destination:primary<br><br>&nbsp;&nbsp;Destination:primary.use<br><br>&nbsp;&nbsp;Destination:primary.endpoint<br><br>&nbsp;&nbsp;Destination:primary.receiver<br><br>&nbsp;&nbsp;Sender<br><br>&nbsp;&nbsp;Source<br><br>&nbsp;&nbsp;Source.endpoint<br><br>&nbsp;&nbsp;Focus</td>
     <td class="tg-0pky">HomeCareObservation</td>
   </tr>
   <tr>
     <td class="tg-0pky">MedComCoreDiagnosticReport</td>
     <td class="tg-0pky">DiagnosticReport</td>
-    <td class="tg-0pky">Contains central information&nbsp;&nbsp;&nbsp;about a DiagnosticReport containg all observation</td>
-    <td class="tg-0pky">Status                                          &nbsp;&nbsp;&nbsp;Code                                    &nbsp;&nbsp;&nbsp;Subject                                                  &nbsp;&nbsp;&nbsp;Issued                                 &nbsp;&nbsp;&nbsp;Meta.Security          &nbsp;&nbsp;&nbsp;Performer                           &nbsp;&nbsp;&nbsp;Result                                   Media                                &nbsp;&nbsp;&nbsp;Media.Link                     &nbsp;&nbsp;&nbsp;Conclusion</td>
+    <td class="tg-0pky">Contains central information<br>about a DiagnosticReport containg all observation</td>
+    <td class="tg-0pky">Status                                          <br>Code                                    <br>Subject                                                  <br>Issued                                 <br>Meta.Security          <br>Performer                           <br>Result                                   Media                                <br>Media.Link                     <br>Conclusion</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky">MedComCoreObservation</td>
     <td class="tg-0pky">Observation</td>
-    <td class="tg-0pky">Contains central informaion about&nbsp;&nbsp;&nbsp;an observation </td>
-    <td class="tg-0pky">Status                                          &nbsp;&nbsp;&nbsp;Code                                                          &nbsp;&nbsp;&nbsp;Code.coding.system                             &nbsp;&nbsp;&nbsp;Code.coding.code                                  &nbsp;&nbsp;&nbsp;Subject                                                  &nbsp;&nbsp;&nbsp;EffectiveDateTime                        &nbsp;&nbsp;&nbsp;Value                               &nbsp;&nbsp;&nbsp;Note                            </td>
+    <td class="tg-0pky">Contains central informaion about<br>an observation </td>
+    <td class="tg-0pky">Status                                          <br>Code                                                          <br>Code.coding.system                             <br>Code.coding.code                                  <br>Subject                                                  <br>EffectiveDateTime                        <br>Value                               <br>Note                            </td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky">MedComHomeCareDiagnosticReport</td>
     <td class="tg-0pky">DiagnosticReport</td>
-    <td class="tg-0pky">Contains information to all&nbsp;&nbsp;&nbsp;observation results performed and produced by the municipal acute care team</td>
-    <td class="tg-0pky">Status                                          &nbsp;&nbsp;&nbsp;Code                                    &nbsp;&nbsp;&nbsp;Subject                                                  &nbsp;&nbsp;&nbsp;Issued                                 &nbsp;&nbsp;&nbsp;Meta.Security          &nbsp;&nbsp;&nbsp;Performer.ProducerOrganization       &nbsp;&nbsp;&nbsp;Performer.practitionerRole                                    &nbsp;&nbsp;&nbsp;Result                                   Media                                 Media.Link                      Conclusion</td>
+    <td class="tg-0pky">Contains information to all<br>observation results performed and produced by the municipal acute care team</td>
+    <td class="tg-0pky">Status                                          <br>Code                                    <br>Subject                                                  <br>Issued                                 <br>Meta.Security          <br>Performer.ProducerOrganization       <br>Performer.practitionerRole                                    <br>Result                                   Media                                 Media.Link                      Conclusion</td>
     <td class="tg-0pky">HomeCareObservation</td>
   </tr>
   <tr>
     <td class="tg-0pky">MedComHomeCareObservation</td>
     <td class="tg-0pky">Observation</td>
-    <td class="tg-0pky">Describes a  observation performed by municipal acute&nbsp;&nbsp;&nbsp;care team </td>
-    <td class="tg-0pky">Status                                          &nbsp;&nbsp;&nbsp;Code                                                          &nbsp;&nbsp;&nbsp;Code.coding.system                             &nbsp;&nbsp;&nbsp;Code.coding.code                &nbsp;&nbsp;&nbsp;Code.coding.display                                 Subject                                                  &nbsp;&nbsp;&nbsp;EffectiveDateTime                         Value.Quantity                              &nbsp;&nbsp;&nbsp;Value.string                          &nbsp;&nbsp;&nbsp;Interpretation                                Note                            </td>
+    <td class="tg-0pky">Describes a  observation performed by municipal acute<br>care team </td>
+    <td class="tg-0pky">Status                                          <br>Code                                                          <br>Code.coding.system                             <br>Code.coding.code                <br>Code.coding.display                                 Subject                                                  <br>EffectiveDateTime                         Value.Quantity                              <br>Value.string                          <br>Interpretation                                Note                            </td>
     <td class="tg-0pky">HomeCareObservation</td>
   </tr>
   <tr>
     <td class="tg-0pky">MedComProducerOrganization</td>
     <td class="tg-0pky">Organizarion</td>
-    <td class="tg-0pky">Represents the producer of the&nbsp;&nbsp;&nbsp;observation </td>
-    <td class="tg-0pky">Text                                               &nbsp;&nbsp;&nbsp;Identifier:EAN-ID                                 &nbsp;&nbsp;&nbsp;Identifier:SOR-ID                          &nbsp;&nbsp;&nbsp;Identifier:ProducentID            &nbsp;&nbsp;&nbsp;Identifier:ProducentID.system              &nbsp;&nbsp;&nbsp;Identifier:ProducentID.value                                        Name</td>
+    <td class="tg-0pky">Represents the producer of the<br>observation </td>
+    <td class="tg-0pky">Text                                               <br>Identifier:EAN-ID                                 <br>Identifier:SOR-ID                          <br>Identifier:ProducentID            <br>Identifier:ProducentID.system              <br>Identifier:ProducentID.value                                        Name</td>
     <td class="tg-0pky">Messaging</td>
   </tr>
   <tr>
     <td class="tg-0pky">MedComCoreMedia</td>
     <td class="tg-0pky">Media</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">Identifier                                     &nbsp;&nbsp;&nbsp;Status                                            &nbsp;&nbsp;&nbsp;Operator                                             &nbsp;&nbsp;&nbsp;Content.contentType                 &nbsp;&nbsp;&nbsp;Content.data                              &nbsp;&nbsp;&nbsp;Content.title                             Content.creation</td>
+    <td class="tg-0pky"> Represents the attached file that is generated in connection with HomeCareObservation. </td>
+    <td class="tg-0pky">Identifier                                     <br>Status                                            <br>Operator                                             <br>Content.contentType                 <br>Content.data                              <br>Content.title                             Content.creation</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky">MedComRequesterOrganizaion</td>
     <td class="tg-0pky">Organization</td>
-    <td class="tg-0pky">Represents the organization that&nbsp;&nbsp;&nbsp;requests the  observation</td>
-    <td class="tg-0pky">Text                                               &nbsp;&nbsp;&nbsp;Identifier:EAN-ID                                 &nbsp;&nbsp;&nbsp;Identifier:SOR-ID                          &nbsp;&nbsp;&nbsp;Identifier:Ydrenummer            &nbsp;&nbsp;&nbsp;Name                                            &nbsp;&nbsp;&nbsp;Contact                                              &nbsp;&nbsp;&nbsp;Contact.name                      &nbsp;&nbsp;&nbsp;Contact.name.given</td>
+    <td class="tg-0pky">Represents the organization that<br>requests the  observation</td>
+    <td class="tg-0pky">Text                                               <br>Identifier:EAN-ID                                 <br>Identifier:SOR-ID                          <br>Identifier:Ydrenummer            <br>Name                                            <br>Contact                                              <br>Contact.name                      <br>Contact.name.given</td>
     <td class="tg-0pky">Messaging</td>
   </tr>
   <tr>
     <td class="tg-0pky">MedComCorePatient</td>
     <td class="tg-0pky">Patient</td>
-    <td class="tg-0pky">Contains information about the&nbsp;&nbsp;&nbsp;patien who have had  observation done</td>
+    <td class="tg-0pky">Contains information about the<br>patien who have had observation done</td>
     <td class="tg-0pky">Name</td>
     <td class="tg-0pky">Core</td>
   </tr>
   <tr>
     <td class="tg-0pky">MedComCorePractitionerRole</td>
     <td class="tg-0pky">PractitionerRole</td>
-    <td class="tg-0pky"> Describes the role of a healthcare&nbsp;&nbsp;&nbsp;professional or another actor involved in citizen or patient care. This&nbsp;&nbsp;&nbsp;profile is used to describe the author role and sender or recipient.</td>
+    <td class="tg-0pky"> Describes the role of a healthcare<br>professional or another actor involved in citizen or patient care. This<br>profile is used to describe the author role and sender or recipient.</td>
     <td class="tg-0pky">Practitioner Organization</td>
     <td class="tg-0pky">Core</td>
   </tr>
 </tbody>
 </table></div>
+
+
+
+## 2 Internal Referneces in a HospitalNotification
