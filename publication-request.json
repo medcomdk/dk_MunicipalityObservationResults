@@ -5,6 +5,7 @@
     "status": "release",
     "sequence": "Release",
     "milestone" : true,
+    "first" : true,
     "title": "The DK MedCom HomeCareObservation",
     "category": "MedCom HomeCareObservation",
     "introduction": "The MedCom HomeCareObservation Implementation Guide includes profiles developed to be part of a production trial of the communication between the general practitioner and municipal acute care team.",

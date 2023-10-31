@@ -8,7 +8,7 @@ Description: "This resource is intenden to be used in relation with a HomeCareOb
 * result ^type.aggregation = #bundled
 * status.value = #final
 * performer 2..2 MS
-* performer only Reference(MedComCoreProducerOrganization or MedComCorePractitionerRole)
+* performer only Reference(MedComProducerOrganization or MedComCorePractitionerRole)
 * performer ^slicing.discriminator.type = #profile
 * performer ^slicing.discriminator.path = "resolve()"
 * performer ^slicing.rules = #closed
@@ -17,7 +17,7 @@ Description: "This resource is intenden to be used in relation with a HomeCareOb
 * performer contains 
     ProducerOrganization 1..1 and
     PractitionerRole 1..1
-* performer[ProducerOrganization] only Reference(MedComCoreProducerOrganization)
+* performer[ProducerOrganization] only Reference(MedComProducerOrganization)
 * performer[ProducerOrganization] ^type.aggregation = #bundled
 * performer[ProducerOrganization] ^short = "Producer organization of the observations. Shall include a producer-ID (Danish: Producent-ID) of the producer"
 * performer[PractitionerRole] only Reference(MedComCorePractitionerRole)
