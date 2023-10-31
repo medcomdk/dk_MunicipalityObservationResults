@@ -12,6 +12,7 @@ class "MedComCorePatient" as patient
 class "MedComCoreProducerOrganization" as organization 
 class "MedComHomeCareDiagnosticReport" as diagnosticReport <<MedComCoreDiagnosticReport>>
 class "MedComHomeCareObservation" as coreobservation <<MedComCoreObservation>>
+class "MedComMedia" as media
 
 message --> messageheader : "entry"
 messageheader --> diagnosticReport : "focus"
@@ -23,6 +24,7 @@ messageheader --> observationRequester : "receiver"
 diagnosticReport --> organization: "performer"
 diagnosticReport --> patient : "subject"
 diagnosticReport --> coreobservation : "result"
+diagnosticReport--> media : "attachment"
 coreobservation --> organization:"performer"
 
 @enduml
