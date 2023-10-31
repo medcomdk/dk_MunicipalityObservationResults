@@ -7,9 +7,9 @@ top to bottom direction
 class "MedComHomeCareObservationMessage" as message <<MedComMessagingMessage>>
 class "MedComHomeCareObservationMessageHeader" as messageheader <<MedComMessagingMessageHeader>>
 class "MedComMessagingProvenance" as provenance
-class "MedComMessagingRequesterOrganization" as observationRequester <<MedComMessagingOrganization>>
+class "MedComRequesterOrganization" as observationRequester <<MedComMessagingOrganization>>
 class "MedComCorePatient" as patient
-class "MedComCoreProducerOrganization" as organization 
+class "MedComProducerOrganization" as organization 
 class "MedComHomeCareDiagnosticReport" as diagnosticReport <<MedComCoreDiagnosticReport>>
 class "MedComHomeCareObservation" as coreobservation <<MedComCoreObservation>>
 class "MedComMedia" as media
