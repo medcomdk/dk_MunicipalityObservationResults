@@ -4,10 +4,11 @@
     "path": "http://medcomfhir.dk/ig/homecareobservation/1.0.0",
     "status": "release",
     "sequence": "Release",
-    "milestone" : true,
+    "mode" : "milestone",
     "first" : true,
     "title": "The DK MedCom HomeCareObservation",
     "category": "MedCom HomeCareObservation",
     "introduction": "The MedCom HomeCareObservation Implementation Guide includes profiles developed to be part of a production trial of the communication between the general practitioner and municipal acute care team.",
-    "descmd": "@release-notes.md"
+    "descmd": "@release-notes.md",
+    "ci-build": "https://build.fhir.org/ig/medcomdk/dk_HomeCareObservations/"
 }
