@@ -113,4 +113,4 @@ In total, eleven profiles from <a href="https://medcomfhir.dk/ig/core/" target="
 
 
 
-## 2 Internal Referneces in a HospitalNotification
+## 2 Internal Referneces in a HomeCareObservation 

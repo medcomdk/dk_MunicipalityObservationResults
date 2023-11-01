@@ -41,12 +41,12 @@ The technical specification for MedCom HomeCareObservation standard is composed 
 The profiles that are part of the technical specification for MedCom HomeCareObservation are: 
  * [MedComCoreDiagnosticReport](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-diagnosticreport.html)
  * [MedComCoreObservation](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-observation.html)
- * [MedComProducerOrganization](http://medcomfhir.dk/ig/messaging/StructureDefinition/medcom-producer-organization)
+ * [MedComProducerOrganization](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-producer-organization.html)
  * [MedComHomeCareDiagnosticReport](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-diagnosticreport.html)
  * [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homeCare-observation.html)
  * [MedComHomeCareObservationMessage](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-message.html)
  * [MedComHomeCareObservationMessageHeader](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecareobservation-MessageHeader.html)
- * [MedComRequesterOrganization](http://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-requesterorganization).html
+ * [MedComRequesterOrganization](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-requesterorganization.html)
  * [MedComCoreMedia](http://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-media.html)
 The link below gives an overview of the included profiles, what their purpose is, and which elements the system should support. Further, the structure of the standard is described and supported with examples in different degree of technical skills.
 
