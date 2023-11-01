@@ -117,9 +117,10 @@ In total, eleven profiles from <a href="https://medcomfhir.dk/ig/core/" target="
 The HomeCareObservation message follows <a href ="https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html" target="_blank"> MedCom's generic messaging model</a> 
 
 The references between the profiles are shown in <a href="#Fig1">Figure 1</a> below. The MedCom HomeCareObservation Message profile acts as the container which includes the other profiles. From the MedComHomeCareObservationMessageHeader the sender and receiver organisations are referenced respectively as MedComProducerOrganization(sender) and MedComRequesterorganization(receiver). Additionally the MedComHomeCareObservationMessageHeader refer focus of the message, which is the MedCom HomeCareDiagnosticReport profile. 
+From the MedCom HomeCareDiagnosticReport 
 
 <figure>
-<img src="../images/HomeCareObservationMessage.svg" alt="Show references between the profiles in an HomeCareObservation message." style="width:60%" id="Fig1">
+<img src="/docs/assets/Images/HomeCareObservationMessage.svg" alt="Show references between the profiles in an HomeCareObservation message." style="width:60%" id="Fig1">
 <figcaption text-align="center"><b>Figure 1: Structure of the HomeCareObservationMessage.</b> </figcaption>
 </figure>
 <br><br>
