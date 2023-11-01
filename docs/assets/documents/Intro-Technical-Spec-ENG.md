@@ -114,3 +114,10 @@ In total, eleven profiles from <a href="https://medcomfhir.dk/ig/core/" target="
 
 
 ## 2 Internal Referneces in a HomeCareObservation 
+The HomeCareObservation message follows <a href ="https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html" target="_blank"> MedCom's generic messaging model</a> 
+
+<figure>
+<img src="../images/HomeCareObservationMessage.svg" alt="Show references between the profiles in an HomeCareObservation message." style="width:60%" id="Fig1">
+<figcaption text-align="center"><b>Figure 1: Structure of the HomeCareObservationMessage.</b> </figcaption>
+</figure>
+<br><br>
