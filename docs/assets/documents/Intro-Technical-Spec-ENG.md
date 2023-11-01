@@ -2,8 +2,8 @@
 [Return](../../index.md)
 
 **Table of contents**
-* [1 profiles in the HomeCareObservation Standard](#1-profiles-in-the-homecareobservation-standard)
-
+* [1 Profiles in the HomeCareObservation Standard](#1-profiles-in-the-homecareobservation-standard)
+* [2 Internal Referneces in a HomeCareObservation ](#2-internal-referneces-in-a-homecareobservation)
 
 
 ## 1 Profiles in the HomeCareObservation Standard
@@ -117,13 +117,13 @@ In total, eleven profiles from <a href="https://medcomfhir.dk/ig/core/" target="
 The HomeCareObservation message follows <a href ="https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html" target="_blank"> MedCom's generic messaging model</a> 
 
 The references between the profiles are shown in <a href="#Fig1">Figure 1</a> below. The MedCom HomeCareObservation Message profile acts as the container which includes the other profiles. From the MedComHomeCareObservationMessageHeader the sender and receiver organisations are referenced respectively as MedComProducerOrganization(sender) and MedComRequesterorganization(receiver). Additionally the MedComHomeCareObservationMessageHeader refer focus of the message, which is the MedCom HomeCareDiagnosticReport profile. 
-From the MedCom HomeCareDiagnosticReport Profile the MedCom HomeCareObservation profile and MedComMedia are refered. MedComHomeCareObservation contains information about the performed observation, whereas MedComMedia profile contains information about the attached file and the attaced file, if it is sendt. The MedCom HomeCareObservations refer the producer of the observation, which is the MedComProducerOrganization. 
+From the MedCom HomeCareDiagnosticReport Profile the MedCom HomeCareObservation profile and MedComMedia are refered. MedComHomeCareObservation contains information about the performed observation, whereas MedComMedia profile contains information about the attached file and the attaced file, if it is sendt. The MedCom HomeCareDiagnosticReport and Medcom HomeCareObservations refer the producer of the observation, which is the MedComProducerOrganization. 
 To represents the subjec a MedComCorePatient shall be used. 
 
+MedComMessagingProvenance is used to keep track of the messaging history and define the activity of the communication. The Provenance references the MedComHomeCareObservationMessageHeader as the target and the agent.who in terms of a MedComProducerOrganization. 
 
 <figure>
 <img src="../Images/HomeCareObservationMessage.svg" alt="Show references between the profiles in an HomeCareObservation message." style="width:60%" id="Fig1">
 <figcaption text-align="center"><b>Figure 1: Structure of the HomeCareObservationMessage.</b> </figcaption>
 </figure>
 <br><br>
-C:\Git_hub\dk_medcom-HomeCareObservarion\docs\assets\Images\HomeCareObservationMessage.svg
