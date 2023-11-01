@@ -42,7 +42,7 @@ In total, eleven profiles from <a href="https://medcomfhir.dk/ig/core/" target="
     <td class="tg-0pky">MedComHomeCareObservationMessageHeader</td>
     <td class="tg-0pky">MessageHeader</td>
     <td class="tg-0pky">The header of a MedComHomeCare<br>message which must always be the first referenced profile, when the type of<br>the bundle is 'message'. This profile holds references to the fundamental<br>information in a message, such as sender, receiver, and the content of the<br>message in terms of HomeCareDiagnosticReport porfile. This profile is<br>inherited form the MedComMessagingMessageHeader</td>
-    <td class="tg-0pky">Id<br><br>&nbsp;&nbsp;Text<br><br>&nbsp;&nbsp;Event[x]:eventCoding<br><br>&nbsp;&nbsp;Destination:primary<br><br>&nbsp;&nbsp;Destination:primary.use<br><br>&nbsp;&nbsp;Destination:primary.endpoint<br><br>&nbsp;&nbsp;Destination:primary.receiver<br><br>&nbsp;&nbsp;Sender<br><br>&nbsp;&nbsp;Source<br><br>&nbsp;&nbsp;Source.endpoint<br><br>&nbsp;&nbsp;Focus</td>
+    <td class="tg-0pky">Id<br><br>Text<br><br>Event[x]:eventCoding<br><br>Destination:primary<br><br>Destination:primary.use<br><br>Destination:primary.endpoint<br><br>Destination:primary.receiver<br><br>Sender<br><br>Source<br><br>Source.endpoint<br><br>Focus</td>
     <td class="tg-0pky">HomeCareObservation</td>
   </tr>
   <tr>
@@ -117,10 +117,12 @@ In total, eleven profiles from <a href="https://medcomfhir.dk/ig/core/" target="
 The HomeCareObservation message follows <a href ="https://medcomdk.github.io/dk-medcom-messaging/assets/documents/Intro-Technical-Spec-ENG.html" target="_blank"> MedCom's generic messaging model</a> 
 
 The references between the profiles are shown in <a href="#Fig1">Figure 1</a> below. The MedCom HomeCareObservation Message profile acts as the container which includes the other profiles. From the MedComHomeCareObservationMessageHeader the sender and receiver organisations are referenced respectively as MedComProducerOrganization(sender) and MedComRequesterorganization(receiver). Additionally the MedComHomeCareObservationMessageHeader refer focus of the message, which is the MedCom HomeCareDiagnosticReport profile. 
-From the MedCom HomeCareDiagnosticReport 
+From the MedCom HomeCareDiagnosticReport Profile the MedCom HomeCareObservation profile and MedComMedia are refered. MedComHomeCareObservation contains information about the performed observation, whereas MedComMedia profile contains information about the attached file and the attaced file, if it is sendt. 
+To represents the subjec 
+
 
 <figure>
-<img src="/docs/assets/Images/HomeCareObservationMessage.svg" alt="Show references between the profiles in an HomeCareObservation message." style="width:60%" id="Fig1">
+<img src="/Images/HomeCareObservationMessage.svg" alt="Show references between the profiles in an HomeCareObservation message." style="width:60%" id="Fig1">
 <figcaption text-align="center"><b>Figure 1: Structure of the HomeCareObservationMessage.</b> </figcaption>
 </figure>
 <br><br>
