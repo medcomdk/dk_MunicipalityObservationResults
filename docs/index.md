@@ -26,7 +26,7 @@ The Clinical Guidelines and documentation is the foundation for the MedCom HomeC
 
 Below can the Clinical Guidelines and documentation in Danish be found:
 
-[Danish: Sundhedsfaglige dokumentation](assets/documents/Kommunale_prøvesvar_Sundhedsfaglig_dokumentation_v1.0.0.pdf) <br> 
+[Danish: Sundhedsfaglige dokumentation](assets/documents/Kommunale_prøvesvar_Sundhedsfaglig_dokumentation_v1.0.1.pdf) <br> 
 
 ### 1.2 Use Cases
 
