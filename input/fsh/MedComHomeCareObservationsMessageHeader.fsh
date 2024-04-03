@@ -10,7 +10,11 @@ Description: "MessageHeader for HomeCareObservation"
 * destination[primary].receiver ^type.aggregation = #bundled
 * sender only Reference(MedComProducerOrganization)
 * focus only Reference(MedComHomeCareDiagnosticReport)
-//* definition = Reference("http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComMessagingMessageDefinition_HomeCareObservation_1_0")
+* definition.value 1..1 MS
+* definition.value = "http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComMessaging.MessageDefinition.HomeCareObservation|1.0"
+//* definition from MedComMessageDefinitionCanonicalUrlVS
+//* definition = $MedComMessageDefinitionCanonicalUrl#http%3A%2F%2Fmedcomfhir.dk%2Fig%2Fhomecareobservation%2FStructureDefinition%2FMedComMessaging.MessageDefinition.HomeCareObservation%7C1.0 (exactly)
+
 
 Instance: b4e7e16b-9658-4172-acd7-5e7193f2cc5f
 InstanceOf: MedComMessagingDestinationUseExtension
@@ -31,7 +35,32 @@ Usage: #example
 * sender = Reference(ef5cb9a6-835f-4d18-a34e-179c578b9a2a)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1144561000016002"
 * focus = Reference(870333ac-3134-4ae6-8257-86e0b0537c5f)
+* definition = "http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComMessaging.MessageDefinition.HomeCareObservation|1.0"
 
+/*
+Alias: $message-events = http://example.org/fhir/message-events
+Alias: $message-reasons-encounter = http://terminology.hl7.org/CodeSystem/message-reasons-encounter
+
+Instance: 1cbdfb97-5859-48a4-8301-d54eab818d68
+InstanceOf: MessageHeader
+Usage: #example
+* eventCoding = $message-events#admin-notify
+* destination.endpointUrl = "llp:10.11.12.14:5432"
+* destination.name = "Acme Message Gateway"
+* destination.target = Reference(Device/example)
+* destination.receiver = Reference(http://acme.com/ehr/fhir/Practitioner/2323-33-4)
+* source.endpointUrl = "llp:10.11.12.13:5432"
+* source.name = "Acme Central Patient Registry"
+* source.software = "FooBar Patient Manager"
+* source.version = "3.1.45.AABB"
+* source.contact.system = #phone
+* source.contact.value = "+1 (555) 123 4567"
+* reason = $message-reasons-encounter#admit
+* response.identifier.value = "5015fe84-8e76-4526-89d8-44b322e8d4fb"
+* response.code = #ok
+* focus = Reference(Patient/example)
+* definition = "http:////acme.com/ehr/fhir/messagedefinition/patientrequest"
+*/
 
 // HomeCareReport new example- urin stick
 Instance: e9f4cc68-b1b7-46b2-ba74-7cc39a914bfa
