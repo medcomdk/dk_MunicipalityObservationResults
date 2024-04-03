@@ -1,6 +1,6 @@
 Profile: MedComMessagingMessageDefinition
 Parent: MessageDefinition
-Description: "An example profile of the MessageDefinition resource."
+Description: "A profile of the MessageDefinition resource. (SHOULD BE MOVED TO MEDCOM MESSAGING IG)"
 //* url from ehmi-medcom-message-definition-uri-valueset
 * identifier 1..1 MS SU
 //* identifier.system from ehmi-medcom-message-definition-uri-valueset
@@ -107,4 +107,26 @@ Description: "MedComMessageDefinitionTypeVS for the EHMI Messaging Infrastructur
 * ^date  =  "2023-09-01"
 * ^experimental = true
 * include codes from system medcom-message-definition-type
+
+CodeSystem: MedComMessageDefinitionCanonicalUrl
+Id: medcom-message-definition-canonical-url
+Title: "medcom-message-definition-canonical-url CodeSystem"
+Description: "medcom-message-definition-canonical-urlCS for the EHMI Messaging Infrastructure"
+* ^version  =  "1.0.0"
+* ^status  =  #active
+* ^date  =  "2024-03-01"
+* ^experimental = true
+* ^caseSensitive = true
+* #http:////medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComMessaging.MessageDefinition.HomeCareObservation|1.0 "MedComMessageDefinitionCanonicalUrl" "MedComMessaging.MessageDefinition.HomeCareObservation|1.0"
+* #http%3A%2F%2Fmedcomfhir.dk%2Fig%2Fhomecareobservation%2FStructureDefinition%2FMedComMessaging.MessageDefinition.HomeCareObservation%7C1.0  "MedComMessageDefinitionCanonicalUrl" "MedComMessaging.MessageDefinition.HomeCareObservation|1.0"
+
+ValueSet: MedComMessageDefinitionCanonicalUrlVS
+Id: medcom-message-definition-canonical-url-valueset
+Title: "medcom-message-definition-canonical-url Valueset"
+Description: "medcom-message-definition-canonical-urlVS for the EHMI Messaging Infrastructure"
+* ^version  =  "1.0.0"
+* ^status  =  #active
+* ^date  =  "2024-03-01"
+* ^experimental = true
+* include codes from system medcom-message-definition-canonical-url
 
