@@ -1,3 +1,4 @@
+/*
 Profile: MedComMessagingMessageDefinition
 Parent: MessageDefinition
 Description: "A profile of the MessageDefinition resource. (SHOULD BE MOVED TO MEDCOM MESSAGING IG)"
@@ -130,3 +131,4 @@ Description: "medcom-message-definition-canonical-urlVS for the EHMI Messaging I
 * ^experimental = true
 * include codes from system medcom-message-definition-canonical-url
 
+*/
