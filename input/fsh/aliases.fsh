@@ -28,4 +28,4 @@ Alias: $MedComMessageDefinitionType = medcom-message-definition-type
 Alias: $MedComMessageDefinitionTypeVS = medcom-message-definition-type-valueset
 Alias: $UsageContextCodeSystem = http://terminology.hl7.org/CodeSystem/usage-context-type
 Alias: $UsageContextCodeSystemVS = http://medcomehmi.dk/ig/dk-ehmi-eer/ValueSet/ehmi-messagedefinition-use-context-code-valueset
-
+Alias: $MedComMessageDefinitionCanonicalUrl = medcom-message-definition-canonical-url
