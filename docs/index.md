@@ -6,10 +6,9 @@
   * [1.1 Clinical Guidelines and documentation](#11-clinical-guidelines-and-documentation)
   * [1.2 Use Cases](#12-use-cases)
   * [1.3 Technical Specification](#13-technical-specification)
-* [2 Test and approvemnet](#2-test-and-approvement)
+* [2 Test and certification](#2-test-and-certification)
 
 > Note: This Standard is developed to be part of a production trial of the communication between the general practitioner and municipal acute care team.
-
 
 This page presents MedCom HomeCareObservation (Danish: Kommunale Prøvesvar) standard. The purpose of the standard is to support digital structured communication of results and observations performed and produced by the municipal acute care team.The HomeCareObservation will be sent from the municipal acute care team to the general practitioner on the condition that the general practitioner previously has requisitioned the acute care team to perform an emergency visit. With HomeCareObservation the quality of the results and observations (hereafter mentioned as observations results) are increased as structured data concerning sender, producer of the results, analysis codes and clinical observations, among others, are part of the HomeCareObservation. This allows the general practitioner to easily create an overview of the citizens health data.
  
@@ -26,12 +25,12 @@ The Clinical Guidelines and documentation is the foundation for the MedCom HomeC
 
 Below can the Clinical Guidelines and documentation in Danish be found:
 
-[Danish: Sundhedsfaglige dokumentation](assets/documents/Kommunale_prøvesvar_Sundhedsfaglig_dokumentation_v1.0.1.pdf) <br> 
+[Danish: Sundhedsfaglige dokumentation (pdf)](assets/documents/Kommunale_prøvesvar_Sundhedsfaglig_dokumentation_v1.0.1.pdf) <br> 
 
 ### 1.2 Use Cases
 
 Use cases describe the different scenarios a standard support. For a certain real-world scenario, it describes the requirements for the content of a message. The purpose of the use cases is to ensure a coherent implementation and use of the MedCom HomeCareObservation. The descriptions are targeted IT-system vendors and the people responsible for the implementation in regions and municipalities.
-[Danish: Use cases](assets/documents/Kommunale_prøvesvar_Use_cases_v1.0.0.pdf) <br> 
+[Danish: Use cases (pdf)](assets/documents/Kommunale_prøvesvar_Use_cases_v1.0.0.pdf) <br> 
 
 
 ### 1.3 Technical specification
@@ -54,9 +53,20 @@ The link below gives an overview of the included profiles, what their purpose is
 
 
 
-## 2 Test and approvement 
-Approvement of a system to production trial implies both an approved testprotocol and run-through of TouchStone test scripts. TouchStone describes an infrastructure that allows for automated test and validation against the IG's developed by MedCom.
+## 2 Test and certification 
 
->Note: The testprotocols and touchstone testscripts wille be added as soon as they are prepared.!
+Certification of a system implies both an approved test protocol and run-through of TouchStone test scripts when testing send of messages. TouchStone describes an infrastructure that allows for automated test and validation against the IG's developed by MedCom. Test protocols can be found below.
+<br>
 
+<a href="https://medcomdk.github.io/MedComLandingPage/#3-test-and-certification">Click here to find the description of test and certification of FHIR standards in MedCom. </a> 
+<br>
 
+**Sending a HomeCareObservation message**
+* [Test protocol in English (docx)](assets/documents/HomeCareObservation_Testprotocol_Send.docx) 
+
+<p>&nbsp;</p>
+
+**Receiving a HomeCareObservation message**
+* [Test protocol in English (docx)](assets/documents/HomeCareObservation_Testprotocol_Receive.docx) 
+
+<p>&nbsp;</p>
