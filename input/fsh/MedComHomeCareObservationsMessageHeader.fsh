@@ -80,7 +80,7 @@ Usage: #example
 * sender = Reference(72cc3a2c-1dda-4b95-b50a-0f7ac19640f4)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1144561000016002"
 * focus = Reference(6d08f000-33cc-41f3-a7c2-c086d53d31a7)
-* definition.value = "http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
+* definition = "http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 //* definition.value = "http:////medcomfhir.dk/ig/homecareobservation/MessageDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 //* definition.value = "http:////medcomfhir.dk/ig/homecareobservation/MessageDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 
@@ -98,7 +98,7 @@ Usage: #example
 * sender = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1144561000016002"
 * focus = Reference(efb1ed12-6a5d-4342-9572-861071644e46)
-* definition.value = "http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
+* definition = "http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 //* definition.value = "http:////medcomfhir.dk/ig/homecareobservation/MessageDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 //* definition.value = "http:////medcomfhir.dk/ig/homecareobservation/MessageDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 
@@ -116,7 +116,7 @@ Usage: #example
 * sender = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1144561000016002"
 * focus = Reference(cfa9e95b-b5ac-4cfe-abe7-ea29e6b67919)
-* definition.value = "http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
+* definition = "http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 //* definition.value = "http:////medcomfhir.dk/ig/homecareobservation/MessageDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 //* definition.value = "http:////medcomfhir.dk/ig/homecareobservation/MessageDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 
@@ -136,7 +136,7 @@ Usage: #example
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1144561000016002"
 * focus[0] = Reference(cfa9e95b-b5ac-4cfe-abe7-ea29e6b67919)
 * focus[1] = Reference(4f013d3a-575c-447d-83e1-7a5fb7f7b0de)
-* definition.value = "http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
+* definition = "http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 //* definition.value = "http:////medcomfhir.dk/ig/homecareobservation/MessageDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 //* definition.value = "http:////medcomfhir.dk/ig/homecareobservation/MessageDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 
