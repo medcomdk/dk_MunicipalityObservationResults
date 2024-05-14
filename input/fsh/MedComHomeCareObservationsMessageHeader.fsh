@@ -10,8 +10,8 @@ Description: "MessageHeader for HomeCareObservation"
 * destination[primary].receiver ^type.aggregation = #bundled
 * sender only Reference(MedComProducerOrganization)
 * focus only Reference(MedComHomeCareDiagnosticReport)
-* definition.value 0..1 MS
-* definition.value = "http:////medcomfhir.dk/ig/homecareobservation/MessageDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
+* definition 0..1 MS
+* definition = "http:////medcomfhir.dk/ig/homecareobservation/MessageDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 //* definition.value = "http:////medcomfhir.dk/ig/homecareobservation/MessageDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 //* definition.value = "http:////medcomfhir.dk/ig/homecareobservation/MessageDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 //* definition from MedComMessageDefinitionCanonicalUrlVS
@@ -37,7 +37,7 @@ Usage: #example
 * sender = Reference(ef5cb9a6-835f-4d18-a34e-179c578b9a2a)
 * source.endpoint = "https://sor2.sum.dsdn.dk/#id=1144561000016002"
 * focus = Reference(870333ac-3134-4ae6-8257-86e0b0537c5f)
-* definition.value.value = "http:////medcomfhir.dk/ig/homecareobservation/MessageDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
+* definition = "http:////medcomfhir.dk/ig/homecareobservation/MessageDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 //* definition.value = "http:////medcomfhir.dk/ig/homecareobservation/MessageDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 //* definition.value = "http:////medcomfhir.dk/ig/homecareobservation/MessageDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 

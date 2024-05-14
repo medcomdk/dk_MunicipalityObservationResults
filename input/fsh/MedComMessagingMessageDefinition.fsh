@@ -1,7 +1,8 @@
 /*
 Profile: MedComMessagingMessageDefinition
 Parent: MessageDefinition
-Description: "A profile of the MessageDefinition resource. (SHOULD BE MOVED TO MEDCOM MESSAGING IG)"
+Id: medcom-messaging-message-definition
+Description: "An example profile of the MessageDefinition resource."
 //* url from ehmi-medcom-message-definition-uri-valueset
 * identifier 1..1 MS SU
 //* identifier.system from ehmi-medcom-message-definition-uri-valueset

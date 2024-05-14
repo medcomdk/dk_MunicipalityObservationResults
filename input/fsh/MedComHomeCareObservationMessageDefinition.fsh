@@ -1,8 +1,9 @@
-Profile: MedComMessagingMessageDefinitionHomeCareObservation
-Parent: MedComMessagingMessageDefinitionFhir
-Id: MedComMessagingMessageDefinitionHomeCareObservation
-Description: "A MessageDefinition for HomeCareObservation:1.0"
-* url = "urn:dk:medcom:fhir:structuredefinition:messagedefinitionhomecareobservation"
+Profile: MedComMessagingMessageDefinition_HomeCareObservation_1_0
+Parent: MedComMessagingMessageDefinition
+Id: medcom-messaging-message-definition-homecareobservation
+Description: "An example of an EerMessageDefinition for HomeCareObservation:1.0"
+* id = "MedComMessagingMessageDefinition-HomeCareObservation-1-0"
+* url = "urn:dk:healthcare:medcom:messaging:fhir:structuredefinition:homecareobservation:1.0"
 * identifier.period.start = "2021-03-23"
 * identifier.use = #official 
 * identifier.value = "HomeCareObservation"

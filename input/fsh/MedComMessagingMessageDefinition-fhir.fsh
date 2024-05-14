@@ -1,7 +1,8 @@
 /*
 Profile: MedComMessagingMessageDefinitionFhir
 Parent: MedComMessagingMessageDefinition
-Description: "An example profile of the MessageDefinition-fhir resource. (SHOULD BE MOVED TO MEDCOM MESSAGING IG)"
+Id: medcom-messaging-message-definition-fhir
+Description: "An example profile of the MessageDefinition-fhir resource."
 * identifier.system = $MessageDefinitionIdentifierSystem#urn:dk:healthcare:medcom:messaging:fhir (exactly)
 //* identifier.type = $MedComMessageDefinitionType#FHIR
 * useContext.code = $UsageContextCodeSystem#workflow (exactly)
