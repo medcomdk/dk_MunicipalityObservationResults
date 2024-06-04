@@ -2,18 +2,18 @@ Profile: MedComHomeCareDiagnosticReport
 Parent: MedComCoreDiagnosticReport
 Id: medcom-homecare-diagnosticreport
 Title: "MedComHomeCareDiagnosticReport"
-Description: "This resource is intenden to be used in relation with a HomeCareObservation message"
+Description: "This resource is intended to be used in relation with a HomeCareObservation message"
 * conclusion ^short = "A comment relevant for all observations in the report and necessary to interpret and understand the results (Danish:Klinisk kommentar)."
 * result only Reference(MedComHomeCareObservation)
 * result ^type.aggregation = #bundled
-* status.value = #final
+* status.value = $StatusCodeDiagnosticReport#final
 * performer 2..2 MS
 * performer only Reference(MedComProducerOrganization or MedComCorePractitionerRole)
 * performer ^slicing.discriminator.type = #profile
 * performer ^slicing.discriminator.path = "resolve()"
 * performer ^slicing.rules = #closed
 * performer ^slicing.ordered = false
-* performer ^slicing.description = " Slice of observation codes"
+* performer ^slicing.description = "Slice of observation codes"
 * performer contains 
     ProducerOrganization 1..1 and
     PractitionerRole 1..1
