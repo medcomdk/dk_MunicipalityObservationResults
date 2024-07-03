@@ -1,7 +1,7 @@
-Profile: MedComMessagingMessageDefinition_HomeCareObservation_1_0
-Parent: MedComMessagingMessageDefinition
-Id: medcom-messaging-message-definition-homecareobservation
-Description: "An example of an EerMessageDefinition for HomeCareObservation:1.0"
+Profile: MedComHomeCareMessageDefinition
+Parent: MedComMessagingMessageDefinitionFhir 
+Id: medcom-homecare-messagedefinition
+Description: "The MessageDefinition for HomeCareObservation:1.0"
 * id = "MedComMessagingMessageDefinition-HomeCareObservation-1-0"
 * url = "urn:dk:healthcare:medcom:messaging:fhir:structuredefinition:homecareobservation:1.0"
 * identifier.period.start = "2021-03-23"
@@ -16,7 +16,7 @@ Description: "An example of an EerMessageDefinition for HomeCareObservation:1.0"
 * copyright = "Copyright © 2023 MedCom"
 //* publisher = "MedCom"
 //InteroperabilityConsultant
-* contact[InteroperabilityConsultant].name = "Interoperability Consultant, Thea Mentz Sørensen"
+* contact[InteroperabilityConsultant].name = "Interoperability Consultant, Thea Sørensen"
 //* contact[InteroperabilityConsultant].telecom.system = #email
 * contact[InteroperabilityConsultant].telecom.value = "tms@medcom.dk" 
 //* contact[InteroperabilityConsultant].telecom.use = #work

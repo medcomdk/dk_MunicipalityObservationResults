@@ -17,7 +17,7 @@ The MedCom HomeCareObservation supports following content in relation to healthc
 [More information about the clinical guidelines for applications can be found here.](https://medcomdk.github.io/dk_HomeCareObservations/#11-clinical-guidelines-and-documentation) 
 
 ## MedCom HomeCareObservation
-The structure of a MedCom HomeCareObservation is despicted on the following diagram:
+The structure of a MedComHomeCareObservation is despicted on the following diagram:
 <figure>
 <img alt="Shows the structure of a HomeCareObservationMessage. The HomeCareObservationMessage includes a MedComHomeCareObservationsMessageHeader and a MedComMessagingProvenance. MedComHomeCareObservationsMessageHeader references a sender and receiver organization, the MedComCoreOrganization and a focus which is a reference to a HomeCare Report. Form the HomeCareRepport is a MedComCorePatient and HomeCareObservation and a MedComObservationProducerOrganization. " src="./HomeCareObservation/HomeCareObservationMessage.svg" style="float:none; display:block; margin-left:auto; margin-right:auto;" id="Fig1"/>
 <figcaption text-align="center"><b>Figure 1: Overview of the references between profiles in a MedCom HomeCareObservation. </b></figcaption>
@@ -31,7 +31,7 @@ MedCom HomeCareObservation follows the general MedCom FHIR messaging model, exce
 ### MedComHomeCareObservationMessage
 The MedComHomeCareObservationMessage profile is used to bundle all observations and relevant information together. All referenced resources in the HomeCareObservationMessage shall be contained in the entry list in MedComHomeCareObservationMessage. 
 
-The [MedComHomeCareObservationMessage](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecare-message.html) is a constraint of the [MedComMessagingMessage](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-message.html) further to use the [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecareobservation-MessageHeader.html) and to require exactly one [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html).
+The [MedComHomeCareObservationMessage](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecareobservation-message.html) is a constraint of the [MedComMessagingMessage](https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-message.html) further to use the [MedComHomeCareObservationsMessageHeader](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homecareobservation-messageheader.html) and to require exactly one [MedComCorePatient](https://medcomfhir.dk/ig/core/StructureDefinition-medcom-core-patient.html).
 Furthermore, it contains rules that constrains the ValueSet of activities in the <a href="https://medcomfhir.dk/ig/messaging/StructureDefinition-medcom-messaging-provenance.html">MedComMessagingProvenance</a> profile to only contain activities from the [MedComHomeCareObservationMessageAcitivityCodes](http://medcomfhir.dk/ig/terminology/ValueSet-medcom-HomeCareObservation-messagingActivities.html) ValueSet, which contains activities such as new-message, forward-message, and other activities triggering the message.
 
 

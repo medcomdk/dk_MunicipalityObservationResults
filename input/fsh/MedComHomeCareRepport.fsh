@@ -1,7 +1,7 @@
-Profile: MedComHomeCareDiagnosticReport
+Profile: MedComHomeCareObservationDiagnosticReport
 Parent: MedComCoreDiagnosticReport
-Id: medcom-homecare-diagnosticreport
-Title: "MedComHomeCareDiagnosticReport"
+Id: medcom-homecareobservation-diagnosticreport
+Title: "MedComHomeCareObservationDiagnosticReport"
 Description: "This resource is intenden to be used in relation with a HomeCareObservation message"
 * conclusion ^short = "A comment relevant for all observations in the report and necessary to interpret and understand the results (Danish:Klinisk kommentar)."
 * result only Reference(MedComHomeCareObservation)
@@ -47,7 +47,7 @@ Expression: "reference.resolve().practitioner.resolve().telecom.where(system = '
 
 
 Instance: 870333ac-3134-4ae6-8257-86e0b0537c5f
-InstanceOf: MedComHomeCareDiagnosticReport
+InstanceOf: MedComHomeCareObservationDiagnosticReport
 Usage: #example
 Title: "HomeCareDiagnosticReport: spot test and EKG"
 Description: "Spot test and EKG performed by the acute care team on a subject."
@@ -73,7 +73,7 @@ Description: "Spot test and EKG performed by the acute care team on a subject."
 
 
 Instance: 6d08f000-33cc-41f3-a7c2-c086d53d31a7
-InstanceOf: MedComHomeCareDiagnosticReport
+InstanceOf: MedComHomeCareObservationDiagnosticReport
 Usage: #example
 Title: "HomeCareDiagnosticReport: Urine dipsticks tests and refused consent"
 Description: "Urine dipstick tests performed by the acute care team on a subject, that has refused consent."
@@ -91,7 +91,7 @@ Description: "Urine dipstick tests performed by the acute care team on a subject
 
 
 Instance: efb1ed12-6a5d-4342-9572-861071644e46
-InstanceOf: MedComHomeCareDiagnosticReport
+InstanceOf: MedComHomeCareObservationDiagnosticReport
 Usage: #example
 Title: "HomeCareDiagnosticReport:TOBS and ABC examination"
 Description: "TOBS and ABC examination of Elmer"
@@ -118,7 +118,7 @@ E.	Temperatur 38,7 Målt rektalt"
 
 // Modified diagostic repport 
 Instance: cfa9e95b-b5ac-4cfe-abe7-ea29e6b67919
-InstanceOf: MedComHomeCareDiagnosticReport
+InstanceOf: MedComHomeCareObservationDiagnosticReport
 Usage: #example
 Title: "Modified HomeCareDiagnosticReport:TOBS and ABC examination"
 Description: "Example of a modified HomeCareDiagnosticReport with TOBS and ABC examination of Elmer"
@@ -147,7 +147,7 @@ Patienten har nægtet at spise og drikke i løbet af dagen."
 
 // Cancelled diagostic repport 
 Instance: 4f013d3a-575c-447d-83e1-7a5fb7f7b0de
-InstanceOf: MedComHomeCareDiagnosticReport
+InstanceOf: MedComHomeCareObservationDiagnosticReport
 Usage: #example
 Title: "Cancelled HomeCareDiagnosticReport: TOBS and ABC examination"
 Description: "Example of a cancelled HomeCareDiagnosticReport, with TOBS and ABC examination of Elmer"

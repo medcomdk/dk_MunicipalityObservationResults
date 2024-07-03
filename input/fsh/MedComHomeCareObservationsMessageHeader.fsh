@@ -9,8 +9,8 @@ Description: "MessageHeader for HomeCareObservation"
 * destination[primary].receiver only Reference(MedComRequesterOrganization)
 * destination[primary].receiver ^type.aggregation = #bundled
 * sender only Reference(MedComProducerOrganization)
-* focus only Reference(MedComHomeCareDiagnosticReport)
-* definition 0..1 MS
+* focus only Reference(MedComHomeCareObservationDiagnosticReport)
+* definition 1..1 MS
 * definition = "http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/MedComMessagingMessageDefinitionHomeCareObservation"
 
 

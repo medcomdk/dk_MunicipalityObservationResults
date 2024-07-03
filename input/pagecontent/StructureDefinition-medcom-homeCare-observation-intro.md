@@ -1,6 +1,6 @@
 ### Scope and usage
 
-The MedComHomeCareObservation profile holds information about the observation results from the municipal acute care team The MedComHomeCareObservations are collected in a MedComHomeCareDiagnosticReport, that is sent as a MedComHomeCareObservation message to the general practitioner.
+The MedComHomeCareObservation profile holds information about the observation results from the municipal acute care team The MedComHomeCareObservations are collected in a MedComHomeCareObservationDiagnosticReport, that is sent as a MedComHomeCareObservation message to the general practitioner.
 
 The observations results needs to have a observation code that defines the type of the observation.
 The code for the observation shall be seleceted from a national analysis repertoire, that defines which observations and assesments methods the municipal acute care team can performe and send to the general practitioner. 
