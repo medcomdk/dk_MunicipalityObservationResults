@@ -243,7 +243,7 @@ Description: "HeartRate of Elmer"
 * status = $ObsStatusCodeSystem#final
 * code.coding[NPU] = $NPU#NPU21692 "Hjerte—Systole; frekv. = ? × 1/min"
 * valueQuantity.value = 92
-* valueQuantity.unit = " 1/min"
+* valueQuantity.unit = "1/min"
 * note.text = "Patienten har været ud og går lige inden målingen."
 * effectiveDateTime = 2023-09-13T09:24:09+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)

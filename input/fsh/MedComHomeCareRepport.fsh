@@ -13,7 +13,7 @@ Description: "This resource is intenden to be used in relation with a HomeCareOb
 * performer ^slicing.discriminator.path = "resolve()"
 * performer ^slicing.rules = #closed
 * performer ^slicing.ordered = false
-* performer ^slicing.description = " Slice of observation codes"
+* performer ^slicing.description = "Slice of observation codes"
 * performer contains 
     ProducerOrganization 1..1 and
     PractitionerRole 1..1
@@ -86,7 +86,7 @@ Description: "Urine dipstick tests performed by the acute care team on a subject
 * result[+] = Reference(4b8f899a-df12-4301-8287-9a77d46ded3d)
 * result[+] = Reference(f58819ff-d727-4740-a4ef-44eefc77022e)
 * result[+] = Reference(2fc2c078-825b-491d-9f8e-34926eb4f06f)
-* meta.security.code.value = $v3-Confidentiality#R
+* meta.security.code = $v3-Confidentiality#R
 * meta.security.display = "Restricted"
 
 
@@ -109,11 +109,11 @@ Description: "TOBS and ABC examination of Elmer"
 * result[+] = Reference(f64a0a78-53cf-4a7f-9b89-4a2338a4935c)
 * conclusion = "ABCDE
 SeFølLyt-Princippet
-A.	RF 19 – påskyndet men regelmæssig, fri respiration. SAT 93%
+A.	RF 19 - påskyndet men regelmæssig, fri respiration. SAT 93%
 B.	Puls 92 palperet på venstre håndled. Fyldig regelmæssig. Fin kapilærrespons
-C.	BT 147/83 – klamtsvedende. Kolde ekstremiteter. 
+C.	BT 147/83 - klamtsvedende. Kolde ekstremiteter. 
 D.	Reagerer habituelt. Pupilreaktion i.a. VAS 7. Bl.s. 6,8
-E.	Temperatur 38,7 Målt rektalt "
+E.	Temperatur 38,7 Målt rektalt"
 
 
 // Modified diagostic repport 
@@ -134,18 +134,16 @@ Description: "Example of a modified HomeCareDiagnosticReport with TOBS and ABC e
 * result[+] = Reference(6bf03841-8397-4a2a-9f9a-8966b0cfa571)
 * result[+] = Reference(85fd1372-cf02-49c6-bd45-7205f5541a66)
 * result[+] = Reference(f64a0a78-53cf-4a7f-9b89-4a2338a4935c)
-* conclusion = "
-ABCDE
+* conclusion = "ABCDE
 SeFølLyt-Princippet
-A.	RF 19 – påskyndet men regelmæssig, fri respiration. SAT 93%
+A.	RF 19 - påskyndet men regelmæssig, fri respiration. SAT 93%
 B.	Puls 92 palperet på venstre håndled. Fyldig regelmæssig. Fin kapilærrespons
-C.	BT 147/83 – klamtsvedende. Kolde ekstremiteter. 
+C.	BT 147/83 - klamtsvedende. Kolde ekstremiteter. 
 D.	Reagerer habituelt. Pupilreaktion i.a. VAS 7. Bl.s. 6,8
 E.	Temperatur 38,7 Målt rektalt
 
 
-Patienten har nægtet at spise og drikke i løbet af dagen. 
-"
+Patienten har nægtet at spise og drikke i løbet af dagen."
 
 // Cancelled diagostic repport 
 Instance: 4f013d3a-575c-447d-83e1-7a5fb7f7b0de
@@ -165,6 +163,4 @@ Description: "Example of a cancelled HomeCareDiagnosticReport, with TOBS and ABC
 * result[+] = Reference(6bf03841-8397-4a2a-9f9a-8966b0cfa571)
 * result[+] = Reference(85fd1372-cf02-49c6-bd45-7205f5541a66)
 * result[+] = Reference(f64a0a78-53cf-4a7f-9b89-4a2338a4935c)
-* conclusion = "
-Cancellation due to incorrect CPR-number!
-"
+* conclusion = "Cancellation due to incorrect CPR-number!"

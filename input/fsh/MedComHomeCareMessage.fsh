@@ -7,10 +7,9 @@ Description: "The HomeCareObservation Message is used exchange of the observatio
 
 
 Invariant: medcom-homecareObsMessage-1
-Description: "The MessageHeader shall conform to medcom-MedComHomeCareObservation-messageHeader profile"
+Description: "The MessageHeader shall conform to medcom-homecareobservation-messageheader profile"
 Severity: #error
-Expression: "entry[0].conformsTo('http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-homecareobservation-MessageHeader')"
-
+Expression: "entry[0].resource.conformsTo('http://medcomfhir.dk/ig/homecareobservation/StructureDefinition/medcom-homecareobservation-messageheader')"
 
 
 
@@ -70,7 +69,7 @@ Usage: #example
 * timestamp = 2023-09-13T12:24:09+02:00
 * entry[+].fullUrl = "http://medcomfhir.dk/ig/homecareobservation/MessageHeader/e9f4cc68-b1b7-46b2-ba74-7cc39a914bfa"
 * entry[=].resource = e9f4cc68-b1b7-46b2-ba74-7cc39a914bfa
-* entry[+].fullUrl = "http://medcomfhir.dk/ig/homecareobservation/Patient/99f5578f-c9d3-4d8c-aa3e-21690e03e27c"
+* entry[+].fullUrl = "http://medcomfhir.dk/ig/homecareobservation/Patient/733cef33-3626-422b-955d-d506aaa65fe1"
 * entry[=].resource = 99f5578f-c9d3-4d8c-aa3e-21690e03e27c
 * entry[+].fullUrl = "http://medcomfhir.dk/ig/homecareobservation/DiagnosticReport/6d08f000-33cc-41f3-a7c2-c086d53d31a7"
 * entry[=].resource = 6d08f000-33cc-41f3-a7c2-c086d53d31a7
