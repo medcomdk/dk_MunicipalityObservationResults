@@ -80,7 +80,7 @@ Description: "Urine dipstick tests performed by the acute care team on a subject
 * status = $StatusCodeDiagnosticReport#final
 * issued = 2023-09-12T12:24:08+02:00
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
-* subject = Reference(99f5578f-c9d3-4d8c-aa3e-21690e03e27c)
+* subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 * performer[ProducerOrganization] = Reference(72cc3a2c-1dda-4b95-b50a-0f7ac19640f4)
 * performer[PractitionerRole] = Reference(4b3b6f0f-a475-4b04-8a92-105e8ce6a7bf)
 * result[+] = Reference(4b8f899a-df12-4301-8287-9a77d46ded3d)
@@ -100,7 +100,7 @@ Description: "TOBS and ABC examination of Elmer"
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
 * performer[ProducerOrganization] = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
-* performer[PractitionerRole] = Reference( 4b3b6f0f-a475-4b04-8a92-105e8ce6a7bf)
+* performer[PractitionerRole] = Reference(4b3b6f0f-a475-4b04-8a92-105e8ce6a7bf)
 * result[+] = Reference(3fd3835d-1758-4d22-8547-000182752817)
 * result[+] = Reference(ba691ee4-6d38-4f5b-82f1-40b54e3b8ad1)
 * result[+] = Reference(8917f29d-269c-4bb3-8ce9-d255c351d52b)
@@ -127,7 +127,7 @@ Description: "Example of a modified HomeCareDiagnosticReport with TOBS and ABC e
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
 * performer[ProducerOrganization] = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
-* performer[PractitionerRole] = Reference( 4b3b6f0f-a475-4b04-8a92-105e8ce6a7bf)
+* performer[PractitionerRole] = Reference(4b3b6f0f-a475-4b04-8a92-105e8ce6a7bf)
 * result[+] = Reference(3fd3835d-1758-4d22-8547-000182752817)
 * result[+] = Reference(ba691ee4-6d38-4f5b-82f1-40b54e3b8ad1)
 * result[+] = Reference(8917f29d-269c-4bb3-8ce9-d255c351d52b)
@@ -156,11 +156,11 @@ Description: "Example of a cancelled HomeCareDiagnosticReport, with TOBS and ABC
 * code.coding = $DiagnosticReportCodeSystem#HomeCareReport
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
 * performer[ProducerOrganization] = Reference(a0330c62-fe29-4719-83fa-a94959084f29)
-* performer[PractitionerRole] = Reference( 4b3b6f0f-a475-4b04-8a92-105e8ce6a7bf)
+* performer[PractitionerRole] = Reference(4b3b6f0f-a475-4b04-8a92-105e8ce6a7bf)
 * result[+] = Reference(3fd3835d-1758-4d22-8547-000182752817)
 * result[+] = Reference(ba691ee4-6d38-4f5b-82f1-40b54e3b8ad1)
 * result[+] = Reference(8917f29d-269c-4bb3-8ce9-d255c351d52b)
 * result[+] = Reference(6bf03841-8397-4a2a-9f9a-8966b0cfa571)
 * result[+] = Reference(85fd1372-cf02-49c6-bd45-7205f5541a66)
 * result[+] = Reference(f64a0a78-53cf-4a7f-9b89-4a2338a4935c)
-* conclusion = "Cancellation due to incorrect CPR-number!"
+* conclusion = "Cancellation due to incorrect CPR-number"
