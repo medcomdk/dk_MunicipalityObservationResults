@@ -4,7 +4,7 @@ Alias: $ObsStatusCodes = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-cor
 // Alias: $ObsStatusCodeSystem = http://hl7.org/fhir/observation-status
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $NPU = urn:oid:1.2.208.176.2.1
-Alias: $MedCom = https://terminology.medcom.dk/fhir/observation-code
+Alias: $MedCom = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes
 Alias: $NPUObservationCodesValueSet = http://medcomfhir.dk/ig/terminology/ValueSet/NPUObservationCodesValueSet
 Alias: $MessageEvents = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-eventCodes
 Alias: $HCOActivityCodes = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-messaging-activityCodes
@@ -21,6 +21,7 @@ Alias: $ObsStatusCodeSystem = http://hl7.org/fhir/observation-status
 // Alias: $StatusCodeDiagnosticReportSystem = http://hl7.org/fhir/diagnostic-report-status
 Alias: $Mimetypes = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-core-attachmentMimeTypes
 Alias: $obsInterpretation = http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-core-interpretation-codes
+Alias: $obsInterpretationValueSet = http://medcomfhir.dk/ig/terminology/ValueSet/medcom-core-interpreation-valueset
 Alias: $mediastatus = http://hl7.org/fhir/event-status
 Alias: $MedcomCodes = http://medcomfhir.dk/ig/terminology/ValueSet/MedComObservationValueSet
 // Added for MessageDefinition purpose

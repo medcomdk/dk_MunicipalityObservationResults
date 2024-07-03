@@ -24,10 +24,10 @@ publisher:
 dependencies:
   hl7.fhir.dk.core: 
     uri: https://hl7.dk/fhir/core/
-    version: 2.2.0
-  medcom.fhir.dk.terminology: 1.5.0
-  medcom.fhir.dk.core: 2.3.0
-  medcom.fhir.dk.messaging: current
+    version: 3.2.0
+  medcom.fhir.dk.terminology: 1.7.0
+  medcom.fhir.dk.core: 2.4.0
+  medcom.fhir.dk.messaging: 2.2.0
 # medcom.fhir.dk.messaging: 2.1.0
 
 
@@ -40,7 +40,12 @@ menu:
   Artifacts: artifacts.html
   Downloads: downloads.html
 
+#parameters:
+#  apply-contact: true
+#  apply-jurisdiction: true
+#  apply-publisher: true
+
 parameters:
-  apply-contact: true
-  apply-jurisdiction: true
-  apply-publisher: true
+  show-inherited-invariants: false
+  ipa-comparison: "{last}"
+  special-url: [urn:oid:1.2.208.176.2.1, urn:iso:std:iso:11073:10101, urn:oid:1.2.208.176.2.4, urn:oid:1.2.208.176.2.21, urn:oid:1.2.208.176.2.4.12]

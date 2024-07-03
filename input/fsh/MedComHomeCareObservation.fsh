@@ -1,6 +1,6 @@
 Profile: MedComHomeCareObservation
 Parent: MedComCoreObservation
-Id: medcom-homeCare-observation
+Id: medcom-homecare-observation
 Title: "MedComHomeCareObservation"
 Description: "This profile is intended to be used in HomeCareObservation to hold information about the observation results."
 * effectiveDateTime MS SU
@@ -14,7 +14,7 @@ Description: "This profile is intended to be used in HomeCareObservation to hold
 * code.coding[MedCom].code from $MedcomCodes 
 * code.coding.display MS
 * interpretation 0..1 MS
-* interpretation from $obsInterpretation
+* interpretation from $obsInterpretationValueSet
 * interpretation.coding.code = #NI
 // * obeys medcom-homecareObservation-1
  
@@ -36,12 +36,12 @@ Usage: #example
 Title: "C-reaktive protein [CRP];P"
 Description: "C-reaktive protein [CRP] test performed by acute care team on the subject."
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = $NPU#NPU19748 "P—C-reaktivt protein; massek. = ? mg/L"
+* code.coding = $NPU#NPU19748 "P—C-reaktivt protein; massek. = ? mg/L"
 * valueQuantity.value = 26
 * valueQuantity.unit = "mg/L"
 * effectiveDateTime = 2023-09-12T10:24:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 
 Instance: f70ae8b7-c1af-44a2-a21a-570c552dd7cc
@@ -50,12 +50,13 @@ Usage: #example
 Title: "Observation of the haemoglobin"
 Description: "Observation of the haemoglobin"
 * status = $ObsStatusCodeSystem#final
-* code.coding[NPU] = $NPU#NPU02319 "B—Hæmoglobin(Fe); stofk. = ? mmol/L"
+* code.coding[NPU].code = #NPU02319	
+* code.coding[NPU].display = "B—Hæmoglobin(Fe); stofk. = ? mmol/L"
 * valueQuantity.value = 7.8
 * valueQuantity.unit = "mmol/L"
 * effectiveDateTime = 2023-09-12T10:25:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 
 
@@ -71,7 +72,7 @@ Description: "Test of leucocyte on the subject by acute care team"
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-09-12T10:27:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 Instance: 4a94a70e-6957-47a8-bec7-3e27b3145668
 InstanceOf:  MedComHomeCareObservation
@@ -84,7 +85,7 @@ Description: "Lymphocyte observation on the subject by acute care team"
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-09-12T10:30:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 
 
@@ -99,7 +100,7 @@ Description: "Monocytes observation performed on o subject by the acute care tea
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-09-12T10:32:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 Instance: f84143f7-f586-477f-af56-e50c7d152605
 InstanceOf: MedComHomeCareObservation
@@ -112,7 +113,7 @@ Description: "Neutrophilocytes observation performed on o subject by the acute c
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-09-12T10:34:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 
 Instance: b22fcbe0-4977-433e-ad1c-d6545bc8c1cb
@@ -126,7 +127,7 @@ Description: "Eosinofilocyt observation performed on a subject by the auce care 
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-09-12T10:36:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 
 
@@ -141,7 +142,7 @@ Description: "Basofilocyt observation performed on a subject by the auce care te
 * valueQuantity.unit = "10^9/L"
 * effectiveDateTime = 2023-09-12T10:38:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 Instance: 0e4a5452-1804-42d3-82ed-484df20a09f0
 InstanceOf: MedComHomeCareObservation
@@ -154,7 +155,7 @@ Description: "Glucose measurement on the subject. "
 * valueQuantity.unit = "mmol/L"
 * effectiveDateTime = 2023-09-12T10:40:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 
 Instance: 470d39e4-d3f9-4301-82eb-b957ba33475e
@@ -167,7 +168,7 @@ Description: "Coagulation factor on the subject"
 * valueQuantity.value = 0.9
 * effectiveDateTime = 2023-09-12T10:42:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 
 
@@ -187,7 +188,7 @@ Description: "Urine dipstick tests on Bruno "
 * valueQuantity.unit = "+"
 * effectiveDateTime = 2023-09-13T12:24:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 Instance: f58819ff-d727-4740-a4ef-44eefc77022e
 InstanceOf: MedComHomeCareObservation
@@ -199,7 +200,7 @@ Description: "Nitrit observation on Bruno"
 * valueString = "Negative" 
 * effectiveDateTime = 2023-09-13T12:24:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 Instance: 2fc2c078-825b-491d-9f8e-34926eb4f06f
 InstanceOf: MedComHomeCareObservation 
@@ -212,7 +213,7 @@ Description: "Test of leucocyt using urine dipstick"
 * valueQuantity.unit = "+"
 * effectiveDateTime = 2023-09-13T12:24:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 
 
@@ -230,7 +231,7 @@ Description: "Respiration frequency of Elmer"
 * valueQuantity.unit = "1/min"
 * effectiveDateTime = 2023-09-13T09:24:08+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 Instance: ba691ee4-6d38-4f5b-82f1-40b54e3b8ad1
 InstanceOf: MedComHomeCareObservation
@@ -244,7 +245,7 @@ Description: "HeartRate of Elmer"
 * note.text = "Patienten har været ud og går lige inden målingen."
 * effectiveDateTime = 2023-09-13T09:24:09+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 Instance: 8917f29d-269c-4bb3-8ce9-d255c351d52b
 InstanceOf: MedComHomeCareObservation
@@ -257,7 +258,7 @@ Description: "Systolic Blood Pressure of Elmer"
 * valueQuantity.unit = "mmHg"
 * effectiveDateTime = 2023-09-13T09:24:10+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 Instance: 6bf03841-8397-4a2a-9f9a-8966b0cfa571
 InstanceOf: MedComHomeCareObservation
@@ -269,7 +270,7 @@ Description: "Consciousness of Elmer"
 * valueQuantity.value = 0
 * effectiveDateTime = 2023-09-13T09:24:11+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 Instance: 85fd1372-cf02-49c6-bd45-7205f5541a66
 InstanceOf: MedComHomeCareObservation
@@ -282,7 +283,7 @@ Description: "Temperature of Elmer"
 * valueQuantity.unit = "°C"
 * effectiveDateTime = 2023-09-13T09:24:12+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"
 
 Instance: f64a0a78-53cf-4a7f-9b89-4a2338a4935c
 InstanceOf: MedComHomeCareObservation
@@ -294,4 +295,4 @@ Description: "TOBS of Elmer"
 * valueQuantity.value = 3
 * effectiveDateTime = 2023-09-13T09:24:13+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
-* interpretation.coding.code = $obsInterpretation#NI
+* interpretation.coding = $obsInterpretation#NI "Not Interpreted"

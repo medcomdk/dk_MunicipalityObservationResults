@@ -1,6 +1,6 @@
 Profile: MedComHomeCareObservationMessageHeader
 Parent: MedComMessagingMessageHeader
-Id: medcom-homecareobservation-MessageHeader
+Id: medcom-homecareobservation-messageheader
 Title: "MedComHomeCareObservationMessageHeader"
 Description: "MessageHeader for HomeCareObservation"
 * id ^short = "A unique identifier for each message. This identifier should be globally unique."
