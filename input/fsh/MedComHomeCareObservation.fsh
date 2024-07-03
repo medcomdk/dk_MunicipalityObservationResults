@@ -10,8 +10,8 @@ Description: "This profile is intended to be used in HomeCareObservation to hold
 * valueQuantity 0..1 MS
 * valueQuantity
   * ^maxLength = 12
-* code.coding[NPU].code from $NPUObservationCodesValueSet 
-* code.coding[MedCom].code from $MedcomCodes 
+* code.coding[NPU] from $NPUObservationCodesValueSet 
+* code.coding[MedCom] from $MedcomCodes 
 * code.coding.display MS
 * interpretation 0..1 MS
 * interpretation from $obsInterpretationValueSet
@@ -166,6 +166,8 @@ Description: "Coagulation factor on the subject"
 * status = $ObsStatusCodeSystem#final
 * code.coding[NPU] = $NPU#NPU01685 "P—Koagulation, vævsfaktor-induceret; rel.tid(aktuel/norm; INR; IRP 67/40; proc.) = ?"
 * valueQuantity.value = 0.9
+* valueQuantity.code = #1
+* valueQuantity.system = $ucum
 * effectiveDateTime = 2023-09-12T10:42:08+02:00
 * subject = Reference(733cef33-3626-422b-955d-d506aaa65fe1)
 * interpretation.coding = $obsInterpretation#NI "Not Interpreted"
@@ -268,6 +270,8 @@ Description: "Consciousness of Elmer"
 * status = $ObsStatusCodeSystem#final
 * code.coding[MedCom] = #MCS88126 "Pt—Bevidsthedsniveau; arb.antal(værdi 0-3) = ?"
 * valueQuantity.value = 0
+* valueQuantity.code = #1
+* valueQuantity.system = $ucum
 * effectiveDateTime = 2023-09-13T09:24:11+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
 * interpretation.coding = $obsInterpretation#NI "Not Interpreted"
@@ -293,6 +297,8 @@ Description: "TOBS of Elmer"
 * status = $ObsStatusCodeSystem#final
 * code.coding[MedCom] = $MedCom#MCS88125 "Pt—Tidlig Opsporing af Begyndende Sygdom (TOBS) score; antal (værdi 0-15) = ?" 
 * valueQuantity.value = 3
+* valueQuantity.code = #1
+* valueQuantity.system = $ucum
 * effectiveDateTime = 2023-09-13T09:24:13+02:00
 * subject = Reference(bbcd4817-1c4b-4089-a712-346f65ec16f9)
 * interpretation.coding = $obsInterpretation#NI "Not Interpreted"
