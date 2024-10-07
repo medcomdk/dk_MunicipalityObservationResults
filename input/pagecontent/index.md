@@ -45,7 +45,6 @@ The profile also includes information about the performer, i.e the preson who pe
 
 This profile also allows to send relevant attachments from the acute home care visit.  Attachment that are allowed to sendt with the HomeCareDiagnosticReport are: pdf, jpeg, png, tiff or gif.
 
-
 ### MedComHomeCareObservation
 The [MedComHomeCareObservation](http://medcomfhir.dk/ig/homecareobservation/StructureDefinition-medcom-homeCare-observation.html) profile inherits from the MedComCoreObservation profile. This profile includes infromation about what observation was performed, what date & time, by whom, and what result was obtained.
 Too expres what observation was performed a Observation.code.coding elemen shall be used. In HomeCareObservation it is allowed to ude NPU codes for observations and MedCom (MCS) codes for  observations. 
