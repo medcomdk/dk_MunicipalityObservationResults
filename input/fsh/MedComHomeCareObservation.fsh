@@ -8,10 +8,10 @@ Description: "This profile is intended to be used in HomeCareObservation to hold
 * valueString
   * ^maxLength = 12
 * valueQuantity 0..1 MS
-* valueQuantity
+* valueQuantity.value
   * ^maxLength = 12
-* code.coding[NPU] from $NPUObservationCodesValueSet 
-* code.coding[MedCom] from $MedcomCodes 
+* code.coding[NPU].code from $NPUObservationCodesValueSet (preferred)
+* code.coding[MedCom].code from $MedcomCodes (preferred)
 * code.coding.display MS
 * interpretation 0..1 MS
 * interpretation from $obsInterpretationValueSet

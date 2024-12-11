@@ -15,7 +15,7 @@ Expression: "entry[0].resource.conformsTo('http://medcomfhir.dk/ig/homecareobser
 Invariant: medcom-homecareObsMessage-2
 Description: "All provenance resources shall contain activities from medcom-HomeCareObservation-messagingActivities valueset"
 Severity: #error
-Expression: "entry.ofType(Provenance).all(resource.activity.memberOf('http://medcomfhir.dk/ig/terminology/ValueSet/medcom-HomeCareObservation-messagingActivities'))"
+Expression: "entry.resource.ofType(Provenance).all(activity.memberOf('http://medcomfhir.dk/ig/terminology/ValueSet/medcom-HomeCareObservation-messagingActivities'))"
 
 
 Instance: add5e7e2-0c0f-4a4a-bfff-f6f984fa7e3c
