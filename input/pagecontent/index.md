@@ -1,6 +1,5 @@
 > This IG is developed to be part of a production trial of the communication between the general practitioner and municipal acute care team.
 
-
 # Home
 ## Introduction
 This implementation guide (IG) is provided by MedCom to describe the use of FHIR ®© in message based exchange of structured health data between the municipal acute care team and the general practitioner.  
